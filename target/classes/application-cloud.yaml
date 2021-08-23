@@ -2,9 +2,9 @@ info:
   name: mock-service
   version: 0.0.1-SNAPSHOT
   origin: ${scm.url}
-  commit: ${buildNumber}
-  branch: UNKNOWN_BRANCH
-  built: 2021-08-23T09:41:14Z
+  commit: 24ad2efbf4e15c356dbabc57dfda174ff7bbb7a1
+  branch: SOCINT-57_initial_commit
+  built: 2021-08-23T11:39:42Z
 
 # logging config here as a reminder as to how to override logback from cmd line
 # ie -Dlogging.level.org.springframework=DEBUG

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ons.sdc.int.common:product-reference:1.0.27">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ons/sdc/int/common/product-reference/1.0.27/product-reference-1.0.27.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ons/sdc/int/common/product-reference/1.0.27/product-reference-1.0.27-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ons/sdc/int/common/product-reference/1.0.27/product-reference-1.0.27-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
