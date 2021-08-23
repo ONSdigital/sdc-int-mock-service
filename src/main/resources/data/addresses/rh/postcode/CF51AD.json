@@ -1,0 +1,209 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "response": {
+    "postcode": "CF51AD",
+    "addresses": [
+      {
+        "uprn": "10013745617",
+        "formattedAddress": "Proposed Bungalow Rear Of 85, Ely Road, Llandaff, Cardiff, CF5 1AD",
+        "addressType": "NAG",
+        "censusAddressType": "NA",
+        "censusEstabType": "NA",
+        "countryCode": "W",
+        "confidenceScore": 100021
+      },
+      {
+        "uprn": "100100072224",
+        "formattedAddress": "1 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100020
+      },
+      {
+        "uprn": "100100072225",
+        "formattedAddress": "2 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100019
+      },
+      {
+        "uprn": "100100072226",
+        "formattedAddress": "3 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100018
+      },
+      {
+        "uprn": "100100072227",
+        "formattedAddress": "4 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100017
+      },
+      {
+        "uprn": "100100072228",
+        "formattedAddress": "5 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100016
+      },
+      {
+        "uprn": "100100072229",
+        "formattedAddress": "6 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100015
+      },
+      {
+        "uprn": "100100072230",
+        "formattedAddress": "7 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100014
+      },
+      {
+        "uprn": "100100072231",
+        "formattedAddress": "8 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100013
+      },
+      {
+        "uprn": "100100072232",
+        "formattedAddress": "9 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100012
+      },
+      {
+        "uprn": "100100072233",
+        "formattedAddress": "10 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100011
+      },
+      {
+        "uprn": "100100072234",
+        "formattedAddress": "11 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100010
+      },
+      {
+        "uprn": "100100072235",
+        "formattedAddress": "12 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100009
+      },
+      {
+        "uprn": "100100072236",
+        "formattedAddress": "13 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100008
+      },
+      {
+        "uprn": "100100072237",
+        "formattedAddress": "14 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100007
+      },
+      {
+        "uprn": "100100072238",
+        "formattedAddress": "15 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100006
+      },
+      {
+        "uprn": "100100072239",
+        "formattedAddress": "16 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100005
+      },
+      {
+        "uprn": "100100072240",
+        "formattedAddress": "17 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100004
+      },
+      {
+        "uprn": "100100072241",
+        "formattedAddress": "18 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100003
+      },
+      {
+        "uprn": "100100072242",
+        "formattedAddress": "19 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100002
+      },
+      {
+        "uprn": "100100072243",
+        "formattedAddress": "21 Fairfield Close, Cardiff, CF5 1AD",
+        "addressType": "PAF",
+        "censusAddressType": "HH",
+        "censusEstabType": "Household",
+        "countryCode": "W",
+        "confidenceScore": 100001
+      }
+    ],
+    "filter": "",
+    "epoch": "",
+    "limit": 100,
+    "offset": 0,
+    "total": 21,
+    "maxScore": 0
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

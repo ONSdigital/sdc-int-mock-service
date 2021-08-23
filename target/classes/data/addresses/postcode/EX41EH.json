@@ -1,0 +1,855 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "response": {
+    "postcode": "EX41EH",
+    "addresses": [
+      {
+        "uprn": "100041045599",
+        "parentUprn": "0",
+        "formattedAddress": "4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "C W U Western Counties, 4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "C W U Western Counties, 4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719814,
+          "longitude": -3.5430896,
+          "easting": 291168,
+          "northing": 92269
+        },
+        "classificationCode": "PP",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013038713",
+        "parentUprn": "100041045599",
+        "formattedAddress": "Communication Workers Union, 4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Communication Workers Union, 4 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719814,
+          "longitude": -3.5430896,
+          "easting": 291168,
+          "northing": 92269
+        },
+        "classificationCode": "CO01",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013041723",
+        "parentUprn": "0",
+        "formattedAddress": "6A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "6A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "6A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "6A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71983,
+          "longitude": -3.5432034,
+          "easting": 291160,
+          "northing": 92271
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226402",
+        "parentUprn": "0",
+        "formattedAddress": "6B Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "6B Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "6 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "6 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71983,
+          "longitude": -3.5432034,
+          "easting": 291160,
+          "northing": 92271
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100041141569",
+        "parentUprn": "100040226404",
+        "formattedAddress": "First Floor, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "First Floor, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "8A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "8A Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719845,
+          "longitude": -3.543289,
+          "easting": 291154,
+          "northing": 92273
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013038714",
+        "parentUprn": "100040226404",
+        "formattedAddress": "Pest Eradication CO Limited, Pest Eradication CO LTD, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Pest Eradication CO Limited, Pest Eradication CO LTD, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "Pest Eradication, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "Pest Eradication, 8 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719845,
+          "longitude": -3.543289,
+          "easting": 291154,
+          "northing": 92273
+        },
+        "classificationCode": "CR08",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226406",
+        "parentUprn": "0",
+        "formattedAddress": "10 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "10 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "10-12 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "10-12 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719864,
+          "longitude": -3.5433745,
+          "easting": 291148,
+          "northing": 92275
+        },
+        "classificationCode": "RD",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226408",
+        "parentUprn": "0",
+        "formattedAddress": "12 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "12 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71991,
+          "longitude": -3.5433195,
+          "easting": 291152,
+          "northing": 92280
+        },
+        "classificationCode": "R",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047189",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 1A Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 1A Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100041141465",
+        "parentUprn": "0",
+        "formattedAddress": "Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "PP",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047188",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 1, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 1, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047190",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 2, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 2, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047191",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 3, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 3, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047192",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 4, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 4, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013047193",
+        "parentUprn": "100041141465",
+        "formattedAddress": "Flat 5, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Flat 5, Holbeche House, 14 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719925,
+          "longitude": -3.543504,
+          "easting": 291139,
+          "northing": 92282
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226417",
+        "parentUprn": "0",
+        "formattedAddress": "16 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "16 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "16 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "16 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71994,
+          "longitude": -3.543618,
+          "easting": 291131,
+          "northing": 92284
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226419",
+        "parentUprn": "0",
+        "formattedAddress": "18 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "18 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "18 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "18 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719948,
+          "longitude": -3.543689,
+          "easting": 291126,
+          "northing": 92285
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226420",
+        "parentUprn": "0",
+        "formattedAddress": "19 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "19 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "19 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "19 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71951,
+          "longitude": -3.5428813,
+          "easting": 291182,
+          "northing": 92235
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226421",
+        "parentUprn": "0",
+        "formattedAddress": "20 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "20 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "20 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "20 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719955,
+          "longitude": -3.5437884,
+          "easting": 291119,
+          "northing": 92286
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226422",
+        "parentUprn": "0",
+        "formattedAddress": "21 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "21 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "21 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "21 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719517,
+          "longitude": -3.5429523,
+          "easting": 291177,
+          "northing": 92236
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226424",
+        "parentUprn": "0",
+        "formattedAddress": "23 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "23 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "23 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "23 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719524,
+          "longitude": -3.5430377,
+          "easting": 291171,
+          "northing": 92237
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226426",
+        "parentUprn": "0",
+        "formattedAddress": "25 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "25 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "25 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "25 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719536,
+          "longitude": -3.5430946,
+          "easting": 291167,
+          "northing": 92238
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226428",
+        "parentUprn": "0",
+        "formattedAddress": "27 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "27 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "27 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "27 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719543,
+          "longitude": -3.5431657,
+          "easting": 291162,
+          "northing": 92239
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226430",
+        "parentUprn": "0",
+        "formattedAddress": "29 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "29 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "29 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "29 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71956,
+          "longitude": -3.5432513,
+          "easting": 291156,
+          "northing": 92241
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226432",
+        "parentUprn": "0",
+        "formattedAddress": "31 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "31 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "31 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "31 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71956,
+          "longitude": -3.543322,
+          "easting": 291151,
+          "northing": 92241
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226434",
+        "parentUprn": "0",
+        "formattedAddress": "33 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "33 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "33 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "33 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719574,
+          "longitude": -3.5433934,
+          "easting": 291146,
+          "northing": 92243
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226436",
+        "parentUprn": "0",
+        "formattedAddress": "35 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "35 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "35 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "35 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71958,
+          "longitude": -3.5434644,
+          "easting": 291141,
+          "northing": 92244
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226438",
+        "parentUprn": "0",
+        "formattedAddress": "37 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "37 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "37 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "37 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719593,
+          "longitude": -3.5435498,
+          "easting": 291135,
+          "northing": 92245
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226440",
+        "parentUprn": "0",
+        "formattedAddress": "39 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "39 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "39 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "39 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.7196,
+          "longitude": -3.5436208,
+          "easting": 291130,
+          "northing": 92246
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "100040226442",
+        "parentUprn": "0",
+        "formattedAddress": "Cedar Lodge, 41-43 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "Cedar Lodge, 41-43 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719612,
+          "longitude": -3.5437195,
+          "easting": 291123,
+          "northing": 92247
+        },
+        "classificationCode": "CH01",
+        "census": {
+          "addressType": "CE",
+          "estabType": "Hotel",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10091473294",
+        "parentUprn": "0",
+        "formattedAddress": "45 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "45 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "45 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "45 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.719627,
+          "longitude": -3.5438316,
+          "easting": 291115,
+          "northing": 92249
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      },
+      {
+        "uprn": "10013050640",
+        "parentUprn": "0",
+        "formattedAddress": "47 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNag": "47 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressPaf": "Cedar Lodge Hotel, 41-43 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "Cedar Lodge Hotel, 41-43 Okehampton Road, Exeter, EX4 1EH",
+        "formattedAddressAuxiliary": "",
+        "geo": {
+          "latitude": 50.71964,
+          "longitude": -3.5439065,
+          "easting": 291109,
+          "northing": 92250
+        },
+        "classificationCode": "RD04",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 100,
+        "underlyingScore": 0
+      }
+    ],
+    "filter": "",
+    "historical": false,
+    "epoch": "",
+    "limit": 100,
+    "offset": 0,
+    "total": 32,
+    "maxScore": 0,
+    "verbose": false,
+    "includeauxiliarysearch": false
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

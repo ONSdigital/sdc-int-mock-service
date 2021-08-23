@@ -1,0 +1,128 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "termsAndConditions": "https://census.gov.uk/terms-and-conditions",
+  "response": {
+    "input": "8 Fair CF",
+    "addresses": [
+      {
+        "uprn": "100100139572",
+        "bestMatchAddress": "8 Fair Meadow, Pentyrch, Cardiff, CF15 9QY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100478480",
+        "bestMatchAddress": "8 Fairfield Road, Bridgend, CF31 3DU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100496794",
+        "bestMatchAddress": "8 Fairmeadows, Maesteg, CF34 9JL",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100499895",
+        "bestMatchAddress": "8 Fairfield Avenue, Maesteg, CF34 9LP",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100513425",
+        "bestMatchAddress": "8 Fairfax Crescent, Porthcawl, CF36 3EN",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100514005",
+        "bestMatchAddress": "8 Heol-fair, Porthcawl, CF36 5LA",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100761880",
+        "bestMatchAddress": "8 Fairhill Drive, Tonteg, Pontypridd, CF38 1NF",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100761896",
+        "bestMatchAddress": "8 Fairmound Place, Tonteg, Pontypridd, CF38 1NH",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100768656",
+        "bestMatchAddress": "8 Fair View, Beddau, Pontypridd, CF38 2DE",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "200003756487",
+        "bestMatchAddress": "8 Fair Oak Close, Aberdare, CF44 8BT",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100718627",
+        "bestMatchAddress": "8 Fair View, Hirwaun, Aberdare, CF44 9RY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "200003769489",
+        "bestMatchAddress": "8 Fairview Terrace, Abercynon, Mountain Ash, CF45 4UP",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100085862",
+        "bestMatchAddress": "8 Fairwater Avenue, Cardiff, CF5 3AR",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10090716185",
+        "bestMatchAddress": "8A Fairwater Green, Cardiff, CF5 3BA",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "64039780",
+        "bestMatchAddress": "8 Fairford Street, Barry, CF63 1BY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100838833",
+        "bestMatchAddress": "8 Fairfield Road, Penarth, CF64 2SL",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100830707",
+        "bestMatchAddress": "8 Fairoaks, Dinas Powys, CF64 4QU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100771303",
+        "bestMatchAddress": "8 Fairways View, Talbot Green, Pontyclun, CF72 8JG",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "200003763030",
+        "bestMatchAddress": "8 Fairland Close, Llantrisant, Pontyclun, CF72 8QH",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "43024308",
+        "bestMatchAddress": "8 Fairways, Bargoed, CF81 8TQ",
+        "bestMatchAddressType": "PAF"
+      }
+    ],
+    "filter": "",
+    "fallback": false,
+    "epoch": "",
+    "limit": 20,
+    "offset": 0,
+    "total": 662,
+    "maxScore": 0,
+    "favourpaf": true,
+    "favourwelsh": false,
+    "eboost": 1,
+    "nboost": 1,
+    "sboost": 1,
+    "wboost": 1
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

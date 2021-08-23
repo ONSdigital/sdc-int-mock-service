@@ -1,0 +1,1 @@
+{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"80","response":{"postcode":"%POSTCODE%","addresses":[],"filter":"","historical":false,"epoch":"","limit":100,"offset":0,"total":0,"maxScore":0,"verbose":false,"includeauxiliarysearch":false},"status":{"code":200,"message":"Ok"},"errors":[]}
