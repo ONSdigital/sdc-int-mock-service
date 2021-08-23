@@ -49,7 +49,7 @@ spring:
     name: MockService
 
 address-index:
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.5W2EgODHpsts672J4psiGH31H-vJBz1r56_Tr9_8pPU
+  token:
   rest-client-config:
     scheme: https
     host: whitelodge-eq-ai-api.census-gcp.onsdigital.uk
