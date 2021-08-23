@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: mock-service
-        image: eu.gcr.io/[GCR]/mock-ai:[CONTAINER_VERSION]
+        image: eu.gcr.io/[GCR]/mock-service:[CONTAINER_VERSION]
         imagePullPolicy: Always
         resources:
           requests:

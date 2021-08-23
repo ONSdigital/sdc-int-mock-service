@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# This script acts as a unit test for the mock-ai.
+# This script acts as a unit test for the mock-service.
 #
 # It invokes the real and mock Address Index for a number of queries.
 # The script then does a diff between the real vs. mocked results.
@@ -10,37 +10,37 @@
 # the 'AI_TOKEN' environment variable.
 # By default the script points at a WL based AI service.
 # 
-# The mock-ai must be running locally.
+# The mock-service must be running locally.
 #
 
 MOCK_AI="http://localhost:8162"
 WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
 
-# Run the comparison of the real vs. mock-ai responses
+# Run the comparison of the real vs. mock-service responses
 function compare {
   ENDPOINT=$1
 
   # Get the response status codes from genuine and mock AI
   curl -s -H "Authorization: Bearer $AI_TOKEN" -I $WL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/wl-ai.status.txt
-  curl -s -I $MOCK_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/mock-ai.status.txt
+  curl -s -I $MOCK_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/mock-service.status.txt
 
   # Compare real & mock AI status codes
-  diff "/tmp/wl-ai.status.txt" "/tmp/mock-ai.status.txt" > /dev/null
+  diff "/tmp/wl-ai.status.txt" "/tmp/mock-service.status.txt" > /dev/null
   if [ $? -ne 0 ]
   then
     echo "*FAIL STATUS*: $ENDPOINT"
     echo -n "  Genuine: "
     cat /tmp/wl-ai.status.txt
     echo -n "  Mock   : "
-    cat /tmp/mock-ai.status.txt
+    cat /tmp/mock-service.status.txt
   fi
 
   # Get responses from genuine and mock AI
   curl -s -H "Authorization: Bearer $AI_TOKEN" $WL_AI/$ENDPOINT | jq . > /tmp/wl-ai.json
-  curl -s $MOCK_AI/$ENDPOINT | jq . > /tmp/mock-ai.json
+  curl -s $MOCK_AI/$ENDPOINT | jq . > /tmp/mock-service.json
 
   # Compare real & mock AI results
-  diff "/tmp/wl-ai.json" "/tmp/mock-ai.json" > /dev/null
+  diff "/tmp/wl-ai.json" "/tmp/mock-service.json" > /dev/null
   if [ $? -eq 0 ]
   then
     echo "Pass: $ENDPOINT"

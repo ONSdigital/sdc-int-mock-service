@@ -21,8 +21,8 @@ spec:
         app: mock-service
     spec:
       containers:
-      - name: mock-ai
-        image: europe-west2-docker.pkg.dev/ons-ci-int/int-docker-snapshot/mock-ai:Fix_file_listing_in_help_endpoint
+      - name: mock-service
+        image: europe-west2-docker.pkg.dev/ons-ci-int/int-docker-snapshot/mock-service:Fix_file_listing_in_help_endpoint
         imagePullPolicy: Always
         resources:
           requests:
