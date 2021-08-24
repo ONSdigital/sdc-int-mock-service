@@ -1,0 +1,128 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "termsAndConditions": "https://census.gov.uk/terms-and-conditions",
+  "response": {
+    "input": "29 CF32",
+    "addresses": [
+      {
+        "uprn": "100100490698",
+        "bestMatchAddress": "29 Blaengarw Road, Blaengarw, Bridgend, CF32 8AW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100645977",
+        "bestMatchAddress": "29 The Meadows, Marshfield, Cardiff, CF3 2AY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100646056",
+        "bestMatchAddress": "29 The Shires, Marshfield, Cardiff, CF3 2AZ",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100645785",
+        "bestMatchAddress": "29 Oakfields, Marshfield, Cardiff, CF3 2EZ",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100645522",
+        "bestMatchAddress": "29 Mallards Reach, Marshfield, Cardiff, CF3 2NN",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10010554934",
+        "bestMatchAddress": "29 Blacktown Gardens, Marshfield, Cardiff, CF3 2SF",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002155701",
+        "bestMatchAddress": "29 Cambrian Drive, Marshfield, Cardiff, CF3 2TE",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100645835",
+        "bestMatchAddress": "29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100645730",
+        "bestMatchAddress": "29 Marysfield Close, Marshfield, Cardiff, CF3 2TY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "200001638757",
+        "bestMatchAddress": "29 Marshfield Road, Castleton, Cardiff, CF3 2UW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10009646758",
+        "bestMatchAddress": "29A Marshfield Road, Castleton, Cardiff, CF3 2UW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10009646757",
+        "bestMatchAddress": "29B Marshfield Road, Castleton, Cardiff, CF3 2UW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10010553880",
+        "bestMatchAddress": "29C Marshfield Road, Castleton, Cardiff, CF3 2UW",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10093731909",
+        "bestMatchAddress": "29 Cypress Crescent, St. Mellons, Cardiff, CF3 2WL",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100483371",
+        "bestMatchAddress": "29 East Avenue, Cefn Cribwr, Bridgend, CF32 0AT",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100483216",
+        "bestMatchAddress": "29 Cefn Road, Cefn Cribwr, Bridgend, CF32 0BA",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100901269",
+        "bestMatchAddress": "29 Green Meadow, Cefn Cribwr, Bridgend, CF32 0BJ",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100496587",
+        "bestMatchAddress": "29 Heol Coed Leyshon, Coytrahen, Bridgend, CF32 0DT",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100494489",
+        "bestMatchAddress": "29 Church View, Laleston, Bridgend, CF32 0HF",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "200002339237",
+        "bestMatchAddress": "29 High Street, Laleston, Bridgend, CF32 0HL",
+        "bestMatchAddressType": "PAF"
+      }
+    ],
+    "filter": "",
+    "fallback": false,
+    "epoch": "",
+    "limit": 20,
+    "offset": 0,
+    "total": 190,
+    "maxScore": 0,
+    "favourpaf": true,
+    "favourwelsh": false,
+    "eboost": 1,
+    "nboost": 1,
+    "sboost": 1,
+    "wboost": 1
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

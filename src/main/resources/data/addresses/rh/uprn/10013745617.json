@@ -1,0 +1,27 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "response": {
+    "address": {
+      "uprn": "10013745617",
+      "formattedAddress": "Proposed Bungalow Rear Of 85, Ely Road, Llandaff, Cardiff, CF5 1AD",
+      "addressLine1": "Proposed Bungalow Rear Of 85",
+      "addressLine2": "Ely Road",
+      "addressLine3": "Llandaff",
+      "townName": "Cardiff",
+      "postcode": "CF5 1AD",
+      "foundAddressType": "NAG",
+      "censusAddressType": "NA",
+      "censusEstabType": "NA",
+      "countryCode": "W",
+      "organisationName": ""
+    },
+    "addressType": "PAF",
+    "epoch": ""
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

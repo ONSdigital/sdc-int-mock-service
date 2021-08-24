@@ -1,0 +1,128 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "termsAndConditions": "https://census.gov.uk/terms-and-conditions",
+  "response": {
+    "input": "29 CF",
+    "addresses": [
+      {
+        "uprn": "200002933231",
+        "bestMatchAddress": "29B Drysgol Road, Radyr, Cardiff, CF15 8BT",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "10023546136",
+        "bestMatchAddress": "29A New Road, Rumney, Cardiff, CF3 3DB",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100903785",
+        "bestMatchAddress": "Go Bananas, 29 Talbot Street, Maesteg, CF34 9DB",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100905329",
+        "bestMatchAddress": "29 Berw Road, Pontypridd, CF37 2AA",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10024278493",
+        "bestMatchAddress": "29 Tramway, Hirwaun, CF44 9PA",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "100100709426",
+        "bestMatchAddress": "29-31 Herbert Street, Abercynon, Mountain Ash, CF45 4RH",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "64107201",
+        "bestMatchAddress": "Lloyds Pharmacy, Court Road Surgery, 29 Court Road, Barry, CF63 4EW",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "64005613",
+        "bestMatchAddress": "Court Road Surgery, 29 Court Road, Barry, CF63 4YD",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002510727",
+        "bestMatchAddress": "Managers Flat, The Queens Vaults, 29 Westgate Street, Cathays, Cardiff, CF10 1EH",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "100101041115",
+        "bestMatchAddress": "Zeegrill, 29 Caroline Street, Cardiff, CF10 1FF",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10023546834",
+        "bestMatchAddress": "Crabtree & Evelyn, 29 The Hayes, Cardiff, CF10 1GA",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002527456",
+        "bestMatchAddress": "Flat 1, 29-31 High Street, Cardiff, CF10 1PU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002527457",
+        "bestMatchAddress": "Flat 2, 29-31 High Street, Cardiff, CF10 1PU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002527458",
+        "bestMatchAddress": "Flat 3, 29-31 High Street, Cardiff, CF10 1PU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "100100890023",
+        "bestMatchAddress": "Pizza Express, 29 High Street, Cardiff, CF10 1PU",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002531174",
+        "bestMatchAddress": "Pillars Restaurant, 29 Queen Street, Cathays, Cardiff, CF10 2AG",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "100100067116",
+        "bestMatchAddress": "29 Adamscroft Place, Cardiff, CF10 2EY",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10023545400",
+        "bestMatchAddress": "29 Barrack Lane, Cardiff, CF10 2FR",
+        "bestMatchAddressType": "PAF"
+      },
+      {
+        "uprn": "10002530721",
+        "bestMatchAddress": "Cornerstone, 29 Charles Street, Cathays, Cardiff, CF10 2GA",
+        "bestMatchAddressType": "NAG"
+      },
+      {
+        "uprn": "10023548442",
+        "bestMatchAddress": "29 Churchill Way, Cathays, Cardiff, CF10 2HE",
+        "bestMatchAddressType": "NAG"
+      }
+    ],
+    "filter": "",
+    "fallback": false,
+    "epoch": "",
+    "limit": 20,
+    "offset": 0,
+    "total": 6019,
+    "maxScore": 0,
+    "favourpaf": true,
+    "favourwelsh": false,
+    "eboost": 1,
+    "nboost": 1,
+    "sboost": 1,
+    "wboost": 1
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

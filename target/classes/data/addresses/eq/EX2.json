@@ -1,0 +1,823 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "termsAndConditions": "https://census.gov.uk/terms-and-conditions",
+  "response": {
+    "partpostcode": "EX2",
+    "postcodes": [
+      {
+        "postcode": "EX2 4AA",
+        "streetName": "Dean Clarke Gardens",
+        "townName": "Exeter",
+        "addressCount": 8,
+        "firstUprn": 10023119611,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AA",
+        "streetName": "Southernhay East",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10091471092,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AB",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 13,
+        "firstUprn": 10013042220,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AD",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 24,
+        "firstUprn": 10013040506,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AE",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 19,
+        "firstUprn": 10091469621,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AF",
+        "streetName": "Veitch Close",
+        "townName": "St Leonards",
+        "addressCount": 18,
+        "firstUprn": 10023118335,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AG",
+        "streetName": "Magdalen Place",
+        "townName": "Exeter",
+        "addressCount": 6,
+        "firstUprn": 10023123875,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AH",
+        "streetName": "Colleton Mews",
+        "townName": "Exeter",
+        "addressCount": 25,
+        "firstUprn": 10091471028,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AN",
+        "streetName": "The Quay",
+        "townName": "Exeter",
+        "addressCount": 21,
+        "firstUprn": 10013039690,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AP",
+        "streetName": "The Quay",
+        "townName": "Exeter",
+        "addressCount": 42,
+        "firstUprn": 10013039684,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AS",
+        "streetName": "Colleton Hill",
+        "townName": "Exeter",
+        "addressCount": 14,
+        "firstUprn": 10023119640,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AT",
+        "streetName": "Colleton Row",
+        "townName": "Exeter",
+        "addressCount": 8,
+        "firstUprn": 10013036557,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AU",
+        "streetName": "Melbourne Street",
+        "townName": "Exeter",
+        "addressCount": 25,
+        "firstUprn": 10013044224,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AW",
+        "streetName": "Colleton Grove",
+        "townName": "Exeter",
+        "addressCount": 3,
+        "firstUprn": 10023118799,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AX",
+        "streetName": "Melbourne Place",
+        "townName": "Exeter",
+        "addressCount": 20,
+        "firstUprn": 10013041097,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AY",
+        "streetName": "Friars Gate",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10091470288,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AY",
+        "streetName": "Friars Walk",
+        "townName": "Exeter",
+        "addressCount": 76,
+        "firstUprn": 10013037153,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4AZ",
+        "streetName": "Friars Gate",
+        "townName": "Exeter",
+        "addressCount": 6,
+        "firstUprn": 10013040744,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4BB",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10013040507,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4BJ",
+        "streetName": "Magdalen Road",
+        "townName": "Exeter",
+        "addressCount": 39,
+        "firstUprn": 10094203007,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4BW",
+        "streetName": "Old Mill Close",
+        "townName": "Exeter",
+        "addressCount": 34,
+        "firstUprn": 10091470444,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4BX",
+        "streetName": "Melbourne Street",
+        "townName": "Exeter",
+        "addressCount": 17,
+        "firstUprn": 100041131774,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4BZ",
+        "streetName": "Colleton Crescent",
+        "townName": "Exeter",
+        "addressCount": 20,
+        "firstUprn": 100041131233,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DA",
+        "streetName": "Southgate",
+        "townName": "Exeter",
+        "addressCount": 45,
+        "firstUprn": 10091470662,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DB",
+        "streetName": "Friars Green",
+        "townName": "Exeter",
+        "addressCount": 4,
+        "firstUprn": 10013045854,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DD",
+        "streetName": "Old Mill Close",
+        "townName": "Exeter",
+        "addressCount": 55,
+        "firstUprn": 10091470446,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DE",
+        "streetName": "Watergate",
+        "townName": "Exeter",
+        "addressCount": 18,
+        "firstUprn": 10091470705,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DF",
+        "streetName": "Melbourne Street",
+        "townName": "Exeter",
+        "addressCount": 30,
+        "firstUprn": 10091470411,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DG",
+        "streetName": "Colleton Crescent",
+        "townName": "Exeter",
+        "addressCount": 32,
+        "firstUprn": 10013036549,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DJ",
+        "streetName": "Larkbeare Road",
+        "townName": "Exeter",
+        "addressCount": 17,
+        "firstUprn": 10091470393,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DL",
+        "streetName": "St Leonards Avenue",
+        "townName": "Exeter",
+        "addressCount": 32,
+        "firstUprn": 100040234744,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DN",
+        "streetName": "Weirfield Road",
+        "townName": "Exeter",
+        "addressCount": 22,
+        "firstUprn": 100040239410,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DP",
+        "streetName": "Baring Terrace",
+        "townName": "Exeter",
+        "addressCount": 19,
+        "firstUprn": 10013046374,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DR",
+        "streetName": "Footpath From Colleton Hill To Old Abbey Court",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 100041131456,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DR",
+        "streetName": "Weirfield Path",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10091470770,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DU",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 100041046461,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DW",
+        "streetName": "Weirfield Road",
+        "townName": "Exeter",
+        "addressCount": 15,
+        "firstUprn": 100040239431,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DX",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 19,
+        "firstUprn": 100041131268,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DY",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 7,
+        "firstUprn": 100041131275,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4DZ",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 33,
+        "firstUprn": 100041131278,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EA",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 7,
+        "firstUprn": 100041131291,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EB",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 40,
+        "firstUprn": 10091471410,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4ED",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 7,
+        "firstUprn": 100041131309,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EE",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 32,
+        "firstUprn": 100041131312,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EF",
+        "streetName": "Commercial Road",
+        "townName": "Exeter",
+        "addressCount": 10,
+        "firstUprn": 100041131324,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EG",
+        "streetName": "Old Mill Close",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10091470443,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EG",
+        "streetName": "Trews Weir Reach",
+        "townName": "Exeter",
+        "addressCount": 20,
+        "firstUprn": 10013041512,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EH",
+        "streetName": "Radnor Place",
+        "townName": "Exeter",
+        "addressCount": 24,
+        "firstUprn": 10013041335,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EN",
+        "streetName": "Mount Radford Crescent",
+        "townName": "Exeter",
+        "addressCount": 6,
+        "firstUprn": 10091470990,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EP",
+        "streetName": "Mount Radford Square",
+        "townName": "Exeter",
+        "addressCount": 5,
+        "firstUprn": 10013038560,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EQ",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 23,
+        "firstUprn": 100040241142,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4ER",
+        "streetName": "Mount Radford Crescent",
+        "townName": "Exeter",
+        "addressCount": 31,
+        "firstUprn": 100041131459,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4ES",
+        "streetName": "Radford Road",
+        "townName": "Exeter",
+        "addressCount": 13,
+        "firstUprn": 10013039213,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4ET",
+        "streetName": "Radford Road",
+        "townName": "Exeter",
+        "addressCount": 21,
+        "firstUprn": 100040230510,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EU",
+        "streetName": "Radford Road",
+        "townName": "Exeter",
+        "addressCount": 36,
+        "firstUprn": 10013046513,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EX",
+        "streetName": "Vine Close",
+        "townName": "Exeter",
+        "addressCount": 19,
+        "firstUprn": 10013044247,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EY",
+        "streetName": "Radnor Place",
+        "townName": "Exeter",
+        "addressCount": 5,
+        "firstUprn": 10013042307,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4EZ",
+        "streetName": "Topsham Road",
+        "townName": "Exeter",
+        "addressCount": 13,
+        "firstUprn": 10013046514,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HA",
+        "streetName": "Pavilion Place",
+        "townName": "Exeter",
+        "addressCount": 12,
+        "firstUprn": 10013038872,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HB",
+        "streetName": "Roberts Road",
+        "townName": "Exeter",
+        "addressCount": 29,
+        "firstUprn": 10013047515,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HD",
+        "streetName": "Roberts Road",
+        "townName": "Exeter",
+        "addressCount": 35,
+        "firstUprn": 100040231723,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HE",
+        "streetName": "Roberts Road",
+        "townName": "Exeter",
+        "addressCount": 16,
+        "firstUprn": 10013041898,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HF",
+        "streetName": "Franklin Street",
+        "townName": "Exeter",
+        "addressCount": 21,
+        "firstUprn": 100040214045,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HG",
+        "streetName": "Holloway Street",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 10091471044,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HG",
+        "streetName": "Temple Road",
+        "townName": "Exeter",
+        "addressCount": 14,
+        "firstUprn": 100040236492,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HH",
+        "streetName": "Dean Street",
+        "townName": "Exeter",
+        "addressCount": 24,
+        "firstUprn": 10013047559,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HJ",
+        "streetName": "Fairpark Close",
+        "townName": "Exeter",
+        "addressCount": 4,
+        "firstUprn": 100040212689,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HL",
+        "streetName": "Fairpark Road",
+        "townName": "Exeter",
+        "addressCount": 58,
+        "firstUprn": 10013044248,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HN",
+        "streetName": "Magdalen Street",
+        "townName": "Exeter",
+        "addressCount": 16,
+        "firstUprn": 10013047130,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HP",
+        "streetName": "Topsham Road",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 100040237126,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HQ",
+        "streetName": "Temple Road",
+        "townName": "Exeter",
+        "addressCount": 18,
+        "firstUprn": 10013047468,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HR",
+        "streetName": "Pavilion Place",
+        "townName": "Exeter",
+        "addressCount": 26,
+        "firstUprn": 10013044251,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HS",
+        "streetName": "Magdalen Street",
+        "townName": "Exeter",
+        "addressCount": 16,
+        "firstUprn": 10091470984,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HU",
+        "streetName": "Wynards Lane",
+        "townName": "Exeter",
+        "addressCount": 2,
+        "firstUprn": 10013041586,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HX",
+        "streetName": "Magdalen Street",
+        "townName": "Exeter",
+        "addressCount": 10,
+        "firstUprn": 10013044253,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HY",
+        "streetName": "Magdalen Street",
+        "townName": "Exeter",
+        "addressCount": 18,
+        "firstUprn": 10013038229,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4HZ",
+        "streetName": "Magdalen Street",
+        "townName": "Exeter",
+        "addressCount": 2,
+        "firstUprn": 10023117162,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JD",
+        "streetName": "Holloway Street",
+        "townName": "Exeter",
+        "addressCount": 24,
+        "firstUprn": 10013042059,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JE",
+        "streetName": "Good Shepherd Drive",
+        "townName": "Exeter",
+        "addressCount": 20,
+        "firstUprn": 10091470306,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JF",
+        "streetName": "Bull Meadow Road",
+        "townName": "Exeter",
+        "addressCount": 4,
+        "firstUprn": 10023121718,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JG",
+        "streetName": "Kimberley Road",
+        "townName": "Exeter",
+        "addressCount": 15,
+        "firstUprn": 100040219415,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JJ",
+        "streetName": "Lansdowne Terrace",
+        "townName": "Exeter",
+        "addressCount": 37,
+        "firstUprn": 10013044274,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JL",
+        "streetName": "Holloway Street",
+        "townName": "Exeter",
+        "addressCount": 18,
+        "firstUprn": 100041131602,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JP",
+        "streetName": "Good Shepherd Drive",
+        "townName": "Exeter",
+        "addressCount": 10,
+        "firstUprn": 10091470967,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JQ",
+        "streetName": "Holloway Street",
+        "townName": "Exeter",
+        "addressCount": 15,
+        "firstUprn": 10013040920,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JR",
+        "streetName": "Good Shepherd Drive",
+        "townName": "Exeter",
+        "addressCount": 15,
+        "firstUprn": 100040214827,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4JS",
+        "streetName": "Trews Weir Court",
+        "townName": "Exeter",
+        "addressCount": 9,
+        "firstUprn": 10013039807,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LA",
+        "streetName": "St Leonards Road",
+        "townName": "Exeter",
+        "addressCount": 42,
+        "firstUprn": 10013046519,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LB",
+        "streetName": "Premier Place",
+        "townName": "Exeter",
+        "addressCount": 11,
+        "firstUprn": 100040229633,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LD",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 11,
+        "firstUprn": 10013047553,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LE",
+        "streetName": "The Quadrant",
+        "townName": "Exeter",
+        "addressCount": 6,
+        "firstUprn": 10013039680,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LF",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 1,
+        "firstUprn": 100040241150,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LG",
+        "streetName": "St Petrocks Close",
+        "townName": "Exeter",
+        "addressCount": 13,
+        "firstUprn": 10013045714,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LH",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 14,
+        "firstUprn": 100040241152,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LJ",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 3,
+        "firstUprn": 100040241211,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LL",
+        "streetName": "Marlborough Road",
+        "townName": "Exeter",
+        "addressCount": 4,
+        "firstUprn": 10023121748,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LN",
+        "streetName": "Marlborough Road",
+        "townName": "Exeter",
+        "addressCount": 16,
+        "firstUprn": 100040223330,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LP",
+        "streetName": "Park Place",
+        "townName": "St Leonards",
+        "addressCount": 6,
+        "firstUprn": 100040227425,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LQ",
+        "streetName": "Wonford Road",
+        "townName": "Exeter",
+        "addressCount": 14,
+        "firstUprn": 10013045180,
+        "postTown": "Exeter"
+      },
+      {
+        "postcode": "EX2 4LR",
+        "streetName": "St Leonards Road",
+        "townName": "Exeter",
+        "addressCount": 15,
+        "firstUprn": 10013045182,
+        "postTown": "Exeter"
+      }
+    ],
+    "filter": "",
+    "historical": false,
+    "epoch": "",
+    "limit": 100,
+    "offset": 0,
+    "total": 1000,
+    "maxScore": 1,
+    "verbose": false
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

@@ -1,0 +1,651 @@
+{
+  "apiVersion": "1.0.0-SNAPSHOT",
+  "dataVersion": "80",
+  "response": {
+    "input": "Okehampton Road",
+    "addresses": [
+      {
+        "uprn": "10013043856",
+        "parentUprn": "0",
+        "formattedAddress": "Okehampton Road Post Office, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressNag": "Okehampton Road Post Office, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressPaf": "Post Office, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "Post Office, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "Post Office, 107 Okehampton Road, Exeter, EX4 1EP",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 50.72004,
+          "longitude": -3.5464544,
+          "easting": 290931,
+          "northing": 92299
+        },
+        "classificationCode": "CR02PO",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 30,
+        "underlyingScore": 6
+      },
+      {
+        "uprn": "100041141545",
+        "parentUprn": "10013043856",
+        "formattedAddress": "Okehampton Road Post Office, Flat, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressNag": "Okehampton Road Post Office, Flat, 107 Okehampton Road, Exeter, EX4 1EP",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "Okehampton Road Post Office, Flat, 107 Okehampton Road, Exeter, EX4 1EP",
+          "source": "L",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 50.72004,
+          "longitude": -3.5464544,
+          "easting": 290931,
+          "northing": 92299
+        },
+        "classificationCode": "RD06",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 30,
+        "underlyingScore": 6
+      },
+      {
+        "uprn": "10091577339",
+        "parentUprn": "0",
+        "formattedAddress": "Okehampton Road Garage Block Ro 222 - 223, Straight Road, Romford, RM3 8XT",
+        "formattedAddressNag": "Okehampton Road Garage Block Ro 222 - 223, Straight Road, Romford, RM3 8XT",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "Okehampton Road Garage Block Ro 222 - 223, Straight Road, Romford, RM3 8XT",
+          "source": "L",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 51.602657,
+          "longitude": 0.2109964,
+          "easting": 553217,
+          "northing": 191628
+        },
+        "classificationCode": "RG02",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 30,
+        "underlyingScore": 6
+      },
+      {
+        "uprn": "10091577337",
+        "parentUprn": "0",
+        "formattedAddress": "Okehampton Road Garage Block, Straight Road, Romford, RM3 8YB",
+        "formattedAddressNag": "Okehampton Road Garage Block, Straight Road, Romford, RM3 8YB",
+        "formattedAddressPaf": "",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "Okehampton Road Garage Block, Straight Road, Romford, RM3 8YB",
+          "source": "L",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 51.60249,
+          "longitude": 0.2111761,
+          "easting": 553230,
+          "northing": 191610
+        },
+        "classificationCode": "RG02",
+        "census": {
+          "addressType": "NA",
+          "estabType": "NA",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 30,
+        "underlyingScore": 6
+      },
+      {
+        "uprn": "100070684465",
+        "parentUprn": "0",
+        "formattedAddress": "1 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "1 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "1 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "1 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "1 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.38398,
+          "longitude": -1.4981052,
+          "easting": 434257,
+          "northing": 276333
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684467",
+        "parentUprn": "0",
+        "formattedAddress": "3 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "3 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "3 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "3 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "3 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.384106,
+          "longitude": -1.49828,
+          "easting": 434245,
+          "northing": 276347
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684469",
+        "parentUprn": "0",
+        "formattedAddress": "5 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "5 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "5 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "5 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "5 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.384144,
+          "longitude": -1.4983383,
+          "easting": 434241,
+          "northing": 276351
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684471",
+        "parentUprn": "0",
+        "formattedAddress": "7 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "7 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "7 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "7 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "7 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.384197,
+          "longitude": -1.4984994,
+          "easting": 434230,
+          "northing": 276357
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684473",
+        "parentUprn": "0",
+        "formattedAddress": "9 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "9 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "9 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "9 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "9 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.384216,
+          "longitude": -1.4985727,
+          "easting": 434225,
+          "northing": 276359
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684475",
+        "parentUprn": "0",
+        "formattedAddress": "11 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "11 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "11 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "11 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "11 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.384823,
+          "longitude": -1.4993005,
+          "easting": 434175,
+          "northing": 276426
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684478",
+        "parentUprn": "0",
+        "formattedAddress": "15 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "15 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "15 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "15 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "15 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.38485,
+          "longitude": -1.499403,
+          "easting": 434168,
+          "northing": 276429
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684480",
+        "parentUprn": "0",
+        "formattedAddress": "17 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "17 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "17 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "17 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "17 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.38491,
+          "longitude": -1.4995198,
+          "easting": 434160,
+          "northing": 276436
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684482",
+        "parentUprn": "0",
+        "formattedAddress": "19 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "19 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "19 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "19 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "19 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.38494,
+          "longitude": -1.4996077,
+          "easting": 434154,
+          "northing": 276439
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684484",
+        "parentUprn": "0",
+        "formattedAddress": "21 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "21 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "21 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "21 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "21 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.385002,
+          "longitude": -1.499754,
+          "easting": 434144,
+          "northing": 276446
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684486",
+        "parentUprn": "0",
+        "formattedAddress": "23 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "23 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "23 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "23 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "23 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.38503,
+          "longitude": -1.4998271,
+          "easting": 434139,
+          "northing": 276449
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684488",
+        "parentUprn": "0",
+        "formattedAddress": "25 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "25 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "25 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "25 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "25 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.385094,
+          "longitude": -1.499988,
+          "easting": 434128,
+          "northing": 276456
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684490",
+        "parentUprn": "0",
+        "formattedAddress": "27 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "27 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "27 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "27 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "27 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.385246,
+          "longitude": -1.5001038,
+          "easting": 434120,
+          "northing": 276473
+        },
+        "classificationCode": "RD02",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684492",
+        "parentUprn": "0",
+        "formattedAddress": "29 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "29 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "29 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "29 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "29 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.385353,
+          "longitude": -1.5000291,
+          "easting": 434125,
+          "northing": 276485
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684494",
+        "parentUprn": "0",
+        "formattedAddress": "31 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "31 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "31 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "31 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "31 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.3854,
+          "longitude": -1.4999845,
+          "easting": 434128,
+          "northing": 276490
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      },
+      {
+        "uprn": "100070684496",
+        "parentUprn": "0",
+        "formattedAddress": "33 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNag": "33 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressPaf": "33 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressNisra": "",
+        "welshFormattedAddressNag": "",
+        "welshFormattedAddressPaf": "33 Okehampton Road, Coventry, CV3 5AT",
+        "formattedAddressAuxiliary": "",
+        "highlights": {
+          "bestMatchAddress": "33 Okehampton Road, Coventry, CV3 5AT",
+          "source": "P",
+          "lang": "E"
+        },
+        "geo": {
+          "latitude": 52.385506,
+          "longitude": -1.4998952,
+          "easting": 434134,
+          "northing": 276502
+        },
+        "classificationCode": "RD03",
+        "census": {
+          "addressType": "HH",
+          "estabType": "Household",
+          "countryCode": "E"
+        },
+        "lpiLogicalStatus": "1",
+        "confidenceScore": 25,
+        "underlyingScore": 5
+      }
+    ],
+    "filter": "",
+    "fallback": false,
+    "historical": false,
+    "epoch": "",
+    "limit": 20,
+    "offset": 0,
+    "total": 5372,
+    "maxScore": 0,
+    "verbose": false,
+    "highlight": "on",
+    "favourpaf": true,
+    "favourwelsh": false,
+    "includeauxiliarysearch": false,
+    "eboost": 1,
+    "nboost": 1,
+    "sboost": 1,
+    "wboost": 1
+  },
+  "status": {
+    "code": 200,
+    "message": "Ok"
+  },
+  "errors": []
+}

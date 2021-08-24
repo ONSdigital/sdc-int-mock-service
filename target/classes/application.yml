@@ -1,0 +1,61 @@
+info:
+  name: mock-service
+  version: 0.0.1-SNAPSHOT
+  origin: ${scm.url}
+  commit: 24ad2efbf4e15c356dbabc57dfda174ff7bbb7a1
+  branch: SOCINT-57_initial_commit
+  built: 2021-08-23T11:39:42Z
+
+# logging config here as a reminder as to how to override logback from cmd line
+# ie -Dlogging.level.org.springframework=DEBUG
+logging:
+  level:
+    uk.gov.ons.ctp: DEBUG
+    org.springframework: ERROR
+  profile: NON_JSON
+
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      base-path: /
+      exposure:
+        include: info, health
+  endpoint:
+    info:
+      enabled: true 
+    health:
+      enabled: true
+
+server:
+  port: 8162
+  undertow:
+    threads:
+      worker: 50
+      io: 50
+
+spring:
+  mvc:
+    servlet:
+      path: /
+  #  security:
+  #    user:
+  #      name: serco_cks
+  #      password: temporary
+  output:
+    ansi:
+      enabled: never
+  application:
+    name: MockService
+
+address-index:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.5W2EgODHpsts672J4psiGH31H-vJBz1r56_Tr9_8pPU
+  rest-client-config:
+    scheme: https
+    host: whitelodge-eq-ai-api.census-gcp.onsdigital.uk
+    port: 443
+    connection-manager-default-max-per-route: 100
+    connection-manager-max-total: 100
+    connectTimeoutMillis: 0
+    connectionRequestTimeoutMillis: 0
+    socketTimeoutMillis: 0
