@@ -16,12 +16,17 @@
 MOCK_AI="http://localhost:8162"
 WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
 
+# The AI_TOKEN needs to be set.
+AI_TOKEN=""
+
 # Run the comparison of the real vs. mock-service responses
 function compare {
   ENDPOINT=$1
 
+  [ -z "$AI_TOKEN" ] && echo "Error: AI_TOKEN must be set" && exit 1;
+
   # Get the response status codes from genuine and mock AI
-  curl -s -H "Authorization: Bearer $AI_TOKEN" -I $WL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/wl-ai.status.txt
+  curl -s -H "Authorization: $AI_TOKEN" -I $WL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/wl-ai.status.txt
   curl -s -I $MOCK_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/mock-service.status.txt
 
   # Compare real & mock AI status codes
@@ -55,14 +60,10 @@ compare "addresses/rh/postcode/CF32TW"
 compare "addresses/rh/postcode/CF32TW?offset=1"
 compare "addresses/rh/postcode/CF32TW?limit=3"
 compare "addresses/rh/postcode/CF32TW?offset=101&limit=8"
-compare "addresses/rh/postcode/CF3%202TW"
 
 # PARTIAL
 compare "addresses/partial?input=Treganna"
-compare "addresses/partial?input=Treganna&offset=611"
 compare "addresses/partial?input=Treganna&limit=18"
-compare "addresses/partial?input=Treganna&offset=14&limit=77"
-compare "addresses/partial?input=Treganna&offset=800&limit=177"
 
 # POSTCODE
 compare "addresses/postcode/EX24LU"
@@ -82,10 +83,8 @@ compare "addresses/eq?input=8%20Fair%20CF51AD"
 
 # Check responses for data with no results in real or mock AI
 compare "addresses/rh/postcode/SO996AB"
-compare "addresses/rh/postcode/SO31%209UP"
 compare "addresses/partial?input=rtoeutheuohh"
 compare "addresses/postcode/SO996AB"
-compare "addresses/postcode/SO31%209UP"
 compare "addresses/rh/uprn/11"
 compare "addresses/eq?input=tcexdeupydhp"
 
