@@ -1,10 +1,11 @@
 package uk.gov.ons.ctp.integration.mock.endpoints;
 
 import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.kv;
+import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.v;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
@@ -16,28 +17,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-import uk.gov.ons.ctp.common.domain.CaseType;
-import uk.gov.ons.ctp.common.domain.FormType;
-import uk.gov.ons.ctp.common.domain.UniquePropertyReferenceNumber;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
-import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.CaseContainerDTO;
-import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.EventDTO;
-import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.QuestionnaireIdDTO;
 import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.SingleUseQuestionnaireIdDTO;
-import uk.gov.ons.ctp.integration.mock.config.CasesConfig;
-import uk.gov.ons.ctp.integration.mock.config.QuestionnairesConfig;
+import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
+import uk.gov.ons.ctp.integration.mock.endpoints.common.RetrieveJson;
 import uk.gov.ons.ctp.integration.mock.misc.FailureSimulator;
-import uk.gov.ons.ctp.integration.mock.model.caserequest.CaseQueryRequestDTO;
-import uk.gov.ons.ctp.integration.mock.model.caserequest.ResponseDTO;
-import uk.gov.ons.ctp.integration.mock.validator.CaseServiceRequestDTO;
+import uk.gov.ons.ctp.integration.mock.validator.AddressesRhUprnRequestDTO;
 
 /** Provides mock endpoints for the case service. */
 @Slf4j
@@ -50,8 +41,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
 
   private static AtomicInteger concurrentCounterFindCaseByUPRN = new AtomicInteger(0);
 
-  @Autowired private CasesConfig casesConfig; // can allow field injection here in a mock service.
-  @Autowired private QuestionnairesConfig questionnairesConfig;
+  @Autowired private RetrieveJson retrieveJson;
 
   @RequestMapping(value = "/info", method = RequestMethod.GET)
   public ResponseEntity<String> info() {
@@ -59,12 +49,21 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
   }
 
   @RequestMapping(value = "/examples", method = RequestMethod.GET)
-  public ResponseEntity<String> examples() {
-    return ResponseEntity.ok(
-        "CASES-- "
-            + casesConfig.getCases()
-            + " -- QUESTIONNAIRES-- "
-            + questionnairesConfig.getQuestionnaires());
+  public ResponseEntity<String> examples() throws IOException, CTPException {
+    List<String> uprnFiles = CaptureCache.listCapturedData(RequestType.CASE_UPRN);
+    List<String> qidFiles = CaptureCache.listCapturedData(RequestType.CASE_QID);
+    List<String> uprn = new ArrayList<>();
+    List<String> questionnaires = new ArrayList<>();
+
+    for (String caseUprn : uprnFiles) {
+      uprn.add(retrieveJson.getCases(RequestType.CASE_UPRN, caseUprn));
+    }
+
+    for (String caseQid : qidFiles) {
+      questionnaires.add(retrieveJson.getCases(RequestType.CASE_QID, caseQid));
+    }
+
+    return ResponseEntity.ok("CASES -- " + uprn + "\r" + "QUESTIONNAIRES -- " + questionnaires);
   }
 
   /**
@@ -75,16 +74,15 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
    * @return the case found
    */
   @RequestMapping(value = "/{caseId}", method = RequestMethod.GET)
-  public ResponseEntity<CaseContainerDTO> findCaseById(
-      @PathVariable("caseId") final UUID caseId,
-      @RequestParam(value = "caseEvents", required = false) boolean includeCaseEvents) {
-    log.debug("Entering findCaseById", kv("case_id", caseId));
+  public ResponseEntity<Object> findCaseById(
+      @PathVariable(value = "caseId") String caseId,
+      @Valid AddressesRhUprnRequestDTO requestParamsDTO)
+      throws IOException, CTPException {
 
-    FailureSimulator.optionallyTriggerFailure(caseId.toString(), 400, 401, 404, 500);
-    CaseContainerDTO caseDetails = casesConfig.getCaseByUUID(caseId.toString());
-    nullTestThrowsException(caseDetails);
-    caseDetails.setCaseEvents(getCaseEvents(caseDetails.getId().toString(), includeCaseEvents));
-    return ResponseEntity.ok(caseDetails);
+    RequestType requestType = RequestType.CASE_ID;
+    log.info("Request {}/{}", requestType.getPath(), v("caseId", caseId));
+
+    return retrieveJson.simulateResponse(requestType, caseId, 0, 1);
   }
 
   /**
@@ -95,39 +93,37 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
    */
   @RequestMapping(value = "/{caseId}/qid", method = RequestMethod.GET)
   public ResponseEntity<SingleUseQuestionnaireIdDTO> newQuestionnaireIdForCase(
-      @PathVariable("caseId") final UUID caseId,
+      @PathVariable("caseId") String caseId,
       @RequestParam(required = false) final boolean individual,
-      @RequestParam(required = false) final UUID individualCaseId) {
+      @RequestParam(required = false) final UUID individualCaseId)
+      throws IOException, CTPException {
     log.debug(
         "Entering newQuestionnaireIdForCase",
         kv("case_id", caseId),
         kv("individual", individual),
         kv("individualCaseId", individualCaseId));
 
-    FailureSimulator.optionallyTriggerFailure(caseId.toString(), 400, 401, 404, 500);
+    FailureSimulator.optionallyTriggerFailure(caseId, 400, 401, 404, 500);
 
-    CaseContainerDTO caseDetails = casesConfig.getCaseByUUID(caseId.toString());
+    RequestType requestType = RequestType.CASE_QID;
+    String caseResult = retrieveJson.getCases(requestType, caseId);
+    Object test =
+        new ObjectMapper().readerFor(SingleUseQuestionnaireIdDTO.class).readValue(caseResult);
+    SingleUseQuestionnaireIdDTO caseDetails = (SingleUseQuestionnaireIdDTO) test;
     nullTestThrowsException(caseDetails);
 
-    if (individual == false && individualCaseId != null) {
+    if (!individual && individualCaseId != null) {
       throw new IllegalStateException("Can't supply individualCaseId if not for an individual");
     }
-
-    CaseServiceRequestDTO.validateGetNewQidByCaseIdRequest(
-        caseDetails, individual, individualCaseId);
 
     SingleUseQuestionnaireIdDTO newQuestionnaire = new SingleUseQuestionnaireIdDTO();
     newQuestionnaire.setQuestionnaireId(
         String.format("%010d", new Random().nextInt(Integer.MAX_VALUE)));
     newQuestionnaire.setUac(RandomStringUtils.randomAlphanumeric(UAC_LENGTH));
-    newQuestionnaire.setFormType(formType(caseDetails.getCaseType()).name());
+    newQuestionnaire.setFormType(caseDetails.getFormType());
     newQuestionnaire.setQuestionnaireType("1");
 
     return ResponseEntity.ok(newQuestionnaire);
-  }
-
-  private FormType formType(String caseType) {
-    return CaseType.CE.name().equals(caseType) ? FormType.C : FormType.H;
   }
 
   /**
@@ -137,25 +133,14 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
    * @return the case found
    */
   @RequestMapping(value = "/uprn/{uprn}", method = RequestMethod.GET)
-  public ResponseEntity<List<CaseContainerDTO>> findCaseByUPRN(
-      @PathVariable(value = "uprn") final UniquePropertyReferenceNumber uprn) {
-    int numConcurrent = concurrentCounterFindCaseByUPRN.incrementAndGet();
-    log.debug("Entering findCaseByUPRN: ConcurrentCount: " + numConcurrent, kv("uprn", uprn));
+  public ResponseEntity<Object> findCaseByUPRN(
+      @PathVariable(value = "uprn") String uprn, @Valid AddressesRhUprnRequestDTO requestParamsDTO)
+      throws IOException, CTPException {
 
-    try {
-      Thread.sleep(FIND_CASE_BY_UPRN_SLEEP_TIME);
-    } catch (InterruptedException e) {
-      log.error("Sleep interrupted", e);
-    }
+    RequestType requestType = RequestType.CASE_UPRN;
+    log.info("Request {}/{}", requestType.getPath(), v("uprn", uprn));
 
-    FailureSimulator.optionallyTriggerFailure(Long.toString(uprn.getValue()), 400, 401, 404, 500);
-    List<CaseContainerDTO> cases = casesConfig.getCaseByUprn(Long.toString(uprn.getValue()));
-    nullTestThrowsException(cases);
-
-    numConcurrent = concurrentCounterFindCaseByUPRN.decrementAndGet();
-    log.debug("Concurrent count on exit: " + numConcurrent);
-
-    return ResponseEntity.ok(cases);
+    return retrieveJson.simulateResponse(requestType, uprn, 0, 1);
   }
 
   /**
@@ -165,110 +150,19 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
    * @return the case found
    */
   @RequestMapping(value = "/ref/{ref}", method = RequestMethod.GET)
-  public ResponseEntity<CaseContainerDTO> findCaseByCaseReference(
-      @PathVariable(value = "ref") final long ref, @Valid CaseQueryRequestDTO requestParamsDTO) {
-    log.info(
-        "Entering GET getCaseByCaseReference",
-        kv("ref", ref),
-        kv("caseEvents", requestParamsDTO.getCaseEvents()));
+  public ResponseEntity<Object> findCaseByCaseReference(
+      @PathVariable(value = "ref") String ref, @Valid AddressesRhUprnRequestDTO requestParamsDTO)
+      throws IOException, CTPException {
 
-    FailureSimulator.optionallyTriggerFailure(Long.toString(ref), 400, 401, 404, 500);
+    RequestType requestType = RequestType.CASE_REF;
+    log.info("Request {}/{}", requestType.getPath(), v("ref", ref));
 
-    CaseContainerDTO caseDetails = casesConfig.getCaseByRef(Long.toString(ref));
-    nullTestThrowsException(caseDetails);
-    caseDetails.setCaseEvents(
-        getCaseEvents(caseDetails.getId().toString(), requestParamsDTO.getCaseEvents()));
-    return ResponseEntity.ok(caseDetails);
-  }
-
-  /**
-   * Post a list of Cases in order to add cases to, or replace cases in, the case maps driving the
-   * responses here.
-   *
-   * @param requestBody - a list of cases
-   * @return - response confirming post.
-   */
-  @RequestMapping(value = "/data/cases/save", method = RequestMethod.POST)
-  @ResponseStatus(value = HttpStatus.OK)
-  public ResponseEntity<ResponseDTO> addOrReplaceCaseData(
-      @RequestBody List<CaseContainerDTO> requestBody) throws CTPException {
-
-    log.info("Entering POST addOrReplaceCaseData", kv("requestBody", requestBody));
-    casesConfig.addOrReplaceData(requestBody);
-
-    return ResponseEntity.ok(createResponseDTO("MockCaseSaveService"));
-  }
-
-  /**
-   * reset the application case data back to the original JSON
-   *
-   * @return - response confirming success.
-   */
-  @RequestMapping(value = "/data/cases/reset", method = RequestMethod.GET)
-  @ResponseStatus(value = HttpStatus.OK)
-  public ResponseEntity<ResponseDTO> resetCaseData() throws CTPException {
-    try {
-      casesConfig.resetData();
-      return ResponseEntity.ok(createResponseDTO("MockCaseResetService"));
-    } catch (IOException e) {
-      throw new CTPException(
-          CTPException.Fault.BAD_REQUEST, "Unable to reset Case Data - IO Exception  reading JSON");
-    }
-  }
-
-  /**
-   * Post a list of Questionnaires in order to add to the questionnaire maps driving the responses
-   * here.
-   *
-   * @param requestBody - a list of Questionnaires
-   * @return - response confirming post.
-   */
-  @RequestMapping(value = "/data/questionnaires/add", method = RequestMethod.POST)
-  @ResponseStatus(value = HttpStatus.OK)
-  public ResponseEntity<ResponseDTO> addQuestionnaireData(
-      @Valid @RequestBody List<QuestionnaireIdDTO> requestBody) throws CTPException {
-
-    log.info("Entering POST addQData", kv("requestBody", requestBody));
-    questionnairesConfig.addData(requestBody);
-    return ResponseEntity.ok(createResponseDTO("MockQuestionnaireAddService"));
-  }
-
-  /**
-   * reset the application data back to the original JSON
-   *
-   * @return - response confirming post.
-   */
-  @RequestMapping(value = "/data/questionnaires/reset", method = RequestMethod.GET)
-  @ResponseStatus(value = HttpStatus.OK)
-  public ResponseEntity<ResponseDTO> resetQuestionnaireData() throws CTPException {
-    try {
-      questionnairesConfig.resetData();
-      return ResponseEntity.ok(createResponseDTO("MockQuestionnaireResetService"));
-    } catch (IOException e) {
-      throw new CTPException(
-          CTPException.Fault.BAD_REQUEST,
-          "Unable to reset Questionnaire Data - IO Exception  reading JSON");
-    }
+    return retrieveJson.simulateResponse(requestType, ref, 0, 1);
   }
 
   private void nullTestThrowsException(Object response) {
     if (response == null) {
       throw new ResponseStatusException(HttpStatus.NOT_FOUND);
     }
-  }
-
-  private List<EventDTO> getCaseEvents(final String caseID, final boolean includeCaseEvents) {
-    final List<EventDTO> caseEvents = new ArrayList<>();
-    if (!includeCaseEvents) {
-      return caseEvents;
-    }
-    return casesConfig.getEventsByCaseID(caseID);
-  }
-
-  private ResponseDTO createResponseDTO(final String id) {
-    final ResponseDTO responseDTO = new ResponseDTO();
-    responseDTO.setId(id);
-    responseDTO.setDateTime(new Date());
-    return responseDTO;
   }
 }

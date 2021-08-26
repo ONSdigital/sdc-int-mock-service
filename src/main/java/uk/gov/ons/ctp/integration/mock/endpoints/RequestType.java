@@ -46,6 +46,29 @@ public enum RequestType {
       HttpStatus.OK,
       "INPUT",
       String.class,
+      "input"),
+  CASE_UPRN(
+      "/cases/uprn", "Search for UPRN for cases.", HttpStatus.OK, "INPUT", String.class, "input"),
+  CASE_REF(
+      "/cases/caseref",
+      "Search for caseRef for cases.",
+      HttpStatus.OK,
+      "INPUT",
+      String.class,
+      "input"),
+  CASE_QID(
+      "/cases/questionnaires",
+      "Search for questionnaires for cases.",
+      HttpStatus.OK,
+      "INPUT",
+      String.class,
+      "input"),
+  CASE_ID(
+      "/cases/caseid",
+      "Search for questionnaires for cases.",
+      HttpStatus.OK,
+      "INPUT",
+      String.class,
       "input");
 
   private String url;

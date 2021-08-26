@@ -1,21 +1,17 @@
 package uk.gov.ons.ctp.integration.mock.endpoints;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
-import uk.gov.ons.ctp.integration.mock.config.CasesConfig;
-import uk.gov.ons.ctp.integration.mock.config.QuestionnairesConfig;
 import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
 
 /**
@@ -26,9 +22,6 @@ import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
 @RestController
 @RequestMapping(value = "", produces = "application/json")
 public final class HelpEndpoint implements CTPEndpoint {
-
-  @Autowired private CasesConfig casesConfig; // can allow field injection here in a mock service.
-  @Autowired private QuestionnairesConfig questionnairesConfig;
 
   @RequestMapping(value = "addresses/help", method = RequestMethod.GET)
   public ResponseEntity<String> addressHelp() throws IOException {
@@ -41,7 +34,8 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("\n\n");
     helpText.append("MOCK ENDPOINTS\n");
     helpText.append("  The following endpoints mock a subset of the AI endpoints.\n");
-    helpText.append("  If mock-ai holds data for a request then the response replies with a\n");
+    helpText.append(
+        "  If mock-service holds data for a request then the response replies with a\n");
     helpText.append("  previously captured AI response. The mock response should be identical \n");
     helpText.append("  to the genuine AI.\n");
     helpText.append("  Endpoints which support offset and limit query parameters return a\n");
@@ -49,9 +43,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  the first 1000 or so results from AI.\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      helpText.append("\n");
-      describeUrl(helpText, requestType, "");
-      describeQueryParams(helpText, requestType);
+      if (!requestType.name().contains("CASE")) {
+        helpText.append("\n");
+        describeUrl(helpText, requestType, "");
+        describeQueryParams(helpText, requestType);
+      }
     }
 
     helpText.append("\n\n");
@@ -73,9 +69,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  with the newly capture data.\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      helpText.append("\n");
-      describeUrl(helpText, requestType, "/capture");
-      describeQueryParams(helpText, requestType);
+      if (!requestType.name().contains("CASE")) {
+        helpText.append("\n");
+        describeUrl(helpText, requestType, "/capture");
+        describeQueryParams(helpText, requestType);
+      }
     }
 
     helpText.append("\n\n");
@@ -96,33 +94,62 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  The mock endpoints currently hold the following data:\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      helpText.append("\n");
-      helpText.append("  " + requestType.getUrl() + "\n");
+      if (!requestType.name().contains("CASE")) {
+        helpText.append("\n");
+        helpText.append("  " + requestType.getUrl() + "\n");
 
-      // Get list of data for this request
-      List<String> dataFiles = CaptureCache.listCapturedData(requestType);
+        // Get list of data for this request
+        List<String> dataFiles = CaptureCache.listCapturedData(requestType);
 
-      // Load optional property file, for descriptions on the data held
-      Properties props = CaptureCache.getInventory(requestType);
+        // Load optional property file, for descriptions on the data held
+        Properties props = CaptureCache.getInventory(requestType);
 
-      // List data items held
-      for (String name : dataFiles) {
-        String normalisedName = CaptureCache.normaliseFileName(name);
-        String dataDescription = props.getProperty(normalisedName, null);
-        String dataText = describeData(normalisedName, dataDescription);
-        helpText.append("    " + dataText + "\n");
+        // List data items held
+        for (String name : dataFiles) {
+          String normalisedName = CaptureCache.normaliseFileName(name);
+          String dataDescription = props.getProperty(normalisedName, null);
+          String dataText = describeData(normalisedName, dataDescription);
+          helpText.append("    " + dataText + "\n");
+        }
       }
     }
+
+    helpText.append("\n\n");
+    helpText.append("MOCK AI Specific Help Endpoints\n");
+    helpText.append(
+        "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
+    helpText.append("\n\n");
+    helpText.append("  $ curl -s localhost:8162/addresses/eq/help\n");
+    helpText.append("  $ curl -s localhost:8162/addresses/partial/help\n");
+    helpText.append("  $ curl -s localhost:8162/addresses/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8162/addresses/rh/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8162/addresses/rh/uprn/help\n");
 
     return ResponseEntity.ok(helpText.toString());
   }
 
   @RequestMapping(value = "cases/help", method = RequestMethod.GET)
-  public ResponseEntity<String> caseHelp() throws JsonProcessingException {
+  public ResponseEntity<String> caseHelp() throws IOException {
     StringBuilder helpText = new StringBuilder();
 
     helpText.append("MOCK CONTACT CENTRE\n");
     helpText.append("  This mock retrieves examples Contact Centre (CC) data.\n");
+
+    helpText.append("\n\n");
+    helpText.append("MOCK ENDPOINTS\n");
+    helpText.append(
+        "  The following endpoints mock a subset of the Case and Questionnaire endpoints.\n");
+    helpText.append(
+        "  If mock-service holds data for a request then the response replies with a\n");
+    helpText.append("  previously captured case or questionnaire response.\n");
+    for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
+        uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
+      if (!requestType.name().contains("AI")) {
+        helpText.append("\n");
+        describeUrl(helpText, requestType, "");
+        describeQueryParams(helpText, requestType);
+      }
+    }
 
     helpText.append("\n\n");
     helpText.append("EXAMPLE COMMANDS\n");
@@ -138,10 +165,36 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("    $ curl -s localhost:8162/addresses/eq?input=Holbeche\n");
 
     helpText.append("\n\n");
-    helpText.append("MOCK AI Results\n");
+    helpText.append("MOCK Case Results\n");
+    for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
+        uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
+      if (!requestType.name().contains("AI")) {
+        helpText.append("\n");
+        helpText.append("  " + requestType.getUrl() + "\n");
+
+        // Get list of data for this request
+        List<String> dataFiles = CaptureCache.listCapturedData(requestType);
+
+        // Load optional property file, for descriptions on the data held
+        Properties props = CaptureCache.getInventory(requestType);
+
+        // List data items held
+        for (String name : dataFiles) {
+          String normalisedName = CaptureCache.normaliseFileName(name);
+          String dataDescription = props.getProperty(normalisedName, null);
+          String dataText = describeData(normalisedName, dataDescription);
+          helpText.append("    " + dataText + "\n");
+        }
+      }
+    }
+    helpText.append("\n\n");
+    helpText.append("MOCK Case Specific Help Endpoints\n");
     helpText.append(
-        "  The following helpendpoints will show the total amount of available test data for a given endpoint.\n");
-    helpText.append("  $ curl -s localhost:8162/cases/cases/help\n");
+        "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
+    helpText.append("\n\n");
+    helpText.append("  $ curl -s localhost:8162/cases/caseid/help\n");
+    helpText.append("  $ curl -s localhost:8162/cases/caseref/help\n");
+    helpText.append("  $ curl -s localhost:8162/cases/uprn/help\n");
     helpText.append("  $ curl -s localhost:8162/cases/questionnaires/help\n");
 
     return ResponseEntity.ok(helpText.toString());
@@ -187,15 +240,36 @@ public final class HelpEndpoint implements CTPEndpoint {
     return ResponseEntity.ok("There are " + resultCount + " RH UPRN examples present");
   }
 
-  @RequestMapping(value = "cases/cases/help", method = RequestMethod.GET)
-  public ResponseEntity<String> helpCases() throws JsonProcessingException {
-    return ResponseEntity.ok("There are " + casesConfig.getCaseCount() + " cases present");
+  @RequestMapping(value = "cases/caseid/help", method = RequestMethod.GET)
+  public ResponseEntity<String> helpCases() throws IOException, CTPException {
+    RequestType request = RequestType.CASE_ID;
+    List<String> dataFiles = CaptureCache.listCapturedData(request);
+    int resultCount = getCount(dataFiles, request, "");
+    return ResponseEntity.ok("There are " + resultCount + " CaseId examples present");
+  }
+
+  @RequestMapping(value = "cases/uprn/help", method = RequestMethod.GET)
+  public ResponseEntity<String> helpCaseUprn() throws IOException, CTPException {
+    RequestType request = RequestType.CASE_UPRN;
+    List<String> dataFiles = CaptureCache.listCapturedData(request);
+    int resultCount = getCount(dataFiles, request, "");
+    return ResponseEntity.ok("There are " + resultCount + " UPRN examples present");
+  }
+
+  @RequestMapping(value = "cases/caseref/help", method = RequestMethod.GET)
+  public ResponseEntity<String> helpCaseRef() throws IOException, CTPException {
+    RequestType request = RequestType.CASE_REF;
+    List<String> dataFiles = CaptureCache.listCapturedData(request);
+    int resultCount = getCount(dataFiles, request, "");
+    return ResponseEntity.ok("There are " + resultCount + " CaseRef examples present");
   }
 
   @RequestMapping(value = "cases/questionnaires/help", method = RequestMethod.GET)
-  public ResponseEntity<String> helpQuestionnaires() throws JsonProcessingException {
-    return ResponseEntity.ok(
-        "There are " + questionnairesConfig.getQuestionnaireCount() + " questionnaires present");
+  public ResponseEntity<String> helpQuestionnaires() throws IOException, CTPException {
+    RequestType request = RequestType.CASE_QID;
+    List<String> dataFiles = CaptureCache.listCapturedData(request);
+    int resultCount = getCount(dataFiles, request, "");
+    return ResponseEntity.ok("There are " + resultCount + " Questionnaire examples present");
   }
 
   private void describeUrl(
@@ -228,15 +302,20 @@ public final class HelpEndpoint implements CTPEndpoint {
   private int getCount(List<String> dataFiles, RequestType request, String search)
       throws IOException, CTPException {
     int resultCount = 0;
-    String individualJsonResults = "";
-    Pattern p = Pattern.compile("\\b" + search + "\\b");
-    Matcher m;
-    for (String name : dataFiles) {
-      String baseFileName = CaptureCache.normaliseFileName(name);
-      individualJsonResults = CaptureCache.readCapturedAiResponse(request, baseFileName);
-      m = p.matcher(individualJsonResults);
-      while (m.find()) {
-        resultCount++;
+
+    if (request.name().contains("CASE")) {
+      resultCount = dataFiles.size();
+    } else {
+      String individualJsonResults = "";
+      Pattern p = Pattern.compile("\\b" + search + "\\b");
+      Matcher m;
+      for (String name : dataFiles) {
+        String baseFileName = CaptureCache.normaliseFileName(name);
+        individualJsonResults = CaptureCache.readCapturedAiResponse(request, baseFileName);
+        m = p.matcher(individualJsonResults);
+        while (m.find()) {
+          resultCount++;
+        }
       }
     }
     return resultCount;
