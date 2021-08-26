@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mock-service
+  annotations:
+    beta.cloud.google.com/backend-config: '{"ports": {"http":"ingress-mockservice-backend-config"}}'
+    cloud.google.com/neg: '{"ingress": false}'
+  labels:
+    app: mock-service
+spec:
+  externalTrafficPolicy: Cluster
+  type: NodePort
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http-server
+  selector:
+    app: mock-service
