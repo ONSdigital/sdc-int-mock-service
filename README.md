@@ -81,7 +81,7 @@ the resources directory.
 
     curl -s localhost:8163/cases/ref/{caseRef}
 
-Note: the "/cases/{caseId}/qid" will generate a new QID and UAC for a given case ID.
+Note: the "/cases/{caseId}/qid" will return results with randomly generated QID and UAC values each time.
 
 ### Scripts
 
