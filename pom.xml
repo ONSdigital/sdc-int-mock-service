@@ -1,169 +1,173 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>ons.sdc.int.app</groupId>
-    <artifactId>mock-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ons.sdc.int.app</groupId>
+  <artifactId>mock-service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-    <parent>
-        <groupId>ons.sdc.int.common</groupId>
-        <artifactId>common</artifactId>
-        <!-- change this to the version of ALL common libs to be used by this build -->
-        <version>1.0.30</version>
-    </parent>
+  <parent>
+    <groupId>ons.sdc.int.common</groupId>
+    <artifactId>common</artifactId>
+    <!-- change this to the version of ALL common libs to be used by this build -->
+    <version>1.0.30</version>
+  </parent>
 
-    <name>SDC : Integrations Mock AI and Case Service</name>
-    <description>SDC : Integrations Mock AI and Case Service</description>
+  <name>SDC : Integrations Mock AI and Case Service</name>
+  <description>SDC : Integrations Mock AI and Case Service</description>
 
-    <properties>
-        <skip.integration.tests>true</skip.integration.tests>
-        <powermock-version>2.0.0</powermock-version>
-    </properties>
+  <properties>
+    <skip.integration.tests>true</skip.integration.tests>
+    <powermock-version>2.0.0</powermock-version>
+  </properties>
 
-    <scm>
-        <connection>scm:git:ssh://github.com/ONSdigital/sdc-int-mock-service</connection>
-        <developerConnection>scm:git:ssh://github.com/ONSdigital/sdc-int-mock-service</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
+  <scm>
+    <connection>scm:git:ssh://github.com/ONSdigital/sdc-int-mock-service</connection>
+    <developerConnection>scm:git:ssh://github.com/ONSdigital/sdc-int-mock-service</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
-    <dependencies>
-        <!-- Spring dependencies -->
+  <dependencies>
+    <!-- Spring dependencies -->
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-undertow</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
 
-        <!-- SPRING END -->
+    <!-- SPRING END -->
 
-        <!-- ONS libraries -->
+    <!-- ONS libraries -->
 
-        <dependency>
-            <groupId>ons.sdc.int.common</groupId>
-            <artifactId>framework</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
+    <dependency>
+      <groupId>ons.sdc.int.common</groupId>
+      <artifactId>framework</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
 
-        <dependency>
-            <groupId>ons.sdc.int.common</groupId>
-            <artifactId>case-api-client</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <!-- ONS END -->
+    <dependency>
+      <groupId>ons.sdc.int.common</groupId>
+      <artifactId>case-api-client</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <!-- ONS END -->
 
-        <dependency>
-            <groupId>net.logstash.logback</groupId>
-            <artifactId>logstash-logback-encoder</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>net.logstash.logback</groupId>
+      <artifactId>logstash-logback-encoder</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
-    </dependencies>
+  <build>
+    <defaultGoal>clean install</defaultGoal>
 
-    <build>
-        <defaultGoal>clean install</defaultGoal>
+    <extensions>
+      <extension>
+        <groupId>com.google.cloud.artifactregistry</groupId>
+        <artifactId>artifactregistry-maven-wagon</artifactId>
+        <version>2.1.1</version>
+      </extension>
+    </extensions>
 
-        <extensions>
-            <extension>
-                <groupId>com.google.cloud.artifactregistry</groupId>
-                <artifactId>artifactregistry-maven-wagon</artifactId>
-                <version>2.1.1</version>
-            </extension>
-        </extensions>
+    <plugins>
+      <plugin>
+        <groupId>com.coveo</groupId>
+        <artifactId>fmt-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <executable>true</executable>
+          <mainClass>uk.gov.ons.ctp.integration.mock.MockServiceApplication</mainClass>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 
-        <plugins>
-            <plugin>
-                <groupId>com.coveo</groupId>
-                <artifactId>fmt-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>buildnumber-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <executable>true</executable>
-                    <mainClass>uk.gov.ons.ctp.integration.mock.MockServiceApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-        </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
 
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-    </build>
+  <repositories>
+    <repository>
+      <id>artifact-release-registry</id>
+      <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-release</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>artifact-snapshot-registry</id>
+      <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
-    <repositories>
-        <repository>
-            <id>artifact-release-registry</id>
-            <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-release</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>artifact-snapshot-registry</id>
-            <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-snapshot</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>artifact-snapshot-registry</id>
-            <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-snapshot</url>
-        </snapshotRepository>
-        <repository>
-            <id>artifact-release-registry</id>
-            <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-release</url>
-        </repository>
-    </distributionManagement>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>artifact-snapshot-registry</id>
+      <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-snapshot</url>
+    </snapshotRepository>
+    <repository>
+      <id>artifact-release-registry</id>
+      <url>artifactregistry://europe-west2-maven.pkg.dev/ons-ci-int/int-maven-release</url>
+    </repository>
+  </distributionManagement>
 </project>

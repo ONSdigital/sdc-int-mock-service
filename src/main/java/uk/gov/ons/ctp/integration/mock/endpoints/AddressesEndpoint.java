@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
-import uk.gov.ons.ctp.integration.mock.endpoints.common.RetrieveJson;
 import uk.gov.ons.ctp.integration.mock.validator.AddressesPartialRequestDTO;
 import uk.gov.ons.ctp.integration.mock.validator.AddressesPostcodeRequestDTO;
 import uk.gov.ons.ctp.integration.mock.validator.AddressesRhPostcodeRequestDTO;

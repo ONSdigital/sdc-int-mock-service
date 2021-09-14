@@ -25,7 +25,6 @@ import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.SingleUseQuestionnaireIdDTO;
 import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
-import uk.gov.ons.ctp.integration.mock.endpoints.common.RetrieveJson;
 import uk.gov.ons.ctp.integration.mock.misc.FailureSimulator;
 import uk.gov.ons.ctp.integration.mock.validator.AddressesRhUprnRequestDTO;
 

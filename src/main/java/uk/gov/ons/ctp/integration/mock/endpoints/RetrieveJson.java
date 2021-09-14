@@ -1,16 +1,15 @@
-package uk.gov.ons.ctp.integration.mock.endpoints.common;
+package uk.gov.ons.ctp.integration.mock.endpoints;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
-import uk.gov.ons.ctp.integration.mock.endpoints.RequestType;
 import uk.gov.ons.ctp.integration.mock.misc.Constants;
 import uk.gov.ons.ctp.integration.mock.model.ai.AddressIndexPartialAddressDTO;
 import uk.gov.ons.ctp.integration.mock.model.ai.AddressIndexPartialResultsDTO;
@@ -20,7 +19,7 @@ import uk.gov.ons.ctp.integration.mock.model.ai.AddressIndexRhPostcodeAddressDTO
 import uk.gov.ons.ctp.integration.mock.model.ai.AddressIndexRhPostcodeResultsDTO;
 
 @Slf4j
-@Configuration
+@Component
 public class RetrieveJson {
 
   @SuppressWarnings("unchecked")
@@ -79,22 +78,12 @@ public class RetrieveJson {
           postcodes.getResponse().setOffset(offset);
           postcodes.getResponse().setLimit(limit);
         case AI_EQ:
-          // Nothing to do for type-ahead response
-          break;
         case AI_RH_UPRN:
-          // Nothing to do for uprn results
-          break;
         case CASE_UPRN:
-          // Nothing to do for uprn results
-          break;
         case CASE_ID:
-          // Nothing to do for uprn results
-          break;
         case CASE_QID:
-          // Nothing to do for uprn results
-          break;
         case CASE_REF:
-          // Nothing to do for uprn results
+          // Nothing to do these types
           break;
         default:
           throw new CTPException(
@@ -111,10 +100,8 @@ public class RetrieveJson {
         String fullPlaceholderName = "%" + placeholderName + "%";
         responseText = responseText.replace(fullPlaceholderName, name);
       }
-
       response = responseText;
     }
-
     return new ResponseEntity<Object>(response, responseStatus);
   }
 
@@ -122,15 +109,12 @@ public class RetrieveJson {
     if (offset > addresses.size() || offset < 0) {
       return new ArrayList<Object>();
     }
-
     int toIndex = Math.min(offset + limit, addresses.size());
-
     return addresses.subList(offset, toIndex);
   }
 
   public String getCases(RequestType requestType, String name) throws IOException, CTPException {
     String baseFileName = CaptureCache.normaliseFileName(name);
-
     return CaptureCache.readCapturedAiResponse(requestType, baseFileName);
   }
 }

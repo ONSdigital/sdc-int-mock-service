@@ -94,4 +94,12 @@ public enum RequestType {
     this.responseClass = responseClass;
     this.queryParams = queryParams;
   }
+
+  public boolean isAddressType() {
+    return url.startsWith("/addresses");
+  }
+
+  public boolean isCaseType() {
+    return url.startsWith("/cases");
+  }
 }

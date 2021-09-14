@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,6 +21,9 @@ import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
 @RestController
 @RequestMapping(value = "", produces = "application/json")
 public final class HelpEndpoint implements CTPEndpoint {
+
+  @Value("${server.port}")
+  private String port;
 
   @RequestMapping(value = "addresses/help", method = RequestMethod.GET)
   public ResponseEntity<String> addressHelp() throws IOException {
@@ -41,7 +45,7 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  the first 1000 or so results from AI.\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      if (!requestType.name().contains("CASE")) {
+      if (requestType.isAddressType()) {
         helpText.append("\n");
         describeUrl(helpText, requestType, "");
         describeQueryParams(helpText, requestType);
@@ -52,11 +56,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("MOCK AI Results\n");
     helpText.append(
         "  The following help endpoints will show the total amount of available test data for a given endpoint.\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/eq/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/partial/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/rh/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/rh/uprn/help\n");
+    curlHelp(helpText, "addresses/eq/help");
+    curlHelp(helpText, "addresses/postcode/help");
+    curlHelp(helpText, "addresses/partial/help");
+    curlHelp(helpText, "rh/postcode/help");
+    curlHelp(helpText, "rh/uprn/help");
 
     helpText.append("\n\n");
     helpText.append("CAPTURE ENDPOINTS\n");
@@ -67,7 +71,7 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  with the newly capture data.\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      if (!requestType.name().contains("CASE")) {
+      if (requestType.isAddressType()) {
         helpText.append("\n");
         describeUrl(helpText, requestType, "/capture");
         describeQueryParams(helpText, requestType);
@@ -78,21 +82,20 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("EXAMPLE COMMANDS\n");
     helpText.append("\n");
 
-    helpText.append("  Here are some example invocations of the mock-ai\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/partial?input=Treganna\n");
-    helpText.append(
-        "    $ curl -s localhost:8163/addresses/partial?input=Treganna&offset=625&limit=85\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/rh/uprn/10013745617\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/rh/postcode/CF32TW\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/postcode/EX24LU\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/eq?input=Holbeche\n");
+    helpText.append("  Here are some example invocations of the mock-ai");
+    curlHelp(helpText, "addresses/partial?input=Treganna");
+    curlHelp(helpText, "addresses/partial?input=Treganna&offset=625&limit=85");
+    curlHelp(helpText, "addresses/rh/uprn/10013745617");
+    curlHelp(helpText, "addresses/rh/postcode/CF32TW");
+    curlHelp(helpText, "addresses/postcode/EX24LU");
+    curlHelp(helpText, "addresses/eq?input=Holbeche");
 
     helpText.append("\n\n");
     helpText.append("DATA HELD\n");
     helpText.append("  The mock endpoints currently hold the following data:\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      if (!requestType.name().contains("CASE")) {
+      if (requestType.isAddressType()) {
         helpText.append("\n");
         helpText.append("  " + requestType.getUrl() + "\n");
 
@@ -117,11 +120,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append(
         "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
     helpText.append("\n\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/eq/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/partial/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/rh/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8163/addresses/rh/uprn/help\n");
+    curlHelp(helpText, "addresses/eq/help");
+    curlHelp(helpText, "addresses/partial/help");
+    curlHelp(helpText, "addresses/postcode/help");
+    curlHelp(helpText, "addresses/rh/postcode/help");
+    curlHelp(helpText, "addresses/rh/uprn/help");
 
     return ResponseEntity.ok(helpText.toString());
   }
@@ -142,7 +145,7 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("  previously captured case or questionnaire response.\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      if (!requestType.name().contains("AI")) {
+      if (requestType.isCaseType()) {
         helpText.append("\n");
         describeUrl(helpText, requestType, "");
         describeQueryParams(helpText, requestType);
@@ -154,19 +157,18 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("\n");
 
     helpText.append("  Here are some example invocations of the mock CC\n");
-    helpText.append("    $ curl -s localhost:8163/cases/examples\n");
-    helpText.append("    $ curl -s localhost:8163/cases/77346443-64ae-422e-9b93-d5250f48a27a\n");
-    helpText.append(
-        "    $ curl -s localhost:8163/cases/77346443-64ae-422e-9b93-d5250f48a27a/qid\n");
-    helpText.append("    $ curl -s localhost:8163/cases/uprn/10013047193\n");
-    helpText.append("    $ curl -s localhost:8163/cases/ref/124124009\n");
-    helpText.append("    $ curl -s localhost:8163/addresses/eq?input=Holbeche\n");
+    curlHelp(helpText, "cases/examples");
+    curlHelp(helpText, "cases/77346443-64ae-422e-9b93-d5250f48a27a");
+    curlHelp(helpText, "cases/77346443-64ae-422e-9b93-d5250f48a27a/qid");
+    curlHelp(helpText, "cases/uprn/10013047193");
+    curlHelp(helpText, "cases/ref/124124009");
+    curlHelp(helpText, "addresses/eq?input=Holbeche");
 
     helpText.append("\n\n");
     helpText.append("MOCK Case Results\n");
     for (uk.gov.ons.ctp.integration.mock.endpoints.RequestType requestType :
         uk.gov.ons.ctp.integration.mock.endpoints.RequestType.values()) {
-      if (!requestType.name().contains("AI")) {
+      if (requestType.isCaseType()) {
         helpText.append("\n");
         helpText.append("  " + requestType.getUrl() + "\n");
 
@@ -190,12 +192,16 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append(
         "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
     helpText.append("\n\n");
-    helpText.append("  $ curl -s localhost:8163/cases/caseid/help\n");
-    helpText.append("  $ curl -s localhost:8163/cases/caseref/help\n");
-    helpText.append("  $ curl -s localhost:8163/cases/uprn/help\n");
-    helpText.append("  $ curl -s localhost:8163/cases/questionnaires/help\n");
+    curlHelp(helpText, "cases/caseid/help");
+    curlHelp(helpText, "cases/caseref/help");
+    curlHelp(helpText, "cases/uprn/help");
+    curlHelp(helpText, "cases/questionnaires/help");
 
     return ResponseEntity.ok(helpText.toString());
+  }
+
+  private StringBuilder curlHelp(StringBuilder helpText, String path) {
+    return helpText.append("  $ curl -s localhost:" + port + "/" + path + "\n");
   }
 
   @RequestMapping(value = "addresses/eq/help", method = RequestMethod.GET)
@@ -297,11 +303,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     return String.format("%-16s(%s)", normalisedName, dataDescription);
   }
 
-  private int getCount(List<String> dataFiles, RequestType request, String search)
+  private int getCount(List<String> dataFiles, RequestType requestType, String search)
       throws IOException, CTPException {
     int resultCount = 0;
 
-    if (request.name().contains("CASE")) {
+    if (requestType.isCaseType()) {
       resultCount = dataFiles.size();
     } else {
       String individualJsonResults = "";
@@ -309,7 +315,7 @@ public final class HelpEndpoint implements CTPEndpoint {
       Matcher m;
       for (String name : dataFiles) {
         String baseFileName = CaptureCache.normaliseFileName(name);
-        individualJsonResults = CaptureCache.readCapturedAiResponse(request, baseFileName);
+        individualJsonResults = CaptureCache.readCapturedAiResponse(requestType, baseFileName);
         m = p.matcher(individualJsonResults);
         while (m.find()) {
           resultCount++;
