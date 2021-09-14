@@ -31,11 +31,11 @@ import uk.gov.ons.ctp.integration.mock.validator.AddressesRhPostcodeRequestDTO;
  */
 @Slf4j
 @RestController
-@RequestMapping(value = "", produces = "application/json")
+@RequestMapping(value = "/capture/addresses", produces = "application/json")
 public final class CaptureAddressesEndpoint implements CTPEndpoint {
   @Autowired private MockServiceClient mockServiceClient;
 
-  @RequestMapping(value = "/capture/addresses/rh/postcode/{postcode}", method = RequestMethod.GET)
+  @RequestMapping(value = "/rh/postcode/{postcode}", method = RequestMethod.GET)
   public Object getAddressesRhPostcode(
       @PathVariable(value = "postcode") String postcode,
       @Valid AddressesRhPostcodeRequestDTO requestParamsDTO)
@@ -52,7 +52,7 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
     return result;
   }
 
-  @RequestMapping(value = "/capture/addresses/partial", method = RequestMethod.GET)
+  @RequestMapping(value = "/partial", method = RequestMethod.GET)
   public Object getAddressesPartial(@RequestParam(required = true) String input)
       throws IOException, CTPException {
 
@@ -66,7 +66,7 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
     return result;
   }
 
-  @RequestMapping(value = "/capture/addresses/postcode/{postcode}", method = RequestMethod.GET)
+  @RequestMapping(value = "/postcode/{postcode}", method = RequestMethod.GET)
   public Object getAddressesPostcode(@PathVariable(value = "postcode") String postcode)
       throws IOException, CTPException {
 
@@ -81,7 +81,7 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
     return result;
   }
 
-  @RequestMapping(value = "/capture/addresses/rh/uprn/{uprn}", method = RequestMethod.GET)
+  @RequestMapping(value = "/rh/uprn/{uprn}", method = RequestMethod.GET)
   public Object getRhPostcode(@PathVariable(value = "uprn") String uprn)
       throws IOException, CTPException {
 
@@ -95,7 +95,7 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
     return result;
   }
 
-  @RequestMapping(value = "/capture/addresses/eq", method = RequestMethod.GET)
+  @RequestMapping(value = "/eq", method = RequestMethod.GET)
   public Object getAddressesEq(@RequestParam(required = true) String input)
       throws IOException, CTPException {
 
