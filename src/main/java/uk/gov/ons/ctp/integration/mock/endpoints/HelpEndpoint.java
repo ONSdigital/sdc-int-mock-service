@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,7 +17,6 @@ import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
  * This class holds the /help endpoint to provide a list of supported endpoints and the available
  * data.
  */
-@Slf4j
 @RestController
 @RequestMapping(value = "", produces = "application/json")
 public final class HelpEndpoint implements CTPEndpoint {
@@ -53,12 +51,12 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("\n\n");
     helpText.append("MOCK AI Results\n");
     helpText.append(
-        "  The following helpendpoints will show the total amount of available test data for a given endpoint.\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/eq/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/partial/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/rh/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/rh/uprn/help\n");
+        "  The following help endpoints will show the total amount of available test data for a given endpoint.\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/eq/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/partial/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/rh/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/rh/uprn/help\n");
 
     helpText.append("\n\n");
     helpText.append("CAPTURE ENDPOINTS\n");
@@ -81,13 +79,13 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("\n");
 
     helpText.append("  Here are some example invocations of the mock-ai\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/partial?input=Treganna\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/partial?input=Treganna\n");
     helpText.append(
-        "    $ curl -s localhost:8162/addresses/partial?input=Treganna?offset=625;limit=85\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/rh/uprn/10013745617\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/rh/postcode/CF32TW\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/postcode/EX24LU\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/eq?input=Holbeche\n");
+        "    $ curl -s localhost:8163/addresses/partial?input=Treganna&offset=625&limit=85\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/rh/uprn/10013745617\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/rh/postcode/CF32TW\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/postcode/EX24LU\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/eq?input=Holbeche\n");
 
     helpText.append("\n\n");
     helpText.append("DATA HELD\n");
@@ -115,15 +113,15 @@ public final class HelpEndpoint implements CTPEndpoint {
     }
 
     helpText.append("\n\n");
-    helpText.append("MOCK AI Specific Help Endpoints\n");
+    helpText.append("MOCK AI Count Endpoints\n");
     helpText.append(
         "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
     helpText.append("\n\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/eq/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/partial/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/rh/postcode/help\n");
-    helpText.append("  $ curl -s localhost:8162/addresses/rh/uprn/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/eq/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/partial/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/rh/postcode/help\n");
+    helpText.append("  $ curl -s localhost:8163/addresses/rh/uprn/help\n");
 
     return ResponseEntity.ok(helpText.toString());
   }
@@ -156,13 +154,13 @@ public final class HelpEndpoint implements CTPEndpoint {
     helpText.append("\n");
 
     helpText.append("  Here are some example invocations of the mock CC\n");
-    helpText.append("    $ curl -s localhost:8162/cases/examples\n");
-    helpText.append("    $ curl -s localhost:8162/cases/77346443-64ae-422e-9b93-d5250f48a27a\n");
+    helpText.append("    $ curl -s localhost:8163/cases/examples\n");
+    helpText.append("    $ curl -s localhost:8163/cases/77346443-64ae-422e-9b93-d5250f48a27a\n");
     helpText.append(
-        "    $ curl -s localhost:8162/cases/77346443-64ae-422e-9b93-d5250f48a27a/qid\n");
-    helpText.append("    $ curl -s localhost:8162/cases/uprn/10013047193\n");
-    helpText.append("    $ curl -s localhost:8162/cases/ref/124124009\n");
-    helpText.append("    $ curl -s localhost:8162/addresses/eq?input=Holbeche\n");
+        "    $ curl -s localhost:8163/cases/77346443-64ae-422e-9b93-d5250f48a27a/qid\n");
+    helpText.append("    $ curl -s localhost:8163/cases/uprn/10013047193\n");
+    helpText.append("    $ curl -s localhost:8163/cases/ref/124124009\n");
+    helpText.append("    $ curl -s localhost:8163/addresses/eq?input=Holbeche\n");
 
     helpText.append("\n\n");
     helpText.append("MOCK Case Results\n");
@@ -188,14 +186,14 @@ public final class HelpEndpoint implements CTPEndpoint {
       }
     }
     helpText.append("\n\n");
-    helpText.append("MOCK Case Specific Help Endpoints\n");
+    helpText.append("MOCK Case Count Endpoints\n");
     helpText.append(
         "  The following help endpoints will show the total amount of available test data for a given endpoint:\n");
     helpText.append("\n\n");
-    helpText.append("  $ curl -s localhost:8162/cases/caseid/help\n");
-    helpText.append("  $ curl -s localhost:8162/cases/caseref/help\n");
-    helpText.append("  $ curl -s localhost:8162/cases/uprn/help\n");
-    helpText.append("  $ curl -s localhost:8162/cases/questionnaires/help\n");
+    helpText.append("  $ curl -s localhost:8163/cases/caseid/help\n");
+    helpText.append("  $ curl -s localhost:8163/cases/caseref/help\n");
+    helpText.append("  $ curl -s localhost:8163/cases/uprn/help\n");
+    helpText.append("  $ curl -s localhost:8163/cases/questionnaires/help\n");
 
     return ResponseEntity.ok(helpText.toString());
   }

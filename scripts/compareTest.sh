@@ -5,15 +5,15 @@
 #
 # It invokes the real and mock Address Index for a number of queries.
 # The script then does a diff between the real vs. mocked results.
-# 
-# NOTE: This script requires an AI token to run. This must be set in 
+#
+# NOTE: This script requires an AI token to run. This must be set in
 # the 'AI_TOKEN' environment variable.
 # By default the script points at a WL based AI service.
-# 
+#
 # The mock-service must be running locally.
 #
 
-MOCK_AI="http://localhost:8162"
+MOCK_AI="http://localhost:8163"
 WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
 
 # The AI_TOKEN needs to be set.

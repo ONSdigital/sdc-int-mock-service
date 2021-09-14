@@ -23,6 +23,7 @@ import uk.gov.ons.ctp.integration.mock.model.ai.AddressIndexRhPostcodeResultsDTO
 @Configuration
 public class RetrieveJson {
 
+  @SuppressWarnings("unchecked")
   public ResponseEntity<Object> simulateResponse(
       RequestType requestType, String name, int offset, int limit)
       throws IOException, CTPException {

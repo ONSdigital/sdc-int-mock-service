@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
-import java.util.concurrent.atomic.AtomicInteger;
 import javax.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -36,10 +35,6 @@ import uk.gov.ons.ctp.integration.mock.validator.AddressesRhUprnRequestDTO;
 @RequestMapping(value = "/cases", produces = "application/json")
 public final class CaseServiceEndpoint implements CTPEndpoint {
   private static final int UAC_LENGTH = 16;
-
-  private static volatile long FIND_CASE_BY_UPRN_SLEEP_TIME = 10;
-
-  private static AtomicInteger concurrentCounterFindCaseByUPRN = new AtomicInteger(0);
 
   @Autowired private RetrieveJson retrieveJson;
 

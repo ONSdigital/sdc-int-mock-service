@@ -23,12 +23,12 @@ import uk.gov.ons.ctp.integration.mock.validator.AddressesRhUprnRequestDTO;
 /** Provides mock endpoints for a subset of the AI /addresses endpoints. */
 @Slf4j
 @RestController
-@RequestMapping(value = "", produces = "application/json")
+@RequestMapping(value = "/addresses", produces = "application/json")
 public final class AddressesEndpoint implements CTPEndpoint {
 
   @Autowired RetrieveJson retrieveJson;
 
-  @RequestMapping(value = "/addresses/rh/postcode/{postcode}", method = RequestMethod.GET)
+  @RequestMapping(value = "/rh/postcode/{postcode}", method = RequestMethod.GET)
   public ResponseEntity<Object> getAddressesRhPostcode(
       @PathVariable(value = "postcode") String postcode,
       @Valid AddressesRhPostcodeRequestDTO requestParamsDTO)
@@ -42,7 +42,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
         requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
-  @RequestMapping(value = "/addresses/partial", method = RequestMethod.GET)
+  @RequestMapping(value = "/partial", method = RequestMethod.GET)
   public ResponseEntity<Object> getAddressesPartial(
       @RequestParam(required = true) String input,
       @Valid AddressesPartialRequestDTO requestParamsDTO)
@@ -55,7 +55,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
         requestType, input, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
-  @RequestMapping(value = "/addresses/postcode/{postcode}", method = RequestMethod.GET)
+  @RequestMapping(value = "/postcode/{postcode}", method = RequestMethod.GET)
   public ResponseEntity<Object> getAddressesPostcode(
       @PathVariable(value = "postcode") String postcode,
       @Valid AddressesPostcodeRequestDTO requestParamsDTO)
@@ -69,7 +69,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
         requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
-  @RequestMapping(value = "/addresses/rh/uprn/{uprn}", method = RequestMethod.GET)
+  @RequestMapping(value = "/rh/uprn/{uprn}", method = RequestMethod.GET)
   public ResponseEntity<Object> getAddressesRhUprn(
       @PathVariable(value = "uprn") String uprn, @Valid AddressesRhUprnRequestDTO requestParamsDTO)
       throws IOException, CTPException {
@@ -80,7 +80,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     return retrieveJson.simulateResponse(requestType, uprn, 0, 1);
   }
 
-  @RequestMapping(value = "/addresses/eq", method = RequestMethod.GET)
+  @RequestMapping(value = "/eq", method = RequestMethod.GET)
   public ResponseEntity<Object> getAddressesEq(@RequestParam(required = true) String input)
       throws IOException, CTPException {
 
