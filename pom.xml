@@ -29,7 +29,6 @@
         <tag>HEAD</tag>
     </scm>
 
-
     <dependencies>
         <!-- Spring dependencies -->
 
@@ -55,26 +54,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>mockwebserver</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <!-- SPRING END -->
@@ -89,50 +71,14 @@
 
         <dependency>
             <groupId>ons.sdc.int.common</groupId>
-            <artifactId>test-framework</artifactId>
-            <version>${project.parent.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>ons.sdc.int.common</groupId>
-            <artifactId>product-reference</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>ons.sdc.int.common</groupId>
             <artifactId>case-api-client</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <!-- ONS END -->
 
-        <!-- third party libraries -->
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.dkanejs.maven.plugins</groupId>
-            <artifactId>docker-compose-maven-plugin</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-validator</groupId>
-            <artifactId>commons-validator</artifactId>
-            <version>1.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin.external.google</groupId>
-            <artifactId>android-json</artifactId>
-            <version>0.0.20131108.vaadin1</version>
-            <scope>compile</scope>
         </dependency>
 
     </dependencies>
@@ -150,53 +96,6 @@
 
         <plugins>
             <plugin>
-                <groupId>com.dkanejs.maven.plugins</groupId>
-                <artifactId>docker-compose-maven-plugin</artifactId>
-                <version>1.0.3</version>
-                <executions>
-                    <execution>
-                        <id>pre-stop</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>down</goal>
-                        </goals>
-                        <configuration>
-                            <composeFile>${project.basedir}/docker-compose.yml</composeFile>
-                            <skip>${skip.integration.tests}</skip>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>up</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>up</goal>
-                        </goals>
-                        <configuration>
-                            <composeFile>${project.basedir}/docker-compose.yml</composeFile>
-                            <detachedMode>true</detachedMode>
-                            <skip>${skip.integration.tests}</skip>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>down</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>down</goal>
-                        </goals>
-                        <configuration>
-                            <composeFile>${project.basedir}/docker-compose.yml</composeFile>
-                            <skip>${skip.integration.tests}</skip>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
-<!--            </plugin>-->
-
-            <plugin>
                 <groupId>com.coveo</groupId>
                 <artifactId>fmt-maven-plugin</artifactId>
             </plugin>
@@ -209,7 +108,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
-                    <mainClass>uk.gov.ons.ctp.integration.mock.MockApplication</mainClass>
+                    <mainClass>uk.gov.ons.ctp.integration.mock.MockServiceApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -221,124 +120,11 @@
             </plugin>
 
             <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.2</version>
-                <executions>
-                    <execution>
-                        <id>default-prepare-agent</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                        </configuration>
-                    </execution>
-
-                    <execution>
-                        <id>pre-unit-test</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
-                            <propertyName>surefireArgLine</propertyName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>post-unit-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
-                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
-                        </configuration>
-                    </execution>
-
-                    <execution>
-                        <id>pre-integration-test</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <destFile>${project.build.directory}/coverage-reports/jacoco-it.exec</destFile>
-                            <propertyName>failsafeArgLine</propertyName>
-                        </configuration>
-                    </execution>
-
-                    <execution>
-                        <id>post-integration-test</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${project.build.directory}/coverage-reports/jacoco-it.exec</dataFile>
-                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <forkCount>1</forkCount>
-                    <reuseForks>true</reuseForks>
-                    <argLine>${surefireArgLine}</argLine>
-                    <classpathDependencyExcludes>
-                        <classpathDependencyExcludes>${project.groupId}:${project.artifactId}
-                        </classpathDependencyExcludes>
-                    </classpathDependencyExcludes>
-                    <additionalClasspathElements>
-                        <additionalClasspathElement>${project.build.outputDirectory}</additionalClasspathElement>
-                    </additionalClasspathElements>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <phase>test</phase>
-                    </execution>
-                </executions>
-            </plugin>
-
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M3</version>
-                <configuration>
-                    <argLine>${failsafeArgLine}</argLine>
-                    <skip>${skip.integration.tests}</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                        <phase>integration-test</phase>
-                    </execution>
-                </executions>
-            </plugin>
-
         </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
