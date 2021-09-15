@@ -34,7 +34,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /info
-            port: 8163
+            port: 8162
           initialDelaySeconds: 20
           periodSeconds: 10
           failureThreshold: 3
@@ -42,14 +42,14 @@ spec:
         livenessProbe:
           httpGet:
             path: /info
-            port: 8163
+            port: 8162
           initialDelaySeconds: 30
           periodSeconds: 10
           failureThreshold: 3
           successThreshold: 1
         ports:
         - name: http-server
-          containerPort: 8163
+          containerPort: 8162
         env:
         - name: JAVA_TOOL_OPTIONS
           value: "-Dspring.profiles.active=dev

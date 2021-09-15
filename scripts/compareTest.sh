@@ -13,7 +13,7 @@
 # The mock-service must be running locally.
 #
 
-MOCK_AI="http://localhost:8163"
+MOCK_AI="http://localhost:8162"
 WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
 
 # The AI_TOKEN needs to be set.

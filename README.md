@@ -15,12 +15,12 @@ These postcodes are:
 
 When running successfully version information can be obtained from the info endpoint
 
-* localhost:8163/info
+* localhost:8162/info
 
 The below endpoints will help as a guide to using the endpoints:
 
-* localhost:8163/addresses/help
-* localhost:8163/cases/help
+* localhost:8162/addresses/help
+* localhost:8162/cases/help
 
 ## Manual testing
 
@@ -30,17 +30,17 @@ These endpoints return AI captured responses which are held within the data reso
 If no data is held for a particular search query then a default 'notFound' response is returned. This mirrors the
 behaviour of AI if it is also asked for data which it doesn't hold.
 
-    curl -s localhost:8163/addresses/help
+    curl -s localhost:8162/addresses/help
 
-    curl -s localhost:8163/addresses/rh/postcode/{postcode}
+    curl -s localhost:8162/addresses/rh/postcode/{postcode}
 
-    curl -s localhost:8163/addresses/rh/uprn/{uprn}
+    curl -s localhost:8162/addresses/rh/uprn/{uprn}
 
-    curl -s localhost:8163/addresses/partial?input={partial}
+    curl -s localhost:8162/addresses/partial?input={partial}
 
-    curl -s localhost:8163/addresses/postcode/{postcode}
+    curl -s localhost:8162/addresses/postcode/{postcode}
 
-    curl -s localhost:8163/addresses/eq?input={search}
+    curl -s localhost:8162/addresses/eq?input={search}
 
 ### Capture endpoints
 
@@ -69,17 +69,17 @@ below curl commands, replacing the "$AI_TOKEN" with the actual AI token.
 These endpoints will return mock cases that is held within the cases and questionnaires yaml files that are held within
 the resources directory.
 
-    curl -s localhost:8163/cases/help
+    curl -s localhost:8162/cases/help
 
-    curl -s localhost:8163/cases/examples
+    curl -s localhost:8162/cases/examples
 
-    curl -s localhost:8163/cases/{caseId}
+    curl -s localhost:8162/cases/{caseId}
 
-    curl -s localhost:8163/cases/{caseId}/qid
+    curl -s localhost:8162/cases/{caseId}/qid
 
-    curl -s localhost:8163/cases/uprn/{uprn}
+    curl -s localhost:8162/cases/uprn/{uprn}
 
-    curl -s localhost:8163/cases/ref/{caseRef}
+    curl -s localhost:8162/cases/ref/{caseRef}
 
 Note: the "/cases/{caseId}/qid" will return results with randomly generated QID and UAC values each time.
 
