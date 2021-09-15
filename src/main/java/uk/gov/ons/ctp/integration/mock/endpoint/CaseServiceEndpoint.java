@@ -32,11 +32,6 @@ import uk.gov.ons.ctp.integration.mock.data.DataRepository;
 public final class CaseServiceEndpoint implements CTPEndpoint {
   private static final int UAC_LENGTH = 16;
 
-  @RequestMapping(value = "/info", method = RequestMethod.GET)
-  public ResponseEntity<String> info() {
-    return ResponseEntity.ok("SDC MOCK CASE SERVICE");
-  }
-
   /**
    * the GET endpoint to find a Case by UUID
    *
@@ -97,7 +92,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
   }
 
   /**
-   * the GET endpoint to find a Case by UPRM
+   * the GET endpoint to find a Case by UPRN
    *
    * @param uprn to find by
    * @return the case found

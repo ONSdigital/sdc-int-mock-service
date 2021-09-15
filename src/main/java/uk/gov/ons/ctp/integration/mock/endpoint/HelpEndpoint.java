@@ -14,11 +14,14 @@ import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.integration.mock.data.DataRepository;
 
 /**
- * This class holds the /help endpoint to provide a list of supported endpoints and the available
+ * This class holds the help endpoint to provide a list of supported endpoints and the available
  * data.
+ * <p>
+ * Note that with the current ingress configuration "/help" is taken by RHUI, so using "/mockhelp"
+ * instead.
  */
 @RestController
-@RequestMapping(value = "/help", produces = "application/json")
+@RequestMapping(value = "/mockhelp", produces = "application/json")
 public final class HelpEndpoint implements CTPEndpoint {
   private static final Pattern UPRN_PATTERN = Pattern.compile("\"uprn\"\\s*:");
   private static final Pattern FIRST_UPRN_PATTERN = Pattern.compile("\"firstUprn\"\\s*:");
@@ -31,23 +34,23 @@ public final class HelpEndpoint implements CTPEndpoint {
     StringBuilder helpText = new StringBuilder();
     helpText.append("HELP ENDPOINT DESCRIPTIONS\n\n");
     helpText.append(
-        "  /help/addresses              - description and examples for addresses endpoint\n");
+        "  /mockhelp/addresses              - description and examples for addresses endpoint\n");
     helpText.append(
-        "  /help/addresses/data         - summary of data held for addresses endpoint\n");
+        "  /mockhelp/addresses/data         - summary of data held for addresses endpoint\n");
     helpText.append(
-        "  /help/capture/addresses      - description and examples for capturing addresses\n");
+        "  /mockhelp/capture/addresses      - description and examples for capturing addresses\n");
     helpText.append(
-        "  /help/cases                  - description and examples for cases endpoint\n");
-    helpText.append("  /help/cases/data             - summary of data held for cases endpoint\n");
+        "  /mockhelp/cases                  - description and examples for cases endpoint\n");
+    helpText.append("  /mockhelp/cases/data             - summary of data held for cases endpoint\n");
 
     helpText.append("\n\n");
     helpText.append("EXAMPLE COMMANDS\n");
     helpText.append("\n");
-    curlHelp(helpText, "help/addresses");
-    curlHelp(helpText, "help/addresses/data");
-    curlHelp(helpText, "help/capture/addresses");
-    curlHelp(helpText, "help/cases");
-    curlHelp(helpText, "help/cases/data");
+    curlHelp(helpText, "mockhelp/addresses");
+    curlHelp(helpText, "mockhelp/addresses/data");
+    curlHelp(helpText, "mockhelp/capture/addresses");
+    curlHelp(helpText, "mockhelp/cases");
+    curlHelp(helpText, "mockhelp/cases/data");
 
     return ResponseEntity.ok(helpText.toString());
   }
@@ -181,7 +184,7 @@ public final class HelpEndpoint implements CTPEndpoint {
 
   private void buildDataHelp(StringBuilder helpText, RequestType requestType) throws Exception {
     helpText.append("\n");
-    helpText.append("  " + requestType.getUrl() + "\n");
+    urlHelp(helpText, requestType);
 
     List<String> dataFiles = DataRepository.list(requestType);
     Properties props = DataRepository.getInventory(requestType);
@@ -198,13 +201,23 @@ public final class HelpEndpoint implements CTPEndpoint {
     }
   }
 
+  private void urlHelp(StringBuilder helpText, RequestType requestType) {
+    helpText.append("  " + requestType.getUrl());
+    String delimiter = "?";
+    for (String param : requestType.getQueryParams()) {
+      helpText.append(delimiter + param + "=<" + param + "-value>");
+      delimiter="&";
+    }
+    helpText.append("\n");
+  }
+
   private StringBuilder curlHelp(StringBuilder helpText, String path) {
     return helpText.append("  $ curl -s localhost:" + port + "/" + path + "\n");
   }
 
   private void describeUrl(
       StringBuilder helpText,
-      uk.gov.ons.ctp.integration.mock.endpoint.RequestType requestType,
+      RequestType requestType,
       String urlPrefix) {
     helpText.append("  " + urlPrefix + requestType.getUrl() + "\n");
     helpText.append("      " + requestType.getDescription() + "\n");

@@ -147,7 +147,7 @@ public class DataRepository {
 
   public static String normaliseFileName(String name) {
     String trimmedName = name.trim();
-    return trimmedName.replaceAll(" ", "-");
+    return trimmedName.replaceAll(" ", "-").toLowerCase();
   }
 
   private static String denormaliseFileName(String name) {

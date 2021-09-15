@@ -11,6 +11,7 @@ import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexUprnResultDTO;
 public enum RequestType {
   AI_RH_POSTCODE(
       "/addresses/rh/postcode/{postcode}",
+      "/addresses/rh/postcode",
       "Search for an address by postcode. RH version.",
       HttpStatus.OK,
       "POSTCODE",
@@ -18,6 +19,7 @@ public enum RequestType {
       "offset",
       "limit"),
   AI_PARTIAL(
+      "/addresses/partial",
       "/addresses/partial",
       "Search by partial address.",
       HttpStatus.OK,
@@ -28,6 +30,7 @@ public enum RequestType {
       "limit"),
   AI_POSTCODE(
       "/addresses/postcode/{postcode}",
+      "/addresses/postcode",
       "Search for an address by postcode.",
       HttpStatus.OK,
       "POSTCODE",
@@ -36,11 +39,13 @@ public enum RequestType {
       "limit"),
   AI_RH_UPRN(
       "/addresses/rh/uprn/{uprn}",
+      "/addresses/rh/uprn",
       "Gets an address by UPRN.",
       HttpStatus.NOT_FOUND,
       null,
       AddressIndexUprnResultDTO.class),
   AI_EQ(
+      "/addresses/eq",
       "/addresses/eq",
       "Search for address for type ahead.",
       HttpStatus.OK,
@@ -48,8 +53,11 @@ public enum RequestType {
       String.class,
       "input"),
   CASE_UPRN(
-      "/cases/uprn", "Search for UPRN for cases.", HttpStatus.OK, "INPUT", String.class, "input"),
+      "/cases/uprn/{uprn}",
+      "/cases/uprn",
+      "Search for UPRN for cases.", HttpStatus.OK, "INPUT", String.class, "input"),
   CASE_REF(
+      "/cases/ref/{ref}",
       "/cases/caseref",
       "Search for caseRef for cases.",
       HttpStatus.OK,
@@ -57,6 +65,7 @@ public enum RequestType {
       String.class,
       "input"),
   CASE_QID(
+      "/cases/{caseId}/qid",
       "/cases/questionnaires",
       "Search for questionnaires for cases.",
       HttpStatus.OK,
@@ -64,6 +73,7 @@ public enum RequestType {
       String.class,
       "input"),
   CASE_ID(
+      "/cases/{caseId}",
       "/cases/caseid",
       "Search for questionnaires for cases.",
       HttpStatus.OK,
@@ -81,16 +91,17 @@ public enum RequestType {
 
   private RequestType(
       String url,
+      String path,
       String description,
       HttpStatus notFoundHttpStatus,
       String placeholderName,
       Class<?> responseClass,
       String... queryParams) {
     this.url = url;
+    this.path = path;
     this.description = description;
     this.notFoundHttpStatus = notFoundHttpStatus;
     this.placeholderName = placeholderName;
-    this.path = url.replaceAll("/\\{.*\\}", "");
     this.responseClass = responseClass;
     this.queryParams = queryParams;
   }
