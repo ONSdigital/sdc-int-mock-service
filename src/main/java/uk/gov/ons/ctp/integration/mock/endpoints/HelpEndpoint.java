@@ -20,7 +20,8 @@ import uk.gov.ons.ctp.integration.mock.data.CaptureCache;
 @RestController
 @RequestMapping(value = "/help", produces = "application/json")
 public final class HelpEndpoint implements CTPEndpoint {
-  private static final Pattern UPRN_PATTERN = Pattern.compile("\\buprn\\b");
+  private static final Pattern UPRN_PATTERN = Pattern.compile("\"uprn\"\\s*:");
+  private static final Pattern FIRST_UPRN_PATTERN = Pattern.compile("\"firstUprn\"\\s*:");
 
   @Value("${server.port}")
   private String port;
@@ -188,13 +189,12 @@ public final class HelpEndpoint implements CTPEndpoint {
     for (String name : dataFiles) {
       String normalisedName = CaptureCache.normaliseFileName(name);
       String dataDescription = props.getProperty(normalisedName, null);
-      String dataText = describeData(normalisedName, dataDescription);
-      String countData = "";
+      Integer count = null;
       if (requestType.isAddressType()) {
-        int count = count(normalisedName, requestType);
-        countData = " (" + count + ")";
+        count = count(normalisedName, requestType);
       }
-      helpText.append("    " + dataText + countData + "\n");
+      String dataText = describeData(normalisedName, count, dataDescription);
+      helpText.append("    " + dataText + "\n");
     }
   }
 
@@ -220,11 +220,14 @@ public final class HelpEndpoint implements CTPEndpoint {
     }
   }
 
-  private String describeData(String normalisedName, String dataDescription) {
+  private String describeData(String normalisedName, Integer count, String dataDescription) {
+    if (count != null) {
+      normalisedName = String.format("%s (%d)", normalisedName, count);
+    }
     if (dataDescription == null) {
       return normalisedName;
     }
-    return String.format("%-16s(%s)", normalisedName, dataDescription);
+    return String.format("%-20s(%s)", normalisedName, dataDescription);
   }
 
   private int count(String baseFileName, RequestType requestType) throws Exception {
@@ -233,9 +236,11 @@ public final class HelpEndpoint implements CTPEndpoint {
     }
     int resultCount = 0;
     String json = CaptureCache.readCapturedAiResponse(requestType, baseFileName);
-    Matcher m = UPRN_PATTERN.matcher(json);
-    while (m.find()) {
-      resultCount++;
+    for (var p : List.of(UPRN_PATTERN, FIRST_UPRN_PATTERN)) {
+      Matcher m = p.matcher(json);
+      while (m.find()) {
+        resultCount++;
+      }
     }
     return resultCount;
   }
