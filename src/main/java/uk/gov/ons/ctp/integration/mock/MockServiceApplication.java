@@ -14,7 +14,7 @@ import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.common.error.RestExceptionHandler;
 import uk.gov.ons.ctp.common.rest.RestClient;
 import uk.gov.ons.ctp.common.rest.RestClientConfig;
-import uk.gov.ons.ctp.integration.mock.client.MockServiceClient;
+import uk.gov.ons.ctp.integration.mock.ai.AddressIndexClient;
 import uk.gov.ons.ctp.integration.mock.config.AppConfig;
 
 /** The 'main' entry point for the Mock Service SpringBoot Application. */
@@ -34,7 +34,7 @@ public class MockServiceApplication {
   }
 
   @Bean
-  public MockServiceClient addressIndexClient() throws CTPException {
+  public AddressIndexClient addressIndexClient() throws CTPException {
     log.info("Address Index configuration: {}", appConfig.getAddressIndex());
     RestClientConfig clientConfig = appConfig.getAddressIndex().getRestClientConfig();
     var statusMapping = clientErrorMapping();
@@ -42,7 +42,7 @@ public class MockServiceApplication {
         new RestClient(clientConfig, statusMapping, HttpStatus.INTERNAL_SERVER_ERROR);
 
     String aiToken = appConfig.getAddressIndex().getToken();
-    return new MockServiceClient(restClient, aiToken);
+    return new AddressIndexClient(restClient, aiToken);
   }
 
   private Map<HttpStatus, HttpStatus> clientErrorMapping() {
