@@ -1,1 +1,0 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"80","response":{"historical":true,"epoch":"","verbose":false,"includeauxiliarysearch":false},"status":{"code":404,"message":"Not found"},"errors":[{"code":3,"message":"CaseRef request didn't yield a result. The CaseRef may no longer exist on the current AddressBase, or only be available with historical=true query string parameter"}]}

@@ -51,7 +51,7 @@ public class DataRepository {
     URL resource = classLoader.getResource(dataFile);
     if (resource == null) {
       log.info(
-          "No captured response",
+          "No captured response for {}",
           kv("baseFileName", baseFileName),
           kv("resource", dataFile),
           kv("requestType", requestType.name()));
@@ -222,11 +222,16 @@ public class DataRepository {
     } else {
       // 404 - not found
       responseStatus = requestType.getNotFoundHttpStatus();
-      responseText = DataRepository.read(requestType, Constants.NO_DATA_FILE_NAME);
-
-      // Customise the not-found response by replacing any place holders with actual values
-      String placeholderName = requestType.getPlaceholderName();
-      if (placeholderName != null) {
+      if (requestType.isAddressType()) {
+        responseText = DataRepository.read(requestType, Constants.NO_DATA_FILE_NAME);
+      } else {
+        responseText = null;
+      }
+      if (responseText == null) {
+        responseText = "Data not found";
+      } else {
+        // Customise the not-found response by replacing any place holders with actual values
+        String placeholderName = requestType.getPlaceholderName();
         String fullPlaceholderName = "%" + placeholderName + "%";
         responseText = responseText.replace(fullPlaceholderName, name);
       }

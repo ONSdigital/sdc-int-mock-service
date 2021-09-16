@@ -56,34 +56,34 @@ public enum RequestType {
       "/cases/uprn/{uprn}",
       "/cases/uprn",
       "Search for UPRN for cases.",
-      HttpStatus.OK,
-      "INPUT",
-      String.class,
-      "input"),
+      HttpStatus.NOT_FOUND,
+      null,
+      String.class),
   CASE_REF(
       "/cases/ref/{ref}",
       "/cases/caseref",
       "Search for caseRef for cases.",
-      HttpStatus.OK,
-      "INPUT",
+      HttpStatus.NOT_FOUND,
+      null,
       String.class,
-      "input"),
+      "caseEvents"),
   CASE_QID(
       "/cases/{caseId}/qid",
       "/cases/questionnaires",
       "Search for questionnaires for cases.",
-      HttpStatus.OK,
-      "INPUT",
+      HttpStatus.NOT_FOUND,
+      null,
       String.class,
-      "input"),
+      "individual",
+      "individualCaseId"),
   CASE_ID(
       "/cases/{caseId}",
       "/cases/caseid",
       "Search for questionnaires for cases.",
-      HttpStatus.OK,
-      "INPUT",
+      HttpStatus.NOT_FOUND,
+      null,
       String.class,
-      "input");
+      "caseEvents");
 
   private String url;
   private String description;
