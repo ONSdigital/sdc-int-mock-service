@@ -66,8 +66,7 @@ below curl commands, replacing the "$AI_TOKEN" with the actual AI token.
 
 ### Cases endpoints
 
-These endpoints will return mock cases that is held within the cases and questionnaires yaml files that are held within
-the resources directory.
+These endpoints will return mock case data held within the resources directory.
 
     curl -s localhost:8162/cases/help
 
@@ -80,8 +79,6 @@ the resources directory.
     curl -s localhost:8162/cases/uprn/{uprn}
 
     curl -s localhost:8162/cases/ref/{caseRef}
-
-Note: the "/cases/{caseId}/qid" will return results with randomly generated QID and UAC values each time.
 
 ### Scripts
 
