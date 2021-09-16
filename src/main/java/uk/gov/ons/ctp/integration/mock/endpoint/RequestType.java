@@ -55,7 +55,11 @@ public enum RequestType {
   CASE_UPRN(
       "/cases/uprn/{uprn}",
       "/cases/uprn",
-      "Search for UPRN for cases.", HttpStatus.OK, "INPUT", String.class, "input"),
+      "Search for UPRN for cases.",
+      HttpStatus.OK,
+      "INPUT",
+      String.class,
+      "input"),
   CASE_REF(
       "/cases/ref/{ref}",
       "/cases/caseref",

@@ -16,9 +16,9 @@ import uk.gov.ons.ctp.integration.mock.data.DataRepository;
 /**
  * This class holds the help endpoint to provide a list of supported endpoints and the available
  * data.
- * <p>
- * Note that with the current ingress configuration "/help" is taken by RHUI, so using "/mockhelp"
- * instead.
+ *
+ * <p>Note that with the current ingress configuration "/help" is taken by RHUI, so using
+ * "/mockhelp" instead.
  */
 @RestController
 @RequestMapping(value = "/mockhelp", produces = "application/json")
@@ -41,7 +41,8 @@ public final class HelpEndpoint implements CTPEndpoint {
         "  /mockhelp/capture/addresses      - description and examples for capturing addresses\n");
     helpText.append(
         "  /mockhelp/cases                  - description and examples for cases endpoint\n");
-    helpText.append("  /mockhelp/cases/data             - summary of data held for cases endpoint\n");
+    helpText.append(
+        "  /mockhelp/cases/data             - summary of data held for cases endpoint\n");
 
     helpText.append("\n\n");
     helpText.append("EXAMPLE COMMANDS\n");
@@ -206,7 +207,7 @@ public final class HelpEndpoint implements CTPEndpoint {
     String delimiter = "?";
     for (String param : requestType.getQueryParams()) {
       helpText.append(delimiter + param + "=<" + param + "-value>");
-      delimiter="&";
+      delimiter = "&";
     }
     helpText.append("\n");
   }
@@ -215,10 +216,7 @@ public final class HelpEndpoint implements CTPEndpoint {
     return helpText.append("  $ curl -s localhost:" + port + "/" + path + "\n");
   }
 
-  private void describeUrl(
-      StringBuilder helpText,
-      RequestType requestType,
-      String urlPrefix) {
+  private void describeUrl(StringBuilder helpText, RequestType requestType, String urlPrefix) {
     helpText.append("  " + urlPrefix + requestType.getUrl() + "\n");
     helpText.append("      " + requestType.getDescription() + "\n");
   }
