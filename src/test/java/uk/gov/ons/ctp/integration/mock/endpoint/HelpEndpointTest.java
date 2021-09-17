@@ -21,17 +21,17 @@ public class HelpEndpointTest {
 
   @Test
   public void shouldCountPostcodeResponse() throws Exception {
-    assertEquals(21, controller.count("cf51ad", RequestType.AI_POSTCODE));
+    assertEquals(23, controller.count("cf51ad", RequestType.AI_POSTCODE));
   }
 
   @Test
   public void shouldCountPartialResponse() throws Exception {
-    assertEquals(20, controller.count("okehampton-road", RequestType.AI_PARTIAL));
+    assertEquals(1000, controller.count("okehampton-road", RequestType.AI_PARTIAL));
   }
 
   @Test
   public void shouldCountEqResponse() throws Exception {
-    assertEquals(19, controller.count("ex24l", RequestType.AI_EQ));
+    assertEquals(26, controller.count("ex24l", RequestType.AI_EQ));
   }
 
   @Test

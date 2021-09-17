@@ -88,6 +88,7 @@ public final class ResponseBuilder {
       }
     } else {
       // 404 - not found
+      responseStatus = requestType.getNotFoundHttpStatus();
       response = notFound(requestType, name);
     }
     return new ResponseEntity<Object>(response, responseStatus);
