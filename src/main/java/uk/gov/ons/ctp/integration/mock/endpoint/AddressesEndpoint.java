@@ -17,7 +17,6 @@ import uk.gov.ons.ctp.integration.mock.ai.model.request.AddressesPartialRequestD
 import uk.gov.ons.ctp.integration.mock.ai.model.request.AddressesPostcodeRequestDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.request.AddressesRhPostcodeRequestDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.request.AddressesRhUprnRequestDTO;
-import uk.gov.ons.ctp.integration.mock.data.DataRepository;
 
 /** Provides mock endpoints for a subset of the AI /addresses endpoints. */
 @Slf4j
@@ -35,7 +34,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     postcode = postcode.replaceAll("\\s", "");
     log.info("Request {}/{}", requestType.getPath(), v("postcode", postcode));
 
-    return DataRepository.simulateResponse(
+    return ResponseBuilder.respond(
         requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
@@ -48,7 +47,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.AI_PARTIAL;
     log.info("Request {}", requestType.getPath() + "?input=" + input);
 
-    return DataRepository.simulateResponse(
+    return ResponseBuilder.respond(
         requestType, input, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
@@ -62,7 +61,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     postcode = postcode.replaceAll("\\s", "");
     log.info("Request {}/{}", requestType.getPath(), v("postcode", postcode));
 
-    return DataRepository.simulateResponse(
+    return ResponseBuilder.respond(
         requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
@@ -74,7 +73,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.AI_RH_UPRN;
     log.info("Request {}/{}", requestType.getPath(), v("uprn", uprn));
 
-    return DataRepository.simulateResponse(requestType, uprn, 0, 1);
+    return ResponseBuilder.respond(requestType, uprn, 0, 1);
   }
 
   @RequestMapping(value = "/eq", method = RequestMethod.GET)
@@ -84,6 +83,6 @@ public final class AddressesEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.AI_EQ;
     log.info("Request {}", requestType.getUrl() + "?input=" + input);
 
-    return DataRepository.simulateResponse(requestType, input, 0, 10);
+    return ResponseBuilder.respond(requestType, input, 0, 10);
   }
 }

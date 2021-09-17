@@ -16,7 +16,6 @@ import uk.gov.ons.ctp.common.domain.UniquePropertyReferenceNumber;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.integration.mock.FailureSimulator;
-import uk.gov.ons.ctp.integration.mock.data.DataRepository;
 
 /** Provides mock endpoints for the case service. */
 @Slf4j
@@ -39,7 +38,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.CASE_ID;
     log.info("Request {}/{}", requestType.getPath(), v("caseId", caseId));
     FailureSimulator.optionallyTriggerFailure(caseId.toString(), 400, 401, 404, 500);
-    return DataRepository.simulateResponse(requestType, caseId.toString(), 0, 1);
+    return ResponseBuilder.respond(requestType, caseId.toString(), 0, 1);
   }
 
   /**
@@ -62,7 +61,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
 
     FailureSimulator.optionallyTriggerFailure(caseId, 400, 401, 404, 500);
     RequestType requestType = RequestType.CASE_QID;
-    return DataRepository.simulateResponse(requestType, caseId.toString(), 0, 1);
+    return ResponseBuilder.respond(requestType, caseId.toString(), 0, 1);
   }
 
   /**
@@ -79,7 +78,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
     log.info("Request {}/{}", requestType.getPath(), v("uprn", uprn));
     String uprnStr = Long.toString(uprn.getValue());
     FailureSimulator.optionallyTriggerFailure(uprnStr, 400, 401, 404, 500);
-    return DataRepository.simulateResponse(requestType, uprnStr, 0, 1);
+    return ResponseBuilder.respond(requestType, uprnStr, 0, 1);
   }
 
   /**
@@ -98,6 +97,6 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
     log.info("Request {}/{}", requestType.getPath(), v("ref", ref));
     String caseRef = Long.toString(ref);
     FailureSimulator.optionallyTriggerFailure(caseRef, 400, 401, 404, 500);
-    return DataRepository.simulateResponse(requestType, caseRef, 0, 1);
+    return ResponseBuilder.respond(requestType, caseRef, 0, 1);
   }
 }
