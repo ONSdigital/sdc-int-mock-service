@@ -15,7 +15,7 @@ cd "$(dirname "$0")"
 cd ../src/main/resources/data
 
 # Find captured files that need to be refetched
-find . -name "*json" | grep -v notFound > $TMP_FILE
+find . -name "*json" | grep -v notfound > $TMP_FILE
 
 # Convert the list of captured files into curl commands
 sed -i ".bak" 's|-|%20|g' $TMP_FILE

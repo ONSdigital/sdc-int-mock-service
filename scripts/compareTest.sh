@@ -45,7 +45,10 @@ function compare {
   curl -s $MOCK_AI/$ENDPOINT | jq . > /tmp/mock-service.json
 
   # Compare real & mock AI results
-  diff "/tmp/external-ai.json" "/tmp/mock-service.json" > /dev/null
+  jq . /tmp/external-ai.json > /tmp/external-ai-pretty.json
+  jq . /tmp/mock-service.json > /tmp/mock-service-pretty.json
+
+  diff "/tmp/external-ai-pretty.json" "/tmp/mock-service-pretty.json" > /dev/null
   if [ $? -eq 0 ]
   then
     echo "Pass: $ENDPOINT"
@@ -56,30 +59,30 @@ function compare {
 
 
 # RH POSTCODE
-compare "addresses/rh/postcode/CF32TW"
-compare "addresses/rh/postcode/CF32TW?offset=1"
-compare "addresses/rh/postcode/CF32TW?limit=3"
-compare "addresses/rh/postcode/CF32TW?offset=101&limit=8"
+compare "addresses/rh/postcode/cf32tw"
+compare "addresses/rh/postcode/cf32tw?offset=1"
+compare "addresses/rh/postcode/cf32tw?limit=3"
+compare "addresses/rh/postcode/cf32tw?offset=101&limit=8"
 
 # PARTIAL
-compare "addresses/partial?input=Treganna"
-compare "addresses/partial?input=Treganna&limit=18"
+compare "addresses/partial?input=treganna"
+compare "addresses/partial?input=treganna&limit=18"
 
 # POSTCODE
-compare "addresses/postcode/EX24LU"
-compare "addresses/postcode/EX24LU?offset=6"
-compare "addresses/postcode/EX24LU?limit=1"
-compare "addresses/postcode/EX24LU?offset=2&limit=90"
+compare "addresses/postcode/ex24lu"
+compare "addresses/postcode/ex24lu?offset=6"
+compare "addresses/postcode/ex24lu?limit=1"
+compare "addresses/postcode/ex24lu?offset=2&limit=90"
 
 # UPRN
 compare "addresses/rh/uprn/10013745617"
 compare "addresses/rh/uprn/100040239948"
 
 # TYPE AHEAD"
-compare "addresses/eq?input=Holbeche"
-compare "addresses/eq?input=Holbe"
-compare "addresses/eq?input=EX2"
-compare "addresses/eq?input=8%20Fair%20CF51AD"
+compare "addresses/eq?input=holbeche"
+compare "addresses/eq?input=holbe"
+compare "addresses/eq?input=ex2"
+compare "addresses/eq?input=8%20fair%20cf51ad"
 
 # Check responses for data with no results in real or mock AI
 compare "addresses/rh/postcode/SO996AB"
