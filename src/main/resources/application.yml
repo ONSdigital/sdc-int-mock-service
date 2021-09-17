@@ -52,7 +52,7 @@ address-index:
   token:
   rest-client-config:
     scheme: https
-    host: whitelodge-eq-ai-api.census-gcp.onsdigital.uk
+    host: initial-test-bulk-1.aims.gcp.onsdigital.uk
     port: 443
     connection-manager-default-max-per-route: 100
     connection-manager-max-total: 100
