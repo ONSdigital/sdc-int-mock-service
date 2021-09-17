@@ -14,10 +14,10 @@
 #
 
 MOCK_AI="http://localhost:8162"
-WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
+EXTERNAL_AI="https://initial-test-bulk-1.aims.gcp.onsdigital.uk"
 
 # The AI_TOKEN needs to be set.
-AI_TOKEN=""
+[[ -z "$AI_TOKEN" ]] && AI_TOKEN=""
 
 # Run the comparison of the real vs. mock-service responses
 function compare {
@@ -26,26 +26,26 @@ function compare {
   [ -z "$AI_TOKEN" ] && echo "Error: AI_TOKEN must be set" && exit 1;
 
   # Get the response status codes from genuine and mock AI
-  curl -s -H "Authorization: $AI_TOKEN" -I $WL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/wl-ai.status.txt
+  curl -s -H "Authorization: Bearer $AI_TOKEN" -I $EXTERNAL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/external-ai.status.txt
   curl -s -I $MOCK_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/mock-service.status.txt
 
   # Compare real & mock AI status codes
-  diff "/tmp/wl-ai.status.txt" "/tmp/mock-service.status.txt" > /dev/null
+  diff "/tmp/external-ai.status.txt" "/tmp/mock-service.status.txt" > /dev/null
   if [ $? -ne 0 ]
   then
     echo "*FAIL STATUS*: $ENDPOINT"
     echo -n "  Genuine: "
-    cat /tmp/wl-ai.status.txt
+    cat /tmp/external-ai.status.txt
     echo -n "  Mock   : "
     cat /tmp/mock-service.status.txt
   fi
 
   # Get responses from genuine and mock AI
-  curl -s -H "Authorization: Bearer $AI_TOKEN" $WL_AI/$ENDPOINT | jq . > /tmp/wl-ai.json
+  curl -s -H "Authorization: Bearer $AI_TOKEN" $EXTERNAL_AI/$ENDPOINT | jq . > /tmp/external-ai.json
   curl -s $MOCK_AI/$ENDPOINT | jq . > /tmp/mock-service.json
 
   # Compare real & mock AI results
-  diff "/tmp/wl-ai.json" "/tmp/mock-service.json" > /dev/null
+  diff "/tmp/external-ai.json" "/tmp/mock-service.json" > /dev/null
   if [ $? -eq 0 ]
   then
     echo "Pass: $ENDPOINT"
