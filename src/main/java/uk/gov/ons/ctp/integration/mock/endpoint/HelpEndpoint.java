@@ -1,5 +1,6 @@
 package uk.gov.ons.ctp.integration.mock.endpoint;
 
+import com.google.common.annotations.VisibleForTesting;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
@@ -241,7 +242,8 @@ public final class HelpEndpoint implements CTPEndpoint {
     return String.format("%-20s(%s)", normalisedName, dataDescription);
   }
 
-  private int count(String baseFileName, RequestType requestType) throws Exception {
+  @VisibleForTesting
+  int count(String baseFileName, RequestType requestType) throws Exception {
     if (requestType.isCaseType()) {
       throw new IllegalArgumentException("count call not for case types!");
     }
