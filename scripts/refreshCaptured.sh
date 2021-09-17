@@ -3,8 +3,8 @@
 # This script updates all of the captured data held in /src/main/resources/data
 #
 # To run it the mock-ai needs to have access to the security token used by AI.
-# mock-ai therefore needs to have a value set for 'address-index.token'.
-# Note that mock-ai is assumed to be running locally.
+# The mock-service therefore needs to have a value set for 'address-index.token'.
+# Note that mock-service is assumed to be running locally.
 
 set -e
 
