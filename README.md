@@ -46,8 +46,8 @@ To get this help in the dev environment with curl do the following:
 
 Further details are provided here:
 
-- [guide to using the mock AI readme](doc/mock-ai.md)
-- [guide to using the mock Case Service readme](doc/mock-case-service.md)
+- [guide to using the mock AI](doc/mock-ai.md)
+- [guide to using the mock Case Service](doc/mock-case-service.md)
 
 
 ## Copyright

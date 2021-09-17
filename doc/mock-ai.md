@@ -1,6 +1,6 @@
 # Mock AI
 
-The mock AIMS part of mock-service has just enough realistic data to be able to allow our
+The mock AI part of mock-service has just enough realistic data to be able to allow our
 services to function with selected data.
 
 AIMS data tends to alter slightly with each refresh of the real service, so additional
@@ -8,7 +8,7 @@ scripts and endpoints are available in order to refresh and validate that data.
 
 ## Help endpoints
 
-Here are examples of endpoints calls using `curl`
+Here are examples of the help endpoints calls using `curl` specific to the mock AI service:
 
 ```
   $ curl -s localhost:8162/mockhelp/addresses

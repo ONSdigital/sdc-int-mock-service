@@ -5,7 +5,7 @@ services to function with selected data.
 
 ## Help endpoints
 
-Here are examples of endpoints calls using `curl`
+Here are examples of the help endpoints calls using `curl` specific to the mock case service:
 
 ```
   $ curl -s localhost:8162/mockhelp/cases
