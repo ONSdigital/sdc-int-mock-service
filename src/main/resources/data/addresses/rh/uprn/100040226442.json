@@ -1,1 +1,27 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","response":{"address":{"uprn":"100040226442","formattedAddress":"Cedar Lodge, 41-43 Okehampton Road, Exeter, EX4 1EH","addressLine1":"Cedar Lodge","addressLine2":"41-43 Okehampton Road","addressLine3":"","townName":"Exeter","postcode":"EX4 1EH","foundAddressType":"NAG","censusAddressType":"CE","censusEstabType":"Hotel","countryCode":"E","organisationName":"Cedar Lodge"},"addressType":"PAF","epoch":""},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "response" : {
+    "address" : {
+      "uprn" : "100040226442",
+      "formattedAddress" : "Cedar Lodge, 41-43 Okehampton Road, Exeter, EX4 1EH",
+      "addressLine1" : "Cedar Lodge",
+      "addressLine2" : "41-43 Okehampton Road",
+      "addressLine3" : "",
+      "townName" : "Exeter",
+      "postcode" : "EX4 1EH",
+      "foundAddressType" : "NAG",
+      "censusAddressType" : "CE",
+      "censusEstabType" : "Hotel",
+      "countryCode" : "E",
+      "organisationName" : "Cedar Lodge"
+    },
+    "addressType" : "PAF",
+    "epoch" : ""
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

@@ -17,7 +17,8 @@ cd ../src/main/resources/data
 # Find captured files that need to be refetched
 find . -name "*json" | grep -v notfound > $TMP_FILE
 
-# Convert the list of captured files into curl commands
+# Convert the list of captured files into curl commands that hit the 
+# mock services '/capture' endpoint
 sed -i ".bak" 's|-|%20|g' $TMP_FILE
 sed -i ".bak" 's|/partial/|/partial?input=|g' $TMP_FILE
 sed -i ".bak" 's|/addresses/eq/|/addresses/eq?input=|g' $TMP_FILE

@@ -1,1 +1,107 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","termsAndConditions":"https://census.gov.uk/terms-and-conditions","response":{"input":"29 cf3","addresses":[{"uprn":"10009646757","bestMatchAddress":"29B Marshfield Road, Castleton, Cardiff, CF3 2UW","bestMatchAddressType":"PAF"},{"uprn":"10010553880","bestMatchAddress":"29C Marshfield Road, Castleton, Cardiff, CF3 2UW","bestMatchAddressType":"PAF"},{"uprn":"10023546136","bestMatchAddress":"29A New Road, Rumney, Cardiff, CF3 3DB","bestMatchAddressType":"PAF"},{"uprn":"100100903785","bestMatchAddress":"Go Bananas, 29 Talbot Street, Maesteg, CF34 9DB","bestMatchAddressType":"PAF"},{"uprn":"100100501691","bestMatchAddress":"29 Maesteg Row, Maesteg, CF34 9DX","bestMatchAddressType":"PAF"},{"uprn":"100100498666","bestMatchAddress":"29 Brynllywarch, Maesteg, CF34 9NB","bestMatchAddressType":"PAF"},{"uprn":"100100498788","bestMatchAddress":"29 Brynteg, Maesteg, CF34 9NH","bestMatchAddressType":"PAF"},{"uprn":"100100502310","bestMatchAddress":"29 Oakwood, Maesteg, CF34 9UA","bestMatchAddressType":"PAF"},{"uprn":"100100513876","bestMatchAddress":"29 Greenways, Porthcawl, CF36 5EP","bestMatchAddressType":"PAF"},{"uprn":"100100905329","bestMatchAddress":"29 Berw Road, Pontypridd, CF37 2AA","bestMatchAddressType":"PAF"},{"uprn":"100100763435","bestMatchAddress":"29 Penywaun, Efail Isaf, Pontypridd, CF38 1AY","bestMatchAddressType":"PAF"},{"uprn":"100100770266","bestMatchAddress":"29 Wellfield, Beddau, Pontypridd, CF38 2BW","bestMatchAddressType":"PAF"},{"uprn":"100100768677","bestMatchAddress":"29 Fair View, Beddau, Pontypridd, CF38 2DE","bestMatchAddressType":"PAF"},{"uprn":"200003766570","bestMatchAddress":"29 Bronheulwen, Porth, CF39 0BJ","bestMatchAddressType":"PAF"},{"uprn":"10091207086","bestMatchAddress":"29 Highfields, Tonyrefail, Porth, CF39 8GB","bestMatchAddressType":"PAF"},{"uprn":"100100115735","bestMatchAddress":"29 Ferntree Drive, St. Mellons, Cardiff, CF3 0AA","bestMatchAddressType":"PAF"},{"uprn":"100100117120","bestMatchAddress":"29 Oaklands Close, St. Mellons, Cardiff, CF3 0AD","bestMatchAddressType":"PAF"},{"uprn":"100100117965","bestMatchAddress":"29 Tarwick Drive, St. Mellons, Cardiff, CF3 0AF","bestMatchAddressType":"PAF"},{"uprn":"100100117153","bestMatchAddress":"29 Orchard Park, St. Mellons, Cardiff, CF3 0AQ","bestMatchAddressType":"PAF"},{"uprn":"100100115938","bestMatchAddress":"29 Glenrise Close, St. Mellons, Cardiff, CF3 0AS","bestMatchAddressType":"PAF"}],"filter":"","fallback":false,"epoch":"","limit":20,"offset":0,"total":1897,"maxScore":0,"favourpaf":true,"favourwelsh":false,"eboost":1,"nboost":1,"sboost":1,"wboost":1},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "input" : "29 cf3",
+    "addresses" : [ {
+      "uprn" : "10009646757",
+      "bestMatchAddress" : "29B Marshfield Road, Castleton, Cardiff, CF3 2UW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10010553880",
+      "bestMatchAddress" : "29C Marshfield Road, Castleton, Cardiff, CF3 2UW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10023546136",
+      "bestMatchAddress" : "29A New Road, Rumney, Cardiff, CF3 3DB",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100903785",
+      "bestMatchAddress" : "Go Bananas, 29 Talbot Street, Maesteg, CF34 9DB",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100501691",
+      "bestMatchAddress" : "29 Maesteg Row, Maesteg, CF34 9DX",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100498666",
+      "bestMatchAddress" : "29 Brynllywarch, Maesteg, CF34 9NB",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100498788",
+      "bestMatchAddress" : "29 Brynteg, Maesteg, CF34 9NH",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100502310",
+      "bestMatchAddress" : "29 Oakwood, Maesteg, CF34 9UA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100513876",
+      "bestMatchAddress" : "29 Greenways, Porthcawl, CF36 5EP",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100905329",
+      "bestMatchAddress" : "29 Berw Road, Pontypridd, CF37 2AA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100763435",
+      "bestMatchAddress" : "29 Penywaun, Efail Isaf, Pontypridd, CF38 1AY",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100770266",
+      "bestMatchAddress" : "29 Wellfield, Beddau, Pontypridd, CF38 2BW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100768677",
+      "bestMatchAddress" : "29 Fair View, Beddau, Pontypridd, CF38 2DE",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "200003766570",
+      "bestMatchAddress" : "29 Bronheulwen, Porth, CF39 0BJ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10091207086",
+      "bestMatchAddress" : "29 Highfields, Tonyrefail, Porth, CF39 8GB",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100115735",
+      "bestMatchAddress" : "29 Ferntree Drive, St. Mellons, Cardiff, CF3 0AA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100117120",
+      "bestMatchAddress" : "29 Oaklands Close, St. Mellons, Cardiff, CF3 0AD",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100117965",
+      "bestMatchAddress" : "29 Tarwick Drive, St. Mellons, Cardiff, CF3 0AF",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100117153",
+      "bestMatchAddress" : "29 Orchard Park, St. Mellons, Cardiff, CF3 0AQ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100115938",
+      "bestMatchAddress" : "29 Glenrise Close, St. Mellons, Cardiff, CF3 0AS",
+      "bestMatchAddressType" : "PAF"
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "epoch" : "",
+    "limit" : 20,
+    "offset" : 0,
+    "total" : 1897,
+    "maxScore" : 0,
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

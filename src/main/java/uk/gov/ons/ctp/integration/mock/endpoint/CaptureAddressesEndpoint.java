@@ -3,19 +3,26 @@ package uk.gov.ons.ctp.integration.mock.endpoint;
 import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.kv;
 import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.v;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
+
 import javax.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
+import lombok.extern.slf4j.Slf4j;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.common.error.CTPException.Fault;
@@ -111,6 +118,7 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
 
   private void saveAiResponse(RequestType requestType, String name, Object capturedResponse)
       throws IOException, CTPException {
+
     // Discover the location of the 'data' resource directory
     ClassLoader classLoader = getClass().getClassLoader();
     URL targetDataUrl = classLoader.getResource("data");
@@ -143,12 +151,19 @@ public final class CaptureAddressesEndpoint implements CTPEndpoint {
       }
     }
 
-    // Convert object to json
+    // Convert object to json string
     String json;
-    if (capturedResponse instanceof String) {
-      json = (String) capturedResponse;
-    } else {
-      json = new ObjectMapper().writeValueAsString(capturedResponse);
+    ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+
+    try {
+        json = mapper.writeValueAsString(capturedResponse);
+        System.out.println("Ready to write. Have formatted JSON String: " + json); 
+    } catch (JsonGenerationException e) {
+      throw new CTPException(Fault.SYSTEM_ERROR, "Failed to format json", e);
+    } catch (JsonMappingException e) {
+      throw new CTPException(Fault.SYSTEM_ERROR, "Failed to format json", e);
+    } catch (IOException e) {
+      throw new CTPException(Fault.SYSTEM_ERROR, "Failed to format json", e);
     }
 
     // Write AI response json to file

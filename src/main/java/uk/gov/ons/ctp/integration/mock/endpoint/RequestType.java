@@ -1,7 +1,10 @@
 package uk.gov.ons.ctp.integration.mock.endpoint;
 
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
+
+import lombok.Getter;
+import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqPostcodeResultsDTO;
+import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeResultsDTO;
@@ -50,7 +53,15 @@ public enum RequestType {
       "Search for address for type ahead.",
       HttpStatus.OK,
       "INPUT",
-      String.class,
+      AddressIndexEqResultsDTO.class,
+      "input"),
+  AI_EQ_POSTCODE(
+      "/addresses/eq",
+      "/addresses/eq",
+      "Search for address for type ahead.",
+      HttpStatus.OK,
+      "INPUT",
+      AddressIndexEqPostcodeResultsDTO.class,
       "input"),
   CASE_UPRN(
       "/cases/uprn/{uprn}",

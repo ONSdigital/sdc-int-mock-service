@@ -1,1 +1,1230 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","response":{"input":"cf32tw","addresses":[{"uprn":"100100645811","parentUprn":"0","formattedAddress":"1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"1 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530823,"longitude":-3.0627117,"easting":326380,"northing":181859},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645812","parentUprn":"0","formattedAddress":"2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"2 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.5316,"longitude":-3.0630758,"easting":326356,"northing":181946},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645813","parentUprn":"0","formattedAddress":"3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"3 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530766,"longitude":-3.062797,"easting":326374,"northing":181853},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645814","parentUprn":"0","formattedAddress":"4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"4 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531536,"longitude":-3.0630455,"easting":326358,"northing":181939},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645815","parentUprn":"0","formattedAddress":"5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"5 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.5308,"longitude":-3.0628843,"easting":326368,"northing":181857},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645816","parentUprn":"0","formattedAddress":"6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"6 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531384,"longitude":-3.0630565,"easting":326357,"northing":181922},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645817","parentUprn":"0","formattedAddress":"7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"7 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530846,"longitude":-3.0629718,"easting":326362,"northing":181862},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645818","parentUprn":"0","formattedAddress":"8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"8 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53133,"longitude":-3.063113,"easting":326353,"northing":181916},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645819","parentUprn":"0","formattedAddress":"9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"9 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53058,"longitude":-3.0628214,"easting":326372,"northing":181832},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645820","parentUprn":"0","formattedAddress":"10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"10 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531258,"longitude":-3.0631545,"easting":326350,"northing":181908},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645821","parentUprn":"0","formattedAddress":"11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"11 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53052,"longitude":-3.0628922,"easting":326367,"northing":181826},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645822","parentUprn":"0","formattedAddress":"12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"12 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531193,"longitude":-3.0631962,"easting":326347,"northing":181901},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645823","parentUprn":"0","formattedAddress":"13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"13 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53056,"longitude":-3.0629795,"easting":326361,"northing":181830},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645824","parentUprn":"0","formattedAddress":"14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"14 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531086,"longitude":-3.06328,"easting":326341,"northing":181889},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645825","parentUprn":"0","formattedAddress":"15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"15 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53062,"longitude":-3.0630963,"easting":326353,"northing":181837},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645826","parentUprn":"0","formattedAddress":"16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"16 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.531033,"longitude":-3.0633366,"easting":326337,"northing":181883},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645827","parentUprn":"0","formattedAddress":"17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"17 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530403,"longitude":-3.0630481,"easting":326356,"northing":181813},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645828","parentUprn":"0","formattedAddress":"18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"18 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53096,"longitude":-3.0633926,"easting":326333,"northing":181875},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645829","parentUprn":"0","formattedAddress":"19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"19 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53035,"longitude":-3.0631332,"easting":326350,"northing":181807},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645830","parentUprn":"0","formattedAddress":"20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"20 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530903,"longitude":-3.06342,"easting":326331,"northing":181869},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645831","parentUprn":"0","formattedAddress":"21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"21 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530384,"longitude":-3.0632205,"easting":326344,"northing":181811},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645832","parentUprn":"0","formattedAddress":"23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"23 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53043,"longitude":-3.063308,"easting":326338,"northing":181816},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645833","parentUprn":"0","formattedAddress":"25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"25 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53023,"longitude":-3.0632892,"easting":326339,"northing":181794},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645834","parentUprn":"0","formattedAddress":"27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"27 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530178,"longitude":-3.06336,"easting":326334,"northing":181788},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645835","parentUprn":"0","formattedAddress":"29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"29 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530212,"longitude":-3.0634615,"easting":326327,"northing":181792},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645836","parentUprn":"0","formattedAddress":"31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"31 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530273,"longitude":-3.063564,"easting":326320,"northing":181799},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645837","parentUprn":"0","formattedAddress":"33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"33 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53006,"longitude":-3.0635302,"easting":326322,"northing":181775},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645838","parentUprn":"0","formattedAddress":"35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"35 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530003,"longitude":-3.063601,"easting":326317,"northing":181769},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645839","parentUprn":"0","formattedAddress":"37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"37 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530037,"longitude":-3.0636883,"easting":326311,"northing":181773},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645840","parentUprn":"0","formattedAddress":"39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"39 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53009,"longitude":-3.063776,"easting":326305,"northing":181779},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001907897","parentUprn":"0","formattedAddress":"Arnold House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Arnold House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Arnolds House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Arnolds House, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Arnolds House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530655,"longitude":-3.064135,"easting":326281,"northing":181842},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001850170","parentUprn":"0","formattedAddress":"Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Beechfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530777,"longitude":-3.0635037,"easting":326325,"northing":181855},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001907898","parentUprn":"0","formattedAddress":"Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Clevedon House, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53059,"longitude":-3.064278,"easting":326271,"northing":181835},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001850171","parentUprn":"0","formattedAddress":"Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Elmfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53073,"longitude":-3.0635602,"easting":326321,"northing":181850},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645882","parentUprn":"0","formattedAddress":"Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Fairfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530685,"longitude":-3.0635881,"easting":326319,"northing":181845},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645883","parentUprn":"0","formattedAddress":"Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Glenfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.53065,"longitude":-3.063645,"easting":326315,"northing":181841},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100898800","parentUprn":"0","formattedAddress":"Oakfield House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Oakfield House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Oakfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Oakfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Oakfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530613,"longitude":-3.0636873,"easting":326312,"northing":181837},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001864327","parentUprn":"0","formattedAddress":"Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Rosefield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530468,"longitude":-3.0638425,"easting":326301,"northing":181821},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"200001864326","parentUprn":"0","formattedAddress":"Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Sandfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530514,"longitude":-3.0637858,"easting":326305,"northing":181826},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9},{"uprn":"100100645884","parentUprn":"0","formattedAddress":"Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNag":"Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressPaf":"Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"Wellfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW","source":"P","lang":"E"},"geo":{"latitude":51.530586,"longitude":-3.06373,"easting":326309,"northing":181834},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":45,"underlyingScore":9}],"filter":"","fallback":false,"historical":false,"epoch":"","limit":-1,"offset":0,"total":40,"maxScore":0,"verbose":false,"highlight":"on","favourpaf":true,"favourwelsh":false,"includeauxiliarysearch":false,"eboost":1,"nboost":1,"sboost":1,"wboost":1},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "response" : {
+    "input" : "cf32tw",
+    "addresses" : [ {
+      "uprn" : "100100645811",
+      "parentUprn" : "0",
+      "formattedAddress" : "1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "1 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "1 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530823,
+        "longitude" : -3.0627117,
+        "easting" : 326380,
+        "northing" : 181859
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645812",
+      "parentUprn" : "0",
+      "formattedAddress" : "2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "2 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "2 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.5316,
+        "longitude" : -3.0630758,
+        "easting" : 326356,
+        "northing" : 181946
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645813",
+      "parentUprn" : "0",
+      "formattedAddress" : "3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "3 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "3 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530766,
+        "longitude" : -3.062797,
+        "easting" : 326374,
+        "northing" : 181853
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645814",
+      "parentUprn" : "0",
+      "formattedAddress" : "4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "4 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "4 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531536,
+        "longitude" : -3.0630455,
+        "easting" : 326358,
+        "northing" : 181939
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645815",
+      "parentUprn" : "0",
+      "formattedAddress" : "5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "5 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "5 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.5308,
+        "longitude" : -3.0628843,
+        "easting" : 326368,
+        "northing" : 181857
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645816",
+      "parentUprn" : "0",
+      "formattedAddress" : "6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "6 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "6 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531384,
+        "longitude" : -3.0630565,
+        "easting" : 326357,
+        "northing" : 181922
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645817",
+      "parentUprn" : "0",
+      "formattedAddress" : "7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "7 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "7 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530846,
+        "longitude" : -3.0629718,
+        "easting" : 326362,
+        "northing" : 181862
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645818",
+      "parentUprn" : "0",
+      "formattedAddress" : "8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "8 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "8 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53133,
+        "longitude" : -3.063113,
+        "easting" : 326353,
+        "northing" : 181916
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645819",
+      "parentUprn" : "0",
+      "formattedAddress" : "9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "9 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "9 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53058,
+        "longitude" : -3.0628214,
+        "easting" : 326372,
+        "northing" : 181832
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645820",
+      "parentUprn" : "0",
+      "formattedAddress" : "10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "10 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "10 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531258,
+        "longitude" : -3.0631545,
+        "easting" : 326350,
+        "northing" : 181908
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645821",
+      "parentUprn" : "0",
+      "formattedAddress" : "11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "11 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "11 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53052,
+        "longitude" : -3.0628922,
+        "easting" : 326367,
+        "northing" : 181826
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645822",
+      "parentUprn" : "0",
+      "formattedAddress" : "12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "12 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "12 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531193,
+        "longitude" : -3.0631962,
+        "easting" : 326347,
+        "northing" : 181901
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645823",
+      "parentUprn" : "0",
+      "formattedAddress" : "13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "13 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "13 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53056,
+        "longitude" : -3.0629795,
+        "easting" : 326361,
+        "northing" : 181830
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645824",
+      "parentUprn" : "0",
+      "formattedAddress" : "14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "14 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "14 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531086,
+        "longitude" : -3.06328,
+        "easting" : 326341,
+        "northing" : 181889
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645825",
+      "parentUprn" : "0",
+      "formattedAddress" : "15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "15 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "15 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53062,
+        "longitude" : -3.0630963,
+        "easting" : 326353,
+        "northing" : 181837
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645826",
+      "parentUprn" : "0",
+      "formattedAddress" : "16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "16 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "16 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.531033,
+        "longitude" : -3.0633366,
+        "easting" : 326337,
+        "northing" : 181883
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645827",
+      "parentUprn" : "0",
+      "formattedAddress" : "17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "17 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "17 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530403,
+        "longitude" : -3.0630481,
+        "easting" : 326356,
+        "northing" : 181813
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645828",
+      "parentUprn" : "0",
+      "formattedAddress" : "18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "18 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "18 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53096,
+        "longitude" : -3.0633926,
+        "easting" : 326333,
+        "northing" : 181875
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645829",
+      "parentUprn" : "0",
+      "formattedAddress" : "19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "19 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "19 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53035,
+        "longitude" : -3.0631332,
+        "easting" : 326350,
+        "northing" : 181807
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645830",
+      "parentUprn" : "0",
+      "formattedAddress" : "20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "20 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "20 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530903,
+        "longitude" : -3.06342,
+        "easting" : 326331,
+        "northing" : 181869
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645831",
+      "parentUprn" : "0",
+      "formattedAddress" : "21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "21 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "21 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530384,
+        "longitude" : -3.0632205,
+        "easting" : 326344,
+        "northing" : 181811
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645832",
+      "parentUprn" : "0",
+      "formattedAddress" : "23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "23 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "23 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53043,
+        "longitude" : -3.063308,
+        "easting" : 326338,
+        "northing" : 181816
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645833",
+      "parentUprn" : "0",
+      "formattedAddress" : "25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "25 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "25 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53023,
+        "longitude" : -3.0632892,
+        "easting" : 326339,
+        "northing" : 181794
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645834",
+      "parentUprn" : "0",
+      "formattedAddress" : "27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "27 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "27 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530178,
+        "longitude" : -3.06336,
+        "easting" : 326334,
+        "northing" : 181788
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645835",
+      "parentUprn" : "0",
+      "formattedAddress" : "29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "29 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "29 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530212,
+        "longitude" : -3.0634615,
+        "easting" : 326327,
+        "northing" : 181792
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645836",
+      "parentUprn" : "0",
+      "formattedAddress" : "31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "31 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "31 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530273,
+        "longitude" : -3.063564,
+        "easting" : 326320,
+        "northing" : 181799
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645837",
+      "parentUprn" : "0",
+      "formattedAddress" : "33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "33 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "33 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53006,
+        "longitude" : -3.0635302,
+        "easting" : 326322,
+        "northing" : 181775
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645838",
+      "parentUprn" : "0",
+      "formattedAddress" : "35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "35 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "35 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530003,
+        "longitude" : -3.063601,
+        "easting" : 326317,
+        "northing" : 181769
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645839",
+      "parentUprn" : "0",
+      "formattedAddress" : "37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "37 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "37 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530037,
+        "longitude" : -3.0636883,
+        "easting" : 326311,
+        "northing" : 181773
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645840",
+      "parentUprn" : "0",
+      "formattedAddress" : "39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "39 Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "39 Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53009,
+        "longitude" : -3.063776,
+        "easting" : 326305,
+        "northing" : 181779
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001907897",
+      "parentUprn" : "0",
+      "formattedAddress" : "Arnold House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Arnold House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Arnolds House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Arnolds House, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Arnolds House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530655,
+        "longitude" : -3.064135,
+        "easting" : 326281,
+        "northing" : 181842
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001850170",
+      "parentUprn" : "0",
+      "formattedAddress" : "Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Beechfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Beechfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530777,
+        "longitude" : -3.0635037,
+        "easting" : 326325,
+        "northing" : 181855
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001907898",
+      "parentUprn" : "0",
+      "formattedAddress" : "Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Clevedon House, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Clevedon House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53059,
+        "longitude" : -3.064278,
+        "easting" : 326271,
+        "northing" : 181835
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001850171",
+      "parentUprn" : "0",
+      "formattedAddress" : "Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Elmfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Elmfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53073,
+        "longitude" : -3.0635602,
+        "easting" : 326321,
+        "northing" : 181850
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645882",
+      "parentUprn" : "0",
+      "formattedAddress" : "Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Fairfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Fairfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530685,
+        "longitude" : -3.0635881,
+        "easting" : 326319,
+        "northing" : 181845
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645883",
+      "parentUprn" : "0",
+      "formattedAddress" : "Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Glenfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Glenfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.53065,
+        "longitude" : -3.063645,
+        "easting" : 326315,
+        "northing" : 181841
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100898800",
+      "parentUprn" : "0",
+      "formattedAddress" : "Oakfield House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Oakfield House, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Oakfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Oakfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Oakfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530613,
+        "longitude" : -3.0636873,
+        "easting" : 326312,
+        "northing" : 181837
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001864327",
+      "parentUprn" : "0",
+      "formattedAddress" : "Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Rosefield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Rosefield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530468,
+        "longitude" : -3.0638425,
+        "easting" : 326301,
+        "northing" : 181821
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "200001864326",
+      "parentUprn" : "0",
+      "formattedAddress" : "Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Sandfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Sandfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530514,
+        "longitude" : -3.0637858,
+        "easting" : 326305,
+        "northing" : 181826
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    }, {
+      "uprn" : "100100645884",
+      "parentUprn" : "0",
+      "formattedAddress" : "Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNag" : "Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressPaf" : "Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "Wellfield, Pentwyn Terrace, Marshfield, Caerdydd, CF3 2TW",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Wellfield, Pentwyn Terrace, Marshfield, Cardiff, CF3 2TW",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.530586,
+        "longitude" : -3.06373,
+        "easting" : 326309,
+        "northing" : 181834
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 45,
+      "underlyingScore" : 9
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "historical" : false,
+    "epoch" : "",
+    "limit" : -1,
+    "offset" : 0,
+    "total" : 40,
+    "maxScore" : 0,
+    "verbose" : false,
+    "highlight" : "on",
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "includeauxiliarysearch" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

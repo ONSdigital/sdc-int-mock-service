@@ -1,1 +1,107 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","termsAndConditions":"https://census.gov.uk/terms-and-conditions","response":{"input":"8 fair c","addresses":[{"uprn":"100070184408","bestMatchAddress":"8 Fair Close, Frankton, Rugby, CV23 9PL","bestMatchAddressType":"PAF"},{"uprn":"100090992284","bestMatchAddress":"8 Fair Close, Feltwell, Thetford, IP26 4AU","bestMatchAddressType":"PAF"},{"uprn":"100091151629","bestMatchAddress":"8 Fair Close, Beccles, NR34 9QR","bestMatchAddressType":"PAF"},{"uprn":"100120778391","bestMatchAddress":"8 Fair Close, Bicester, OX26 4YW","bestMatchAddressType":"PAF"},{"uprn":"10094911824","bestMatchAddress":"8 Fair Close, Mitchell, Newquay, TR8 5FX","bestMatchAddressType":"PAF"},{"uprn":"10013018895","bestMatchAddress":"8 Fair Close, Bushey, WD23 1FR","bestMatchAddressType":"PAF"},{"uprn":"9051097563","bestMatchAddress":"8 Fairview Crescent, Danestone, Aberdeen, AB22 8TL","bestMatchAddressType":"PAF"},{"uprn":"9051096101","bestMatchAddress":"8 Fairview Circle, Danestone, Aberdeen, AB22 8ZQ","bestMatchAddressType":"PAF"},{"uprn":"151075130","bestMatchAddress":"8 Fairwinds Place, Coplandhill, Peterhead, AB42 1GP","bestMatchAddressType":"NAG"},{"uprn":"200003854885","bestMatchAddress":"8 Fairfield Close, Hatfield, AL10 0TR","bestMatchAddressType":"PAF"},{"uprn":"100080848930","bestMatchAddress":"8 Fairway Close, Park Street, St. Albans, AL2 2QX","bestMatchAddressType":"PAF"},{"uprn":"200003632457","bestMatchAddress":"Flat 8, Fairshot Court, Woodcock Hill, Sandridge, St. Albans, AL4 9ED","bestMatchAddressType":"PAF"},{"uprn":"100080831747","bestMatchAddress":"8 Fairway Close, Harpenden, AL5 2NN","bestMatchAddressType":"PAF"},{"uprn":"100070958124","bestMatchAddress":"8 Faircroft Road, Castle Bromwich, Solihull, B36 9UE","bestMatchAddressType":"NAG"},{"uprn":"100070361800","bestMatchAddress":"8 Fairlie Crescent, Birmingham, B38 8DY","bestMatchAddressType":"PAF"},{"uprn":"32162999","bestMatchAddress":"Flat 8, Fairyfield Court, Newton Road, Great Barr, Birmingham, B43 6AJ","bestMatchAddressType":"PAF"},{"uprn":"10090741535","bestMatchAddress":"8 Fairey Street, Cofton Hackett, Birmingham, B45 8GW","bestMatchAddressType":"PAF"},{"uprn":"100070203865","bestMatchAddress":"8 Fairwater Crescent, Alcester, B49 6QX","bestMatchAddressType":"PAF"},{"uprn":"394010308","bestMatchAddress":"8 Fairview Close, Tamworth, B77 3LA","bestMatchAddressType":"PAF"},{"uprn":"100070987817","bestMatchAddress":"8 Fairford Close, Solihull, B91 1JF","bestMatchAddressType":"PAF"}],"filter":"","fallback":false,"epoch":"","limit":20,"offset":0,"total":10000,"maxScore":0,"favourpaf":true,"favourwelsh":false,"eboost":1,"nboost":1,"sboost":1,"wboost":1},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "input" : "8 fair c",
+    "addresses" : [ {
+      "uprn" : "100070184408",
+      "bestMatchAddress" : "8 Fair Close, Frankton, Rugby, CV23 9PL",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100090992284",
+      "bestMatchAddress" : "8 Fair Close, Feltwell, Thetford, IP26 4AU",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100091151629",
+      "bestMatchAddress" : "8 Fair Close, Beccles, NR34 9QR",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100120778391",
+      "bestMatchAddress" : "8 Fair Close, Bicester, OX26 4YW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10094911824",
+      "bestMatchAddress" : "8 Fair Close, Mitchell, Newquay, TR8 5FX",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10013018895",
+      "bestMatchAddress" : "8 Fair Close, Bushey, WD23 1FR",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051097563",
+      "bestMatchAddress" : "8 Fairview Crescent, Danestone, Aberdeen, AB22 8TL",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096101",
+      "bestMatchAddress" : "8 Fairview Circle, Danestone, Aberdeen, AB22 8ZQ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "151075130",
+      "bestMatchAddress" : "8 Fairwinds Place, Coplandhill, Peterhead, AB42 1GP",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "200003854885",
+      "bestMatchAddress" : "8 Fairfield Close, Hatfield, AL10 0TR",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100080848930",
+      "bestMatchAddress" : "8 Fairway Close, Park Street, St. Albans, AL2 2QX",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "200003632457",
+      "bestMatchAddress" : "Flat 8, Fairshot Court, Woodcock Hill, Sandridge, St. Albans, AL4 9ED",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100080831747",
+      "bestMatchAddress" : "8 Fairway Close, Harpenden, AL5 2NN",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100070958124",
+      "bestMatchAddress" : "8 Faircroft Road, Castle Bromwich, Solihull, B36 9UE",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "100070361800",
+      "bestMatchAddress" : "8 Fairlie Crescent, Birmingham, B38 8DY",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "32162999",
+      "bestMatchAddress" : "Flat 8, Fairyfield Court, Newton Road, Great Barr, Birmingham, B43 6AJ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10090741535",
+      "bestMatchAddress" : "8 Fairey Street, Cofton Hackett, Birmingham, B45 8GW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100070203865",
+      "bestMatchAddress" : "8 Fairwater Crescent, Alcester, B49 6QX",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "394010308",
+      "bestMatchAddress" : "8 Fairview Close, Tamworth, B77 3LA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100070987817",
+      "bestMatchAddress" : "8 Fairford Close, Solihull, B91 1JF",
+      "bestMatchAddressType" : "PAF"
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "epoch" : "",
+    "limit" : 20,
+    "offset" : 0,
+    "total" : 10000,
+    "maxScore" : 0,
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

@@ -75,6 +75,7 @@ public final class ResponseBuilder {
           postcodes.getResponse().setOffset(offset);
           postcodes.getResponse().setLimit(limit);
         case AI_EQ:
+        case AI_EQ_POSTCODE:
         case AI_RH_UPRN:
         case CASE_UPRN:
         case CASE_ID:

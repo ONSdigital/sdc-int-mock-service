@@ -1,1 +1,107 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","termsAndConditions":"https://census.gov.uk/terms-and-conditions","response":{"input":"8 fair","addresses":[{"uprn":"9051127678","bestMatchAddress":"8 Fairfield Way, Aberdeen, AB11 7SQ","bestMatchAddressType":"PAF"},{"uprn":"9051007095","bestMatchAddress":"8 Fairies Knowe, Bucksburn, Aberdeen, AB21 9XS","bestMatchAddressType":"PAF"},{"uprn":"9051096433","bestMatchAddress":"8 Fairview Grange, Danestone, Aberdeen, AB22 8AZ","bestMatchAddressType":"PAF"},{"uprn":"9051097563","bestMatchAddress":"8 Fairview Crescent, Danestone, Aberdeen, AB22 8TL","bestMatchAddressType":"PAF"},{"uprn":"9051095906","bestMatchAddress":"8 Fairview Avenue, Danestone, Aberdeen, AB22 8ZA","bestMatchAddressType":"PAF"},{"uprn":"9051095939","bestMatchAddress":"8 Fairview Gardens, Danestone, Aberdeen, AB22 8ZD","bestMatchAddressType":"PAF"},{"uprn":"9051096319","bestMatchAddress":"8 Fairview Grove, Danestone, Aberdeen, AB22 8ZE","bestMatchAddressType":"PAF"},{"uprn":"9051095958","bestMatchAddress":"8 Fairview Park, Danestone, Aberdeen, AB22 8ZF","bestMatchAddressType":"PAF"},{"uprn":"9051096011","bestMatchAddress":"8 Fairview Road, Danestone, Aberdeen, AB22 8ZG","bestMatchAddressType":"PAF"},{"uprn":"9051096023","bestMatchAddress":"8 Fairview Terrace, Danestone, Aberdeen, AB22 8ZH","bestMatchAddressType":"PAF"},{"uprn":"9051096034","bestMatchAddress":"8 Fairview Place, Danestone, Aberdeen, AB22 8ZJ","bestMatchAddressType":"PAF"},{"uprn":"9051096101","bestMatchAddress":"8 Fairview Circle, Danestone, Aberdeen, AB22 8ZQ","bestMatchAddressType":"PAF"},{"uprn":"9051097005","bestMatchAddress":"8 Fairview Walk, Danestone, Aberdeen, AB22 8ZR","bestMatchAddressType":"PAF"},{"uprn":"9051097034","bestMatchAddress":"8 Fairview Wynd, Danestone, Aberdeen, AB22 8ZS","bestMatchAddressType":"PAF"},{"uprn":"9051097070","bestMatchAddress":"8 Fairview Drive, Danestone, Aberdeen, AB22 8ZU","bestMatchAddressType":"PAF"},{"uprn":"9051096152","bestMatchAddress":"8 Fairview Way, Danestone, Aberdeen, AB22 8ZW","bestMatchAddressType":"PAF"},{"uprn":"9051096187","bestMatchAddress":"8 Fairview Parade, Danestone, Aberdeen, AB22 8ZX","bestMatchAddressType":"PAF"},{"uprn":"9051038453","bestMatchAddress":"8 Fairview Manor, Danestone, Aberdeen, AB22 8ZY","bestMatchAddressType":"PAF"},{"uprn":"151600140","bestMatchAddress":"8 Fairways, Inchmarlo, Banchory, AB31 4GA","bestMatchAddressType":"PAF"},{"uprn":"151075130","bestMatchAddress":"8 Fairwinds Place, Peterhead, AB42 1GP","bestMatchAddressType":"PAF"}],"filter":"","fallback":false,"epoch":"","limit":20,"offset":0,"total":10000,"maxScore":0,"favourpaf":true,"favourwelsh":false,"eboost":1,"nboost":1,"sboost":1,"wboost":1},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "input" : "8 fair",
+    "addresses" : [ {
+      "uprn" : "9051127678",
+      "bestMatchAddress" : "8 Fairfield Way, Aberdeen, AB11 7SQ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051007095",
+      "bestMatchAddress" : "8 Fairies Knowe, Bucksburn, Aberdeen, AB21 9XS",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096433",
+      "bestMatchAddress" : "8 Fairview Grange, Danestone, Aberdeen, AB22 8AZ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051097563",
+      "bestMatchAddress" : "8 Fairview Crescent, Danestone, Aberdeen, AB22 8TL",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051095906",
+      "bestMatchAddress" : "8 Fairview Avenue, Danestone, Aberdeen, AB22 8ZA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051095939",
+      "bestMatchAddress" : "8 Fairview Gardens, Danestone, Aberdeen, AB22 8ZD",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096319",
+      "bestMatchAddress" : "8 Fairview Grove, Danestone, Aberdeen, AB22 8ZE",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051095958",
+      "bestMatchAddress" : "8 Fairview Park, Danestone, Aberdeen, AB22 8ZF",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096011",
+      "bestMatchAddress" : "8 Fairview Road, Danestone, Aberdeen, AB22 8ZG",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096023",
+      "bestMatchAddress" : "8 Fairview Terrace, Danestone, Aberdeen, AB22 8ZH",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096034",
+      "bestMatchAddress" : "8 Fairview Place, Danestone, Aberdeen, AB22 8ZJ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096101",
+      "bestMatchAddress" : "8 Fairview Circle, Danestone, Aberdeen, AB22 8ZQ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051097005",
+      "bestMatchAddress" : "8 Fairview Walk, Danestone, Aberdeen, AB22 8ZR",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051097034",
+      "bestMatchAddress" : "8 Fairview Wynd, Danestone, Aberdeen, AB22 8ZS",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051097070",
+      "bestMatchAddress" : "8 Fairview Drive, Danestone, Aberdeen, AB22 8ZU",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096152",
+      "bestMatchAddress" : "8 Fairview Way, Danestone, Aberdeen, AB22 8ZW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051096187",
+      "bestMatchAddress" : "8 Fairview Parade, Danestone, Aberdeen, AB22 8ZX",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "9051038453",
+      "bestMatchAddress" : "8 Fairview Manor, Danestone, Aberdeen, AB22 8ZY",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "151600140",
+      "bestMatchAddress" : "8 Fairways, Inchmarlo, Banchory, AB31 4GA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "151075130",
+      "bestMatchAddress" : "8 Fairwinds Place, Peterhead, AB42 1GP",
+      "bestMatchAddressType" : "PAF"
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "epoch" : "",
+    "limit" : 20,
+    "offset" : 0,
+    "total" : 10000,
+    "maxScore" : 0,
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

@@ -1,1 +1,450 @@
-{"apiVersion":"1.0.0-SNAPSHOT","dataVersion":"84","response":{"input":"63 west grove road","addresses":[{"uprn":"100040240007","parentUprn":"0","formattedAddress":"63 West Grove Road, Exeter, EX2 4LU","formattedAddressNag":"63 West Grove Road, Exeter, EX2 4LU","formattedAddressPaf":"63 West Grove Road, Exeter, EX2 4LU","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"63 West Grove Road, Exeter, EX2 4LU","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"63 West Grove Road, Exeter, EX2 4LU","source":"P","lang":"E"},"geo":{"latitude":50.718597,"longitude":-3.520695,"easting":292746,"northing":92101},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":55,"underlyingScore":11},{"uprn":"100061633073","parentUprn":"0","formattedAddress":"63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ","formattedAddressNag":"63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ","formattedAddressPaf":"63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ","source":"P","lang":"E"},"geo":{"latitude":51.335876,"longitude":-0.4762583,"easting":506242,"northing":160745},"classificationCode":"RD06","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":40,"underlyingScore":8},{"uprn":"100050839896","parentUprn":"0","formattedAddress":"63 Grove Road, West Melton, Rotherham, S63 6PQ","formattedAddressNag":"63 Grove Road, West Melton, Rotherham, S63 6PQ","formattedAddressPaf":"63 Grove Road, Wath-upon-dearne, Rotherham, S63 6PQ","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"63 Grove Road, Wath-upon-dearne, Rotherham, S63 6PQ","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"63 Grove Road, West Melton, Rotherham, S63 6PQ","source":"L","lang":"E"},"geo":{"latitude":53.50781,"longitude":-1.3666579,"easting":442102,"northing":401420},"classificationCode":"RD03","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":40,"underlyingScore":8},{"uprn":"100050434257","parentUprn":"0","formattedAddress":"Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY","formattedAddressNag":"Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY","formattedAddressPaf":"63 Westfield Road, Tockwith, York, YO26 7PY","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"63 Westfield Road, Tockwith, York, YO26 7PY","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY","source":"L","lang":"E"},"geo":{"latitude":53.965748,"longitude":-1.2929261,"easting":446485,"northing":452414},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":40,"underlyingScore":8},{"uprn":"10025168108","parentUprn":"0","formattedAddress":"Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD","formattedAddressNag":"Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD","source":"L","lang":"E"},"geo":{"latitude":51.305305,"longitude":-0.5574781,"easting":500651,"northing":157230},"classificationCode":"CL06QS","census":{"addressType":"NA","estabType":"NA","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":30,"underlyingScore":6},{"uprn":"10025319288","parentUprn":"0","formattedAddress":"Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL","formattedAddressNag":"Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL","source":"L","lang":"E"},"geo":{"latitude":52.490814,"longitude":-0.9523978,"easting":471226,"northing":288613},"classificationCode":"LW02IW","census":{"addressType":"NA","estabType":"NA","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":25,"underlyingScore":5},{"uprn":"10092971856","parentUprn":"0","formattedAddress":"2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressNag":"2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressPaf":"2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","source":"P","lang":"E"},"geo":{"latitude":51.309406,"longitude":0.4063073,"easting":567812,"northing":159448},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":20,"underlyingScore":4},{"uprn":"10092971855","parentUprn":"0","formattedAddress":"4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressNag":"4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressPaf":"4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG","source":"P","lang":"E"},"geo":{"latitude":51.30926,"longitude":0.4062097,"easting":567806,"northing":159431},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":20,"underlyingScore":4},{"uprn":"10025498225","parentUprn":"0","formattedAddress":"Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS","formattedAddressNag":"Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS","source":"L","lang":"E"},"geo":{"latitude":52.86089,"longitude":0.8235116,"easting":590176,"northing":332998},"classificationCode":"LW02IW","census":{"addressType":"NA","estabType":"NA","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":20,"underlyingScore":4},{"uprn":"10015773010","parentUprn":"0","formattedAddress":"Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX","formattedAddressNag":"Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX","source":"L","lang":"E"},"geo":{"latitude":53.81424,"longitude":-1.823772,"easting":411701,"northing":435341},"classificationCode":"OI07","census":{"addressType":"NA","estabType":"NA","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":15,"underlyingScore":3},{"uprn":"10024853045","parentUprn":"0","formattedAddress":"Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU","formattedAddressNag":"Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU","source":"L","lang":"E"},"geo":{"latitude":51.762383,"longitude":-2.3048933,"easting":379054,"northing":207121},"classificationCode":"LW02IW","census":{"addressType":"NA","estabType":"NA","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":15,"underlyingScore":3},{"uprn":"100061339732","parentUprn":"0","formattedAddress":"18 Grovelands, West Molesey, KT8 2ED","formattedAddressNag":"18 Grovelands, West Molesey, KT8 2ED","formattedAddressPaf":"18 Grovelands, West Molesey, KT8 2ED","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"18 Grovelands, West Molesey, KT8 2ED","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"18 Grovelands, West Molesey, KT8 2ED","source":"P","lang":"E"},"geo":{"latitude":51.401596,"longitude":-0.3739872,"easting":513204,"northing":168206},"classificationCode":"RD04","census":{"addressType":"HH","estabType":"Household","countryCode":"E"},"lpiLogicalStatus":"1","confidenceScore":15,"underlyingScore":3},{"uprn":"10093295252","parentUprn":"0","formattedAddress":"1 Hoelion Grove, Rogerstone, Newport, NP10 9PF","formattedAddressNag":"1 Hoelion Grove, Rogerstone, Newport, NP10 9PF","formattedAddressPaf":"1 Hoelion Grove, Rogerstone, Newport, NP10 9PF","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"1 Llwyn Hoelion, Rogerstone, Newport, NP10 9PF","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"1 Hoelion Grove, Rogerstone, Newport, NP10 9PF","source":"P","lang":"E"},"geo":{"latitude":51.58282,"longitude":-3.0552864,"easting":326978,"northing":187634},"classificationCode":"RD02","census":{"addressType":"HH","estabType":"Household","countryCode":"W"},"lpiLogicalStatus":"1","confidenceScore":15,"underlyingScore":3},{"uprn":"10025434171","parentUprn":"0","formattedAddress":"Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN","formattedAddressNag":"Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN","formattedAddressPaf":"","formattedAddressNisra":"","welshFormattedAddressNag":"","welshFormattedAddressPaf":"","formattedAddressAuxiliary":"","highlights":{"bestMatchAddress":"Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN","source":"L","lang":"E"},"geo":{"latitude":56.762314,"longitude":-4.36443,"easting":255561,"northing":765909},"classificationCode":"LW02IW","census":{"addressType":"NA","estabType":"NA","countryCode":"S"},"lpiLogicalStatus":"1","confidenceScore":15,"underlyingScore":3}],"filter":"","fallback":false,"historical":false,"epoch":"","limit":-1,"offset":0,"total":14,"maxScore":0,"verbose":false,"highlight":"on","favourpaf":true,"favourwelsh":false,"includeauxiliarysearch":false,"eboost":1,"nboost":1,"sboost":1,"wboost":1},"status":{"code":200,"message":"Ok"},"errors":[]}
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "response" : {
+    "input" : "63 west grove road",
+    "addresses" : [ {
+      "uprn" : "100040240007",
+      "parentUprn" : "0",
+      "formattedAddress" : "63 West Grove Road, Exeter, EX2 4LU",
+      "formattedAddressNag" : "63 West Grove Road, Exeter, EX2 4LU",
+      "formattedAddressPaf" : "63 West Grove Road, Exeter, EX2 4LU",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "63 West Grove Road, Exeter, EX2 4LU",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "63 West Grove Road, Exeter, EX2 4LU",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 50.718597,
+        "longitude" : -3.520695,
+        "easting" : 292746,
+        "northing" : 92101
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 55,
+      "underlyingScore" : 11
+    }, {
+      "uprn" : "100061633073",
+      "parentUprn" : "0",
+      "formattedAddress" : "63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ",
+      "formattedAddressNag" : "63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ",
+      "formattedAddressPaf" : "63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "63 Eden Grove Road, Byfleet, West Byfleet, KT14 7PJ",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.335876,
+        "longitude" : -0.4762583,
+        "easting" : 506242,
+        "northing" : 160745
+      },
+      "classificationCode" : "RD06",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 40,
+      "underlyingScore" : 8
+    }, {
+      "uprn" : "100050839896",
+      "parentUprn" : "0",
+      "formattedAddress" : "63 Grove Road, West Melton, Rotherham, S63 6PQ",
+      "formattedAddressNag" : "63 Grove Road, West Melton, Rotherham, S63 6PQ",
+      "formattedAddressPaf" : "63 Grove Road, Wath-upon-dearne, Rotherham, S63 6PQ",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "63 Grove Road, Wath-upon-dearne, Rotherham, S63 6PQ",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "63 Grove Road, West Melton, Rotherham, S63 6PQ",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 53.50781,
+        "longitude" : -1.3666579,
+        "easting" : 442102,
+        "northing" : 401420
+      },
+      "classificationCode" : "RD03",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 40,
+      "underlyingScore" : 8
+    }, {
+      "uprn" : "100050434257",
+      "parentUprn" : "0",
+      "formattedAddress" : "Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY",
+      "formattedAddressNag" : "Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY",
+      "formattedAddressPaf" : "63 Westfield Road, Tockwith, York, YO26 7PY",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "63 Westfield Road, Tockwith, York, YO26 7PY",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Wood Grove, 63 Westfield Road, Tockwith, YO26 7PY",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 53.965748,
+        "longitude" : -1.2929261,
+        "easting" : 446485,
+        "northing" : 452414
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 40,
+      "underlyingScore" : 8
+    }, {
+      "uprn" : "10025168108",
+      "parentUprn" : "0",
+      "formattedAddress" : "Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD",
+      "formattedAddressNag" : "Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Tennis 44M From Penlan, Kingfield Green 63M From Unnamed Road, Townpath From Westfield Grove To Kingfield Road, Westfield, Woking, GU22 9BD",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.305305,
+        "longitude" : -0.5574781,
+        "easting" : 500651,
+        "northing" : 157230
+      },
+      "classificationCode" : "CL06QS",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 30,
+      "underlyingScore" : 6
+    }, {
+      "uprn" : "10025319288",
+      "parentUprn" : "0",
+      "formattedAddress" : "Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL",
+      "formattedAddressNag" : "Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Centre Of Pond 634M From 2 Owen Way 108M From Unnamed Road, West Grove, Market Harborough, LE16 7UL",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 52.490814,
+        "longitude" : -0.9523978,
+        "easting" : 471226,
+        "northing" : 288613
+      },
+      "classificationCode" : "LW02IW",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 25,
+      "underlyingScore" : 5
+    }, {
+      "uprn" : "10092971856",
+      "parentUprn" : "0",
+      "formattedAddress" : "2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressNag" : "2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressPaf" : "2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "2 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.309406,
+        "longitude" : 0.4063073,
+        "easting" : 567812,
+        "northing" : 159448
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 20,
+      "underlyingScore" : 4
+    }, {
+      "uprn" : "10092971855",
+      "parentUprn" : "0",
+      "formattedAddress" : "4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressNag" : "4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressPaf" : "4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "4 Hawthorn Grove, Leybourne, West Malling, ME19 5SG",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.30926,
+        "longitude" : 0.4062097,
+        "easting" : 567806,
+        "northing" : 159431
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 20,
+      "underlyingScore" : 4
+    }, {
+      "uprn" : "10025498225",
+      "parentUprn" : "0",
+      "formattedAddress" : "Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS",
+      "formattedAddressNag" : "Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Centre Of Pond 630M From 3 Meadow Cottages, Grove Road 88M From B1105, Wells Road, West Barsham, NR21 9NS",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 52.86089,
+        "longitude" : 0.8235116,
+        "easting" : 590176,
+        "northing" : 332998
+      },
+      "classificationCode" : "LW02IW",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 20,
+      "underlyingScore" : 4
+    }, {
+      "uprn" : "10015773010",
+      "parentUprn" : "0",
+      "formattedAddress" : "Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX",
+      "formattedAddressNag" : "Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Tank 63M From Yorkshire Water Plc, Chellow Heights W T W, Haworth Road 33M From Unnamed Ro, Heather Grove, Bradford, BD9 6NX",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 53.81424,
+        "longitude" : -1.823772,
+        "easting" : 411701,
+        "northing" : 435341
+      },
+      "classificationCode" : "OI07",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 15,
+      "underlyingScore" : 3
+    }, {
+      "uprn" : "10024853045",
+      "parentUprn" : "0",
+      "formattedAddress" : "Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU",
+      "formattedAddressNag" : "Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Centre Of Pond 63M From 1 The Green 6M From Unnamed Road, Grove Lane To Orchard Place Westend, Nupend, Stonehouse, GL10 3SU",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.762383,
+        "longitude" : -2.3048933,
+        "easting" : 379054,
+        "northing" : 207121
+      },
+      "classificationCode" : "LW02IW",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 15,
+      "underlyingScore" : 3
+    }, {
+      "uprn" : "100061339732",
+      "parentUprn" : "0",
+      "formattedAddress" : "18 Grovelands, West Molesey, KT8 2ED",
+      "formattedAddressNag" : "18 Grovelands, West Molesey, KT8 2ED",
+      "formattedAddressPaf" : "18 Grovelands, West Molesey, KT8 2ED",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "18 Grovelands, West Molesey, KT8 2ED",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "18 Grovelands, West Molesey, KT8 2ED",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.401596,
+        "longitude" : -0.3739872,
+        "easting" : 513204,
+        "northing" : 168206
+      },
+      "classificationCode" : "RD04",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "E"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 15,
+      "underlyingScore" : 3
+    }, {
+      "uprn" : "10093295252",
+      "parentUprn" : "0",
+      "formattedAddress" : "1 Hoelion Grove, Rogerstone, Newport, NP10 9PF",
+      "formattedAddressNag" : "1 Hoelion Grove, Rogerstone, Newport, NP10 9PF",
+      "formattedAddressPaf" : "1 Hoelion Grove, Rogerstone, Newport, NP10 9PF",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "1 Llwyn Hoelion, Rogerstone, Newport, NP10 9PF",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "1 Hoelion Grove, Rogerstone, Newport, NP10 9PF",
+        "source" : "P",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 51.58282,
+        "longitude" : -3.0552864,
+        "easting" : 326978,
+        "northing" : 187634
+      },
+      "classificationCode" : "RD02",
+      "census" : {
+        "addressType" : "HH",
+        "estabType" : "Household",
+        "countryCode" : "W"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 15,
+      "underlyingScore" : 3
+    }, {
+      "uprn" : "10025434171",
+      "parentUprn" : "0",
+      "formattedAddress" : "Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN",
+      "formattedAddressNag" : "Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN",
+      "formattedAddressPaf" : "",
+      "formattedAddressNisra" : "",
+      "welshFormattedAddressNag" : "",
+      "welshFormattedAddressPaf" : "",
+      "formattedAddressAuxiliary" : "",
+      "highlights" : {
+        "bestMatchAddress" : "Pond 6325M From Corrievarkie Lodge 1695M From Unnamed Road, B846 From the Access Road To Birch Grove To the West Access Road Junction To Lairn Farm, Killichonan, PH17 2QN",
+        "source" : "L",
+        "lang" : "E"
+      },
+      "geo" : {
+        "latitude" : 56.762314,
+        "longitude" : -4.36443,
+        "easting" : 255561,
+        "northing" : 765909
+      },
+      "classificationCode" : "LW02IW",
+      "census" : {
+        "addressType" : "NA",
+        "estabType" : "NA",
+        "countryCode" : "S"
+      },
+      "lpiLogicalStatus" : "1",
+      "confidenceScore" : 15,
+      "underlyingScore" : 3
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "historical" : false,
+    "epoch" : "",
+    "limit" : -1,
+    "offset" : 0,
+    "total" : 14,
+    "maxScore" : 0,
+    "verbose" : false,
+    "highlight" : "on",
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "includeauxiliarysearch" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}
