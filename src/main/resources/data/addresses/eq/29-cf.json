@@ -1,0 +1,107 @@
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "input" : "29 cf",
+    "addresses" : [ {
+      "uprn" : "10023546834",
+      "bestMatchAddress" : "Crabtree & Evelyn, 29 The Hayes, Cardiff, CF10 1GA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100890023",
+      "bestMatchAddress" : "Pizza Express, 29 High Street, Cardiff, CF10 1PU",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10002515522",
+      "bestMatchAddress" : "29 Lower Cathedral Road, Riverside, Cardiff, CF11 6LU",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "10023547176",
+      "bestMatchAddress" : "29A Ferry Road, Cardiff, CF11 7DW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10008904077",
+      "bestMatchAddress" : "29B-29C Severn Road, Cardiff, CF11 9DZ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10003567487",
+      "bestMatchAddress" : "Woodside Court Offices, 29 Woodside Court, Llanishen, Cardiff, CF14 0RY",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "10002525233",
+      "bestMatchAddress" : "29A Kimberley Terrace, Llanishen, Cardiff, CF14 5EA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10023545954",
+      "bestMatchAddress" : "29 Ragnall Close, Thornhill, Cardiff, CF14 9FR",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100894776",
+      "bestMatchAddress" : "29A Drysgol Road, Radyr, Cardiff, CF15 8BT",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "200002933231",
+      "bestMatchAddress" : "29B Drysgol Road, Radyr, Cardiff, CF15 8BT",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "10023544767",
+      "bestMatchAddress" : "29 Ffordd Nowell, Penylan, Cardiff, CF23 9FA",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "100100067406",
+      "bestMatchAddress" : "29A Augusta Street, Cardiff, CF24 0EP",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10023544574",
+      "bestMatchAddress" : "29 Clifton Street, Cardiff, CF24 1LQ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10013747234",
+      "bestMatchAddress" : "29A Richards Terrace, Cardiff, CF24 1RW",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10013747235",
+      "bestMatchAddress" : "Provisional Flat 2, 29 Richards Terrace, Roath, Cardiff, CF24 1RW",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "100100056917",
+      "bestMatchAddress" : "29 Bedford Street, Cardiff, CF24 3BZ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10002516662",
+      "bestMatchAddress" : "First And Second Floor Flat, 29B Bangor Street, Roath, Cardiff, CF24 3LQ",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "100100056847",
+      "bestMatchAddress" : "Ground Floor, 29A Bangor Street, Roath, Cardiff, CF24 3LQ",
+      "bestMatchAddressType" : "NAG"
+    }, {
+      "uprn" : "100101043762",
+      "bestMatchAddress" : "Tesco, 29-31 Wellfield Road, Cardiff, CF24 3NZ",
+      "bestMatchAddressType" : "PAF"
+    }, {
+      "uprn" : "10023550964",
+      "bestMatchAddress" : "29A Salisbury Road, Cardiff, CF24 4AA",
+      "bestMatchAddressType" : "PAF"
+    } ],
+    "filter" : "",
+    "fallback" : false,
+    "epoch" : "",
+    "limit" : 20,
+    "offset" : 0,
+    "total" : 7060,
+    "maxScore" : 0,
+    "favourpaf" : true,
+    "favourwelsh" : false,
+    "eboost" : 1,
+    "nboost" : 1,
+    "sboost" : 1,
+    "wboost" : 1
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

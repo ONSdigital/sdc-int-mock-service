@@ -1,0 +1,22 @@
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "partpostcode" : null,
+    "postcodes" : null,
+    "filter" : "",
+    "historical" : false,
+    "epoch" : "",
+    "limit" : 100,
+    "offset" : 0,
+    "total" : 64,
+    "maxScore" : 0,
+    "verbose" : false
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}

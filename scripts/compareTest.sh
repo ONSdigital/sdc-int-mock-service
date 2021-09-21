@@ -5,19 +5,19 @@
 #
 # It invokes the real and mock Address Index for a number of queries.
 # The script then does a diff between the real vs. mocked results.
-# 
-# NOTE: This script requires an AI token to run. This must be set in 
+#
+# NOTE: This script requires an AI token to run. This must be set in
 # the 'AI_TOKEN' environment variable.
 # By default the script points at a WL based AI service.
-# 
+#
 # The mock-service must be running locally.
 #
 
 MOCK_AI="http://localhost:8162"
-WL_AI="https://whitelodge-eq-ai-api.census-gcp.onsdigital.uk"
+EXTERNAL_AI="https://initial-test-bulk-1.aims.gcp.onsdigital.uk"
 
 # The AI_TOKEN needs to be set.
-AI_TOKEN=""
+[[ -z "$AI_TOKEN" ]] && AI_TOKEN=""
 
 # Run the comparison of the real vs. mock-service responses
 function compare {
@@ -26,26 +26,29 @@ function compare {
   [ -z "$AI_TOKEN" ] && echo "Error: AI_TOKEN must be set" && exit 1;
 
   # Get the response status codes from genuine and mock AI
-  curl -s -H "Authorization: $AI_TOKEN" -I $WL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/wl-ai.status.txt
+  curl -s -H "Authorization: Bearer $AI_TOKEN" -I $EXTERNAL_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/external-ai.status.txt
   curl -s -I $MOCK_AI/$ENDPOINT | grep HTTP | grep -Eo "[0-9]{3}" > /tmp/mock-service.status.txt
 
   # Compare real & mock AI status codes
-  diff "/tmp/wl-ai.status.txt" "/tmp/mock-service.status.txt" > /dev/null
+  diff "/tmp/external-ai.status.txt" "/tmp/mock-service.status.txt" > /dev/null
   if [ $? -ne 0 ]
   then
     echo "*FAIL STATUS*: $ENDPOINT"
     echo -n "  Genuine: "
-    cat /tmp/wl-ai.status.txt
+    cat /tmp/external-ai.status.txt
     echo -n "  Mock   : "
     cat /tmp/mock-service.status.txt
   fi
 
   # Get responses from genuine and mock AI
-  curl -s -H "Authorization: Bearer $AI_TOKEN" $WL_AI/$ENDPOINT | jq . > /tmp/wl-ai.json
+  curl -s -H "Authorization: Bearer $AI_TOKEN" $EXTERNAL_AI/$ENDPOINT | jq . > /tmp/external-ai.json
   curl -s $MOCK_AI/$ENDPOINT | jq . > /tmp/mock-service.json
 
   # Compare real & mock AI results
-  diff "/tmp/wl-ai.json" "/tmp/mock-service.json" > /dev/null
+  jq . /tmp/external-ai.json > /tmp/external-ai-pretty.json
+  jq . /tmp/mock-service.json > /tmp/mock-service-pretty.json
+
+  diff "/tmp/external-ai-pretty.json" "/tmp/mock-service-pretty.json" > /dev/null
   if [ $? -eq 0 ]
   then
     echo "Pass: $ENDPOINT"
@@ -56,30 +59,30 @@ function compare {
 
 
 # RH POSTCODE
-compare "addresses/rh/postcode/CF32TW"
-compare "addresses/rh/postcode/CF32TW?offset=1"
-compare "addresses/rh/postcode/CF32TW?limit=3"
-compare "addresses/rh/postcode/CF32TW?offset=101&limit=8"
+compare "addresses/rh/postcode/cf32tw"
+compare "addresses/rh/postcode/cf32tw?offset=1"
+compare "addresses/rh/postcode/cf32tw?limit=3"
+compare "addresses/rh/postcode/cf32tw?offset=101&limit=8"
 
 # PARTIAL
-compare "addresses/partial?input=Treganna"
-compare "addresses/partial?input=Treganna&limit=18"
+compare "addresses/partial?input=treganna"
+compare "addresses/partial?input=treganna&limit=18"
 
 # POSTCODE
-compare "addresses/postcode/EX24LU"
-compare "addresses/postcode/EX24LU?offset=6"
-compare "addresses/postcode/EX24LU?limit=1"
-compare "addresses/postcode/EX24LU?offset=2&limit=90"
+compare "addresses/postcode/ex24lu"
+compare "addresses/postcode/ex24lu?offset=6"
+compare "addresses/postcode/ex24lu?limit=1"
+compare "addresses/postcode/ex24lu?offset=2&limit=90"
 
 # UPRN
 compare "addresses/rh/uprn/10013745617"
 compare "addresses/rh/uprn/100040239948"
 
 # TYPE AHEAD"
-compare "addresses/eq?input=Holbeche"
-compare "addresses/eq?input=Holbe"
-compare "addresses/eq?input=EX2"
-compare "addresses/eq?input=8%20Fair%20CF51AD"
+compare "addresses/eq?input=holbeche"
+compare "addresses/eq?input=holbe"
+compare "addresses/eq?input=ex2"
+compare "addresses/eq?input=8%20fair%20cf51ad"
 
 # Check responses for data with no results in real or mock AI
 compare "addresses/rh/postcode/SO996AB"

@@ -1,0 +1,722 @@
+{
+  "apiVersion" : "1.0.0-SNAPSHOT",
+  "dataVersion" : "84",
+  "termsAndConditions" : "https://census.gov.uk/terms-and-conditions",
+  "response" : {
+    "partpostcode" : "ex24",
+    "postcodes" : [ {
+      "postcode" : "EX24 6AA",
+      "streetName" : "Market Place",
+      "townName" : "Colyton",
+      "addressCount" : 3,
+      "firstUprn" : 10000251927,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AB",
+      "streetName" : "Dolphin Street",
+      "townName" : "Colyton",
+      "addressCount" : 6,
+      "firstUprn" : 10000247591,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AB",
+      "streetName" : "Road To Telesis Eagle",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10023097227,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AD",
+      "streetName" : "Footpath From Seaway Head To Old Sidmouth Road",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10090911080,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6AD",
+      "streetName" : "Old Sidmouth Road",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10000249964,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6AD",
+      "streetName" : "Seaway Head",
+      "townName" : "Colyton",
+      "addressCount" : 21,
+      "firstUprn" : 10024073336,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AE",
+      "streetName" : "Cuthouse Meadow",
+      "townName" : "Colyton",
+      "addressCount" : 13,
+      "firstUprn" : 10090912861,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AE",
+      "streetName" : "Hillhead",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10024073214,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AF",
+      "streetName" : "Fair View Lane",
+      "townName" : "Colyford",
+      "addressCount" : 8,
+      "firstUprn" : 10000276755,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AG",
+      "streetName" : "Coly Road",
+      "townName" : "Colyton",
+      "addressCount" : 2,
+      "firstUprn" : 10024074737,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AH",
+      "streetName" : "Coly Road",
+      "townName" : "Colyton",
+      "addressCount" : 2,
+      "firstUprn" : 10023004986,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AH",
+      "streetName" : "Saxon Meadow",
+      "townName" : "Colyton",
+      "addressCount" : 13,
+      "firstUprn" : 10093128387,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6AJ",
+      "streetName" : "Lower Church Street",
+      "townName" : "Colyton",
+      "addressCount" : 3,
+      "firstUprn" : 10094722196,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BH",
+      "streetName" : "Road From Northleigh Cross To Farwood Cross",
+      "townName" : "Northleigh",
+      "addressCount" : 11,
+      "firstUprn" : 10000275494,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BH",
+      "streetName" : "Road From The Ridings To Foothills",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10000275493,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BJ",
+      "streetName" : "Road From Collins Farm To The Ridings",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10015856636,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BJ",
+      "streetName" : "Road From The Ridings To Foothills",
+      "townName" : "Northleigh",
+      "addressCount" : 5,
+      "firstUprn" : 10000275505,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Northleigh Footpath 10",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100232,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Northleigh Footpath 9",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100241,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road From Bucknole Cross To Suddons Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10000275496,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road From Northleigh Cross To Farwood Cross",
+      "townName" : "Northleigh",
+      "addressCount" : 3,
+      "firstUprn" : 10023096481,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road From Suddons Cross To Northleigh Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 4,
+      "firstUprn" : 10000275495,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road From Suddons Farm To Foothills",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000275498,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road Past Farwood House",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10023097234,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Road Past Old School House",
+      "townName" : "Northleigh",
+      "addressCount" : 8,
+      "firstUprn" : 10000247890,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BL",
+      "streetName" : "Suddons Lane",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023095884,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BN",
+      "streetName" : "Road From Bucknole Cross To Suddons Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000275500,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BN",
+      "streetName" : "Road Past Old School House",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10000275521,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BP",
+      "streetName" : "Lane From Bucknole Cross To Netherton Hall",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10015391803,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BP",
+      "streetName" : "Lane To Merrifield",
+      "townName" : "Northleigh",
+      "addressCount" : 3,
+      "firstUprn" : 10000245273,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BP",
+      "streetName" : "Road From Bucknole Cross To Suddons Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 6,
+      "firstUprn" : 10000275406,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BR",
+      "streetName" : "Northleigh Footpath 1",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10024755859,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BR",
+      "streetName" : "Road From Bucknole Farm To Collins Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 6,
+      "firstUprn" : 10000275526,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Access To Clodes Cottage",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000275543,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Colyton Footpath 41",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10023099890,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Lane Past The Old Rectory",
+      "townName" : "Northleigh",
+      "addressCount" : 3,
+      "firstUprn" : 10000270632,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Lane To Glebe House",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000244143,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Lane To Swallows",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023098640,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Lane To The Old Coach House",
+      "townName" : "Northleigh",
+      "addressCount" : 4,
+      "firstUprn" : 10000275542,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Northleigh Footpath 12",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100234,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Northleigh Footpath 13",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100235,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Northleigh Footpath 1",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10023100231,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Road From Northleigh Cross To Combe Lane",
+      "townName" : "Northleigh",
+      "addressCount" : 17,
+      "firstUprn" : 10000251936,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BS",
+      "streetName" : "Road From Northleigh Cross To Farwood Cross",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023101007,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BT",
+      "streetName" : "Northleigh Road",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023096644,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BT",
+      "streetName" : "Road From Northleigh Road To Shaves House",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023099457,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BT",
+      "streetName" : "Road Past Tricombe Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000275820,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Lane To Bethlehem Farm",
+      "townName" : "Offwell",
+      "addressCount" : 2,
+      "firstUprn" : 10023004788,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Lane To Smallicombe Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 5,
+      "firstUprn" : 10000275824,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Northleigh Footpath 17",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10015784144,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Northleigh Footpath 19",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100237,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Road From Northleigh Cross To Slade Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 8,
+      "firstUprn" : 10000275825,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Road Past Blamphayne Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000248011,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BU",
+      "streetName" : "Road Past Stockers Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10094722209,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BW",
+      "streetName" : "Hillside",
+      "townName" : "Northleigh",
+      "addressCount" : 8,
+      "firstUprn" : 10000275506,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BW",
+      "streetName" : "Northleigh Footpath 6",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10025007533,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BW",
+      "streetName" : "Northleigh Footpath 7",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10090910953,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BW",
+      "streetName" : "Road From Bucknole Cross To Suddons Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 4,
+      "firstUprn" : 10000250623,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BW",
+      "streetName" : "Road From Netherton Hall To Chilcombe Cross",
+      "townName" : "Farway",
+      "addressCount" : 1,
+      "firstUprn" : 10023095578,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BX",
+      "streetName" : "Road From Gate Cross To Home Bush Cross",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10090913340,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BX",
+      "streetName" : "Road From New Road Cross To Yardley Hill Road",
+      "townName" : "Wilmington",
+      "addressCount" : 1,
+      "firstUprn" : 10024752386,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BX",
+      "streetName" : "Road Past Blamphayne Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10025007542,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6BX",
+      "streetName" : "Road Past Stockers Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 10,
+      "firstUprn" : 10000275917,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BY",
+      "streetName" : "Road Past Blamphayne Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 14,
+      "firstUprn" : 10000244089,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BZ",
+      "streetName" : "Road From Gate Cross To Home Bush Cross",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10023004374,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6BZ",
+      "streetName" : "Road Past Stockers Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000249847,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Lane Past Buckhouse Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 7,
+      "firstUprn" : 10000248524,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Northleigh Road",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10025007541,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Road From Rockerhayne Cross To Lawdeshayne Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 3,
+      "firstUprn" : 10000275913,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Road Past Stockers Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10023097231,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Road Past Tricombe Farm",
+      "townName" : "Northleigh",
+      "addressCount" : 4,
+      "firstUprn" : 10000275822,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DA",
+      "streetName" : "Road To Rockerhayne Cross",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10000275914,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Colyton Footpath 1",
+      "townName" : "Colyton",
+      "addressCount" : 4,
+      "firstUprn" : 10023099866,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Colyton Road",
+      "townName" : "Colyton",
+      "addressCount" : 6,
+      "firstUprn" : 10000249346,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Lane From Gate Cross To Lexhayne Mill",
+      "townName" : "Colyton",
+      "addressCount" : 2,
+      "firstUprn" : 10023103079,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Lions Close Hill",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10023096479,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Road From Gate Cross To Willhayne Lane",
+      "townName" : "Colyton",
+      "addressCount" : 2,
+      "firstUprn" : 10023097979,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DD",
+      "streetName" : "Shute Footpath 22",
+      "townName" : "Shute",
+      "addressCount" : 1,
+      "firstUprn" : 10025017914,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DE",
+      "streetName" : "Backwells Mead",
+      "townName" : "Northleigh",
+      "addressCount" : 8,
+      "firstUprn" : 10023095568,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DE",
+      "streetName" : "Northleigh Footpath 11",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100233,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DE",
+      "streetName" : "Northleigh Footpath 5",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10023100239,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DE",
+      "streetName" : "Road From Collins Farm To The Ridings",
+      "townName" : "Northleigh",
+      "addressCount" : 2,
+      "firstUprn" : 10023096686,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DF",
+      "streetName" : "Road From Netherton Hall To Farway Cross",
+      "townName" : "Farway",
+      "addressCount" : 3,
+      "firstUprn" : 10000275384,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DF",
+      "streetName" : "Road Heading Southwest From Farway Cross",
+      "townName" : "Farway",
+      "addressCount" : 5,
+      "firstUprn" : 10000275371,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DF",
+      "streetName" : "Road Past Common Moor Farm",
+      "townName" : "Farway",
+      "addressCount" : 1,
+      "firstUprn" : 10023097180,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DG",
+      "streetName" : "Road From Budlake Cross To Annings",
+      "townName" : "Farway",
+      "addressCount" : 7,
+      "firstUprn" : 10000275372,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Access To Goldacre Farm",
+      "townName" : "Farway",
+      "addressCount" : 1,
+      "firstUprn" : 10023099078,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Colyton Footpath 6",
+      "townName" : "Colyton",
+      "addressCount" : 1,
+      "firstUprn" : 10090910962,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Farway Footpath 3",
+      "townName" : "Farway",
+      "addressCount" : 1,
+      "firstUprn" : 10090910960,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Lane To Farway Countryside Park",
+      "townName" : "Farway",
+      "addressCount" : 2,
+      "firstUprn" : 10024752374,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Lane To Holnest Farm",
+      "townName" : "Farway",
+      "addressCount" : 5,
+      "firstUprn" : 10000275365,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Lane To Perryhill Farm",
+      "townName" : "Farway",
+      "addressCount" : 3,
+      "firstUprn" : 10000275389,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Lane To Widecombe Barton",
+      "townName" : "Farway",
+      "addressCount" : 5,
+      "firstUprn" : 10000275364,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Northleigh Footpath 8",
+      "townName" : "Northleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10090910959,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Road From Suddons Cross To Telemead",
+      "townName" : "Farway",
+      "addressCount" : 11,
+      "firstUprn" : 10000275368,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Road From Woodbridge Farm To Hornshayne Farm",
+      "townName" : "Farway",
+      "addressCount" : 15,
+      "firstUprn" : 10000247217,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Road Past Common Moor Farm",
+      "townName" : "Farway",
+      "addressCount" : 1,
+      "firstUprn" : 10090911364,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DH",
+      "streetName" : "Road Past Farway Countryside Park",
+      "townName" : "Southleigh",
+      "addressCount" : 1,
+      "firstUprn" : 10024073279,
+      "postTown" : "N"
+    }, {
+      "postcode" : "EX24 6DJ",
+      "streetName" : "Lane To Blackley Down Farm",
+      "townName" : "Farway",
+      "addressCount" : 2,
+      "firstUprn" : 10000275486,
+      "postTown" : "Colyton"
+    }, {
+      "postcode" : "EX24 6DL",
+      "streetName" : "Farway Bridleway 2",
+      "townName" : "Farway",
+      "addressCount" : 3,
+      "firstUprn" : 10023099995,
+      "postTown" : "Colyton"
+    } ],
+    "filter" : "",
+    "historical" : false,
+    "epoch" : "",
+    "limit" : 100,
+    "offset" : 0,
+    "total" : 568,
+    "maxScore" : 1,
+    "verbose" : false
+  },
+  "status" : {
+    "code" : 200,
+    "message" : "Ok"
+  },
+  "errors" : [ ]
+}
