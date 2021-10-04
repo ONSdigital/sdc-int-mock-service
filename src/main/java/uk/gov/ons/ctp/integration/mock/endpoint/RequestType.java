@@ -1,8 +1,7 @@
 package uk.gov.ons.ctp.integration.mock.endpoint;
 
-import org.springframework.http.HttpStatus;
-
 import lombok.Getter;
+import org.springframework.http.HttpStatus;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;

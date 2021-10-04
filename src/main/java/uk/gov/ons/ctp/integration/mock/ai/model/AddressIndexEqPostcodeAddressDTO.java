@@ -8,12 +8,12 @@ public class AddressIndexEqPostcodeAddressDTO {
   private String postcode;
 
   private String streetName;
-  
+
   private String townName;
-  
+
   private int addressCount;
-  
+
   private long firstUprn;
-  
+
   private String postTown;
 }

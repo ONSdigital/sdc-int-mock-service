@@ -146,7 +146,8 @@ public class AddressIndexClient {
     // Decide if search is for a postcode, as AI will then have different limit and structure
     boolean isPostcodeBasedSearch = input.matches("[A-Za-z]{1,2}[0-9].*");
     int limit = isPostcodeBasedSearch ? 100 : 20;
-    RequestType requestType = isPostcodeBasedSearch ? RequestType.AI_EQ_POSTCODE : RequestType.AI_EQ;
+    RequestType requestType =
+        isPostcodeBasedSearch ? RequestType.AI_EQ_POSTCODE : RequestType.AI_EQ;
 
     Object response = invokeAI(requestType, queryParams, 0, limit, (String) null);
 

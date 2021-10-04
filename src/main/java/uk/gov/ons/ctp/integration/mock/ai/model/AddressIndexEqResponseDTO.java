@@ -9,9 +9,9 @@ public class AddressIndexEqResponseDTO {
   private String input;
 
   private List<AddressIndexEqAddressDTO> addresses;
-  
+
   private String filter;
-  
+
   private boolean fallback;
 
   private String epoch;
