@@ -13,7 +13,7 @@ public class AddressIndexEqResultsDTO {
   private String termsAndConditions;
 
   private AddressIndexEqResponseDTO response;
-  
+
   private AddressIndexStatusDTO status;
 
   private ArrayList<String> errors;

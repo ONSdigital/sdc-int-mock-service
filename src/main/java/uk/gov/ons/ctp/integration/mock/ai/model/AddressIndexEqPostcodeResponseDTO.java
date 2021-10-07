@@ -9,9 +9,9 @@ public class AddressIndexEqPostcodeResponseDTO {
   private String partpostcode;
 
   private List<AddressIndexEqPostcodeAddressDTO> postcodes;
-  
+
   private String filter;
-  
+
   private boolean historical;
 
   private String epoch;
