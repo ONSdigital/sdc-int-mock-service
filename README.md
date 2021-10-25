@@ -1,4 +1,3 @@
-
 # Mock Service
 
 A service for use in development and as part of the acceptance environment to mock out the following services:
