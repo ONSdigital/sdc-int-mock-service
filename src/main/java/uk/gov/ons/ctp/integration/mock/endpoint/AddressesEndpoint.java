@@ -35,7 +35,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     log.info("Request {}/{}", requestType.getPath(), v("postcode", postcode));
 
     return ResponseBuilder.respond(
-        requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
+        requestType, null, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
   @RequestMapping(value = "/partial", method = RequestMethod.GET)
@@ -48,7 +48,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     log.info("Request {}", requestType.getPath() + "?input=" + input);
 
     return ResponseBuilder.respond(
-        requestType, input, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
+        requestType, null, input, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
   @RequestMapping(value = "/postcode/{postcode}", method = RequestMethod.GET)
@@ -62,7 +62,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     log.info("Request {}/{}", requestType.getPath(), v("postcode", postcode));
 
     return ResponseBuilder.respond(
-        requestType, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
+        requestType, null, postcode, requestParamsDTO.getOffset(), requestParamsDTO.getLimit());
   }
 
   @RequestMapping(value = "/rh/uprn/{uprn}", method = RequestMethod.GET)
@@ -73,7 +73,7 @@ public final class AddressesEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.AI_RH_UPRN;
     log.info("Request {}/{}", requestType.getPath(), v("uprn", uprn));
 
-    return ResponseBuilder.respond(requestType, uprn, 0, 1);
+    return ResponseBuilder.respond(requestType, null, uprn, 0, 1);
   }
 
   @RequestMapping(value = "/eq", method = RequestMethod.GET)
@@ -87,6 +87,6 @@ public final class AddressesEndpoint implements CTPEndpoint {
 
     log.info("Request {}", requestType.getUrl() + "?input=" + input);
 
-    return ResponseBuilder.respond(requestType, input, 0, 10);
+    return ResponseBuilder.respond(requestType, null, input, 0, 10);
   }
 }

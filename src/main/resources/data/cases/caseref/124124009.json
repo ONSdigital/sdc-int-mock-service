@@ -1,45 +1,18 @@
 {
-  "caseRef":"124124009",
-  "arid":"2344266233",
-  "estabArid":"AABBCC",
-  "estabType":"ET",
-  "estabUprn":"334111111111",
-  "uprn":"10013745617",
-  "createdDateTime":"2019-04-15T13:45:26.564+01:00",
-  "addressLine1":"Proposed Bungalow Rear Of 85",
-  "addressLine2":"Ely Road",
-  "addressLine3":"Llandaff",
-  "townName":"Cardiff",
-  "postcode":"CF5 1AD",
-  "organisationName":"ON",
-  "addressLevel":"E",
-  "abpCode":"AACC",
-  "latitude":"51.48628",
-  "longitude":"-3.2264986",
-  "oa":"EE22",
-  "lsoa":"x1",
-  "msoa":"x2",
-  "lad":"H1",
-  "secureEstablishment":true,
-  "caseEvents":[
-    {
-      "id":"201",
-      "eventType":"CASE_CREATED",
-      "description":"Initial creation of case",
-      "createdDateTime":"2019-04-15T13:45:26.564+01:00"
-    },
-    {
-      "id":"202",
-      "eventType":"CASE_UPDATED",
-      "description":"Create Household Visit",
-      "createdDateTime":"2019-04-15T13:45:26.564+01:00"
-    }
-  ],
-  "id":"3305e937-6fb1-4ce1-9d4c-077f147789ab",
-  "caseType":"HH",
-  "addressType":"HH",
-  "region":"W",
-  "collectionExerciseId":"49871667-117d-4a63-9101-f6a0660f73f6",
-  "surveyType":"CENSUS",
-  "handDelivery":false
+	"id": "3305e937-6fb1-4ce1-9d4c-077f147789ab",
+	"caseRef": "124124009",
+	"createdDateTime": "2022-01-03T13:45:26.564+01:00",
+	"lastUpdatedAt": "2022-01-03T13:45:26.564+01:00",
+	"sample": {
+		"addressLine1": "Proposed Bungalow Rear Of 85",
+		"addressLine2": "Ely Road",
+		"addressLine3": "Llandaff",
+		"townName": "Cardiff",
+		"postcode": "CF5 1AD",
+		"uprn": "10013745617",
+		"region": "W"
+	},
+	"caseEvents": [],
+	"invalid": false,
+	"refusalReceived": ""
 }

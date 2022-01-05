@@ -4,11 +4,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import uk.gov.ons.ctp.common.error.CTPException;
+import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.RmCaseDTO;
 import uk.gov.ons.ctp.integration.mock.Constants;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;
@@ -24,7 +26,11 @@ public final class ResponseBuilder {
 
   @SuppressWarnings("unchecked")
   public static ResponseEntity<Object> respond(
-      RequestType requestType, String name, int offset, int limit)
+      RequestType requestType,
+      Map<String, Object> requestParams,
+      String name,
+      int offset,
+      int limit)
       throws IOException, CTPException {
 
     HttpStatus responseStatus = HttpStatus.OK;
@@ -74,13 +80,18 @@ public final class ResponseBuilder {
           postcodes.getResponse().setAddresses(postcodeAddresses);
           postcodes.getResponse().setOffset(offset);
           postcodes.getResponse().setLimit(limit);
+          break;
+        case CASE_ID:
+        case CASE_REF:
+          boolean includeCaseEvents = (Boolean) requestParams.get("caseEvents");
+          if (!includeCaseEvents) {
+            RmCaseDTO rmCaseDTO = (RmCaseDTO) response;
+            rmCaseDTO.setCaseEvents(new ArrayList<>());
+          }
         case AI_EQ:
         case AI_EQ_POSTCODE:
         case AI_RH_UPRN:
-        case CASE_UPRN:
-        case CASE_ID:
         case CASE_QID:
-        case CASE_REF:
           // Nothing to do these types
           break;
         default:

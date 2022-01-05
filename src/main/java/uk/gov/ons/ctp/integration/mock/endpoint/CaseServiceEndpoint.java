@@ -4,6 +4,8 @@ import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.kv;
 import static uk.gov.ons.ctp.common.log.ScopedStructuredArguments.v;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import uk.gov.ons.ctp.common.domain.UniquePropertyReferenceNumber;
 import uk.gov.ons.ctp.common.endpoint.CTPEndpoint;
 import uk.gov.ons.ctp.common.error.CTPException;
 import uk.gov.ons.ctp.integration.mock.FailureSimulator;
@@ -38,7 +39,9 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
     RequestType requestType = RequestType.CASE_ID;
     log.info("Request {}/{}", requestType.getPath(), v("caseId", caseId));
     FailureSimulator.optionallyTriggerFailure(caseId.toString(), 400, 401, 404, 500);
-    return ResponseBuilder.respond(requestType, caseId.toString(), 0, 1);
+    Map<String, Object> requestParams = new HashMap<>();
+    requestParams.put("caseEvents", includeCaseEvents);
+    return ResponseBuilder.respond(requestType, requestParams, caseId.toString(), 0, 1);
   }
 
   /**
@@ -61,24 +64,7 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
 
     FailureSimulator.optionallyTriggerFailure(caseId, 400, 401, 404, 500);
     RequestType requestType = RequestType.CASE_QID;
-    return ResponseBuilder.respond(requestType, caseId.toString(), 0, 1);
-  }
-
-  /**
-   * the GET endpoint to find a Case by UPRN
-   *
-   * @param uprn to find by
-   * @return the case found
-   */
-  @RequestMapping(value = "/uprn/{uprn}", method = RequestMethod.GET)
-  public ResponseEntity<?> findCaseByUPRN(
-      @PathVariable(value = "uprn") final UniquePropertyReferenceNumber uprn)
-      throws IOException, CTPException {
-    RequestType requestType = RequestType.CASE_UPRN;
-    log.info("Request {}/{}", requestType.getPath(), v("uprn", uprn));
-    String uprnStr = Long.toString(uprn.getValue());
-    FailureSimulator.optionallyTriggerFailure(uprnStr, 400, 401, 404, 500);
-    return ResponseBuilder.respond(requestType, uprnStr, 0, 1);
+    return ResponseBuilder.respond(requestType, null, caseId.toString(), 0, 1);
   }
 
   /**
@@ -97,6 +83,8 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
     log.info("Request {}/{}", requestType.getPath(), v("ref", ref));
     String caseRef = Long.toString(ref);
     FailureSimulator.optionallyTriggerFailure(caseRef, 400, 401, 404, 500);
-    return ResponseBuilder.respond(requestType, caseRef, 0, 1);
+    Map<String, Object> requestParams = new HashMap<>();
+    requestParams.put("caseEvents", includeCaseEvents);
+    return ResponseBuilder.respond(requestType, requestParams, caseRef, 0, 1);
   }
 }
