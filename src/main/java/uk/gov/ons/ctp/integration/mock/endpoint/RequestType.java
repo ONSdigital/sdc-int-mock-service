@@ -78,7 +78,7 @@ public enum RequestType {
       String.class,
       "caseEvents"),
   CASE_QID(
-      "/cases/{caseId}/qid",
+      "/cases/{caseId}/telephone-capture",
       "/cases/questionnaires",
       "Search for questionnaires for cases.",
       HttpStatus.NOT_FOUND,

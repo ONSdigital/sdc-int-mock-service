@@ -47,17 +47,10 @@ public final class CaseServiceEndpoint implements CTPEndpoint {
    * @param caseId to find by
    * @return the new questionnaire id
    */
-  @RequestMapping(value = "/{caseId}/qid", method = RequestMethod.GET)
-  public ResponseEntity<?> newQuestionnaireIdForCase(
-      @PathVariable("caseId") String caseId,
-      @RequestParam(required = false) final boolean individual,
-      @RequestParam(required = false) final UUID individualCaseId)
+  @RequestMapping(value = "/{caseId}/telephone-capture", method = RequestMethod.GET)
+  public ResponseEntity<?> newQuestionnaireIdForCase(@PathVariable("caseId") String caseId)
       throws IOException, CTPException {
-    log.info(
-        "Entering newQuestionnaireIdForCase {}",
-        kv("case_id", caseId),
-        kv("individual", individual),
-        kv("individualCaseId", individualCaseId));
+    log.info("Entering newQuestionnaireIdForCase {}", kv("case_id", caseId));
 
     FailureSimulator.optionallyTriggerFailure(caseId, 400, 401, 404, 500);
     RequestType requestType = RequestType.CASE_QID;
