@@ -2,13 +2,13 @@ package uk.gov.ons.ctp.integration.mock.endpoint;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
-import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.RmCaseDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexEqResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexUprnResultDTO;
+import uk.gov.ons.ctp.integration.mock.caseapi.model.CaseContainerDTO;
 
 @Getter
 public enum RequestType {
@@ -69,7 +69,7 @@ public enum RequestType {
       "Search for caseRef for cases.",
       HttpStatus.NOT_FOUND,
       null,
-      RmCaseDTO.class,
+      CaseContainerDTO.class,
       "caseEvents"),
   CASE_QID(
       "/cases/{caseId}/qid",
@@ -86,7 +86,7 @@ public enum RequestType {
       "Search for questionnaires for cases.",
       HttpStatus.NOT_FOUND,
       null,
-      RmCaseDTO.class,
+      CaseContainerDTO.class,
       "caseEvents");
 
   private String url;

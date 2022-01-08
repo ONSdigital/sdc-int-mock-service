@@ -1,6 +1,5 @@
 package uk.gov.ons.ctp.integration.mock.endpoint;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +9,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import uk.gov.ons.ctp.common.error.CTPException;
-import uk.gov.ons.ctp.integration.caseapiclient.caseservice.model.RmCaseDTO;
 import uk.gov.ons.ctp.integration.mock.Constants;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;
@@ -18,7 +16,9 @@ import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeResultsDTO;
+import uk.gov.ons.ctp.integration.mock.caseapi.model.CaseContainerDTO;
 import uk.gov.ons.ctp.integration.mock.data.DataRepository;
+import uk.gov.ons.ctp.integration.mock.util.ObjectMapperFactory;
 
 /** Build response from JSON data and respond as though the original service had responded. */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -44,7 +44,9 @@ public final class ResponseBuilder {
         response = responseText;
       } else {
         response =
-            new ObjectMapper().readerFor(requestType.getResponseClass()).readValue(responseText);
+            ObjectMapperFactory.objectMapper()
+                .readerFor(requestType.getResponseClass())
+                .readValue(responseText);
       }
 
       switch (requestType) {
@@ -85,7 +87,7 @@ public final class ResponseBuilder {
         case CASE_REF:
           boolean includeCaseEvents = (Boolean) requestParams.get("caseEvents");
           if (!includeCaseEvents) {
-            RmCaseDTO rmCaseDTO = (RmCaseDTO) response;
+            CaseContainerDTO rmCaseDTO = (CaseContainerDTO) response;
             rmCaseDTO.setCaseEvents(new ArrayList<>());
           }
         case AI_EQ:

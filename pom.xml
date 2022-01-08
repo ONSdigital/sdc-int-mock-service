@@ -12,7 +12,7 @@
     <groupId>ons.sdc.int.common</groupId>
     <artifactId>common</artifactId>
     <!-- change this to the version of ALL common libs to be used by this build -->
-    <version>1.0.73</version>
+    <version>1.0.74</version>
   </parent>
 
   <name>SDC : Integrations Mock AI and Case Service</name>
@@ -69,12 +69,12 @@
       <version>${project.parent.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>ons.sdc.int.common</groupId>
-      <artifactId>case-api-client</artifactId>
-      <version>${project.parent.version}</version>
-    </dependency>
     <!-- ONS END -->
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>net.logstash.logback</groupId>

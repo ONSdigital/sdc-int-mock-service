@@ -35,10 +35,6 @@ server:
       io: 50
 
 spring:
-  cloud:
-    gcp:
-      core:
-        enabled: false
   mvc:
     servlet:
       path: /
