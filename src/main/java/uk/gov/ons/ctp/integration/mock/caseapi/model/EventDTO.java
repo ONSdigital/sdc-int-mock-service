@@ -12,6 +12,5 @@ public class EventDTO {
 
   private String description;
 
-  //  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
   private OffsetDateTime createdDateTime;
 }
