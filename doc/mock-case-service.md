@@ -21,7 +21,6 @@ These endpoints will return mock case data held within the resources directory.
 ```
     curl -s localhost:8162/cases/{caseId}
     curl -s localhost:8162/cases/{caseId}/qid
-    curl -s localhost:8162/cases/uprn/{uprn}
     curl -s localhost:8162/cases/ref/{caseRef}
 ```
 
