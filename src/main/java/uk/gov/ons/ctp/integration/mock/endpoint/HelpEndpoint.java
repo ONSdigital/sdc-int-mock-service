@@ -163,7 +163,6 @@ public final class HelpEndpoint implements CTPEndpoint {
     curlHelp(helpText, "cases/examples");
     curlHelp(helpText, "cases/77346443-64ae-422e-9b93-d5250f48a27a");
     curlHelp(helpText, "cases/77346443-64ae-422e-9b93-d5250f48a27a/qid");
-    curlHelp(helpText, "cases/uprn/10013047193");
     curlHelp(helpText, "cases/ref/124124009");
     curlHelp(helpText, "addresses/eq?input=Holbeche");
 
