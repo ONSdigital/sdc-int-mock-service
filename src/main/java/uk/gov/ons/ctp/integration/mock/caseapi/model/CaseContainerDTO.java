@@ -7,11 +7,11 @@ import java.util.UUID;
 import lombok.Data;
 
 /**
- * By having these model classes, the mock stands apart from the case api client in common.
- * It's understanding of what it is mocking is separate from the common clients understanding - in
+ * By having these model classes, the mock stands apart from the case api client in common. Its
+ * understanding of what it is mocking is separate from the common clients understanding - in
  * particular, it uses exactly the same datetime types that RM uses.
- * @author philwhiles
  *
+ * @author philwhiles
  */
 @Data
 public class CaseContainerDTO {
