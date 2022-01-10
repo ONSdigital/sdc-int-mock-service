@@ -1,9 +1,9 @@
 package uk.gov.ons.ctp.integration.mock.endpoint;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,7 +16,9 @@ import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeAddressDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeResultsDTO;
+import uk.gov.ons.ctp.integration.mock.caseapi.model.CaseContainerDTO;
 import uk.gov.ons.ctp.integration.mock.data.DataRepository;
+import uk.gov.ons.ctp.integration.mock.util.ObjectMapperFactory;
 
 /** Build response from JSON data and respond as though the original service had responded. */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -24,7 +26,11 @@ public final class ResponseBuilder {
 
   @SuppressWarnings("unchecked")
   public static ResponseEntity<Object> respond(
-      RequestType requestType, String name, int offset, int limit)
+      RequestType requestType,
+      Map<String, Object> requestParams,
+      String name,
+      int offset,
+      int limit)
       throws IOException, CTPException {
 
     HttpStatus responseStatus = HttpStatus.OK;
@@ -38,7 +44,9 @@ public final class ResponseBuilder {
         response = responseText;
       } else {
         response =
-            new ObjectMapper().readerFor(requestType.getResponseClass()).readValue(responseText);
+            ObjectMapperFactory.objectMapper()
+                .readerFor(requestType.getResponseClass())
+                .readValue(responseText);
       }
 
       switch (requestType) {
@@ -74,13 +82,18 @@ public final class ResponseBuilder {
           postcodes.getResponse().setAddresses(postcodeAddresses);
           postcodes.getResponse().setOffset(offset);
           postcodes.getResponse().setLimit(limit);
+          break;
+        case CASE_ID:
+        case CASE_REF:
+          boolean includeCaseEvents = (Boolean) requestParams.get("caseEvents");
+          if (!includeCaseEvents) {
+            CaseContainerDTO rmCaseDTO = (CaseContainerDTO) response;
+            rmCaseDTO.setCaseEvents(new ArrayList<>());
+          }
         case AI_EQ:
         case AI_EQ_POSTCODE:
         case AI_RH_UPRN:
-        case CASE_UPRN:
-        case CASE_ID:
         case CASE_QID:
-        case CASE_REF:
           // Nothing to do these types
           break;
         default:

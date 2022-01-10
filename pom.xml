@@ -69,12 +69,12 @@
       <version>${project.parent.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>ons.sdc.int.common</groupId>
-      <artifactId>case-api-client</artifactId>
-      <version>${project.parent.version}</version>
-    </dependency>
     <!-- ONS END -->
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>net.logstash.logback</groupId>
@@ -222,7 +222,6 @@
           </execution>
         </executions>
       </plugin>
-      
       
     </plugins>
 

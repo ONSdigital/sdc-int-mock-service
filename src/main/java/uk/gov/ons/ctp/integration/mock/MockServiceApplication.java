@@ -1,5 +1,6 @@
 package uk.gov.ons.ctp.integration.mock;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +17,7 @@ import uk.gov.ons.ctp.common.rest.RestClient;
 import uk.gov.ons.ctp.common.rest.RestClientConfig;
 import uk.gov.ons.ctp.integration.mock.ai.AddressIndexClient;
 import uk.gov.ons.ctp.integration.mock.config.AppConfig;
+import uk.gov.ons.ctp.integration.mock.util.ObjectMapperFactory;
 
 /** The 'main' entry point for the Mock Service SpringBoot Application. */
 @Slf4j
@@ -51,5 +53,10 @@ public class MockServiceApplication {
         .filter(s -> s.is4xxClientError())
         .forEach(s -> mapping.put(s, s));
     return mapping;
+  }
+
+  @Bean
+  public ObjectMapper defaultMapper() {
+    return ObjectMapperFactory.objectMapper();
   }
 }

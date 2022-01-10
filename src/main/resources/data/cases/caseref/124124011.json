@@ -1,31 +1,37 @@
 {
-  "caseRef": "124124011",
-  "arid": "2344266233",
-  "estabArid": "AABBCC",
-  "estabType": "ET",
-  "uprn": "100040239948",
-  "createdDateTime": "2019-04-14T13:45:26.564+01:00",
-  "addressLine1": "1 West Grove Road",
-  "addressLine2": "",
-  "addressLine3": "",
-  "townName": "Exeter",
-  "postcode": "EX2 4LU",
-  "organisationName": "ON",
-  "addressLevel": "E",
-  "abpCode": "AACC",
-  "latitude": "50.717552",
-  "longitude": "-3.5220919",
-  "oa": "EE22",
-  "lsoa": "x1",
-  "msoa": "x2",
-  "lad": "H1",
-  "secureEstablishment": false,
-  "caseEvents": [],
-  "id": "03f58cb5-9af4-4d40-9d60-c124c5bddf09",
-  "caseType": "HH",
-  "addressType": "HH",
-  "region": "E",
-  "collectionExerciseId": "49871667-117d-4a63-9101-f6a0660f73f6",
-  "surveyType": "CCS",
-  "handDelivery": false
+	"id": "03f58cb5-9af4-4d40-9d60-c124c5bddf09",
+	"caseRef": "124124011",
+	"sample": {
+		"addressLine1": "1 West Grove Road",
+		"addressLine2": "",
+		"addressLine3": "",
+		"townName": "Exeter",
+		"postcode": "EX2 4LU",
+		"uprn": "100040239948",
+		"region": "E"
+	},
+	"createdAt": "2022-01-01T12:47:31.64708Z",
+	"lastUpdatedAt": "2022-01-02T12:47:31.64708Z",
+	"caseEvents": [
+		{
+			"id": "0e2cd225-53bc-4124-8431-790e563b56a5",
+			"eventType": "NEW_CASE",
+			"description": "Initial creation of case",
+			"createdDateTime": "2022-01-03T12:47:31.64708Z"
+		},
+		{
+			"id": "3248f79d-4697-43de-80cf-354c9668a059",
+			"eventType": "PRINT_FULFILMENT",
+			"description": "Replacement UAC posted",
+			"createdDateTime": "2022-01-04T12:47:31.64708Z"
+		},
+		{
+			"id": "563780c8-18e3-4651-a5a2-b94b62e5fc9b",
+			"eventType": "SMS_FULFILMENT",
+			"description": "Replacement UAC sent",
+			"createdDateTime": "2022-01-05T12:47:31.64708Z"
+		}
+	],
+	"invalid": false,
+	"refusalReceived": null
 }

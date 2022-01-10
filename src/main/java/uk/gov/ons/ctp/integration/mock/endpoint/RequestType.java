@@ -8,6 +8,7 @@ import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPartialResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexRhPostcodeResultsDTO;
 import uk.gov.ons.ctp.integration.mock.ai.model.AddressIndexUprnResultDTO;
+import uk.gov.ons.ctp.integration.mock.caseapi.model.CaseContainerDTO;
 
 @Getter
 public enum RequestType {
@@ -62,20 +63,13 @@ public enum RequestType {
       "INPUT",
       AddressIndexEqPostcodeResultsDTO.class,
       "input"),
-  CASE_UPRN(
-      "/cases/uprn/{uprn}",
-      "/cases/uprn",
-      "Search for UPRN for cases.",
-      HttpStatus.NOT_FOUND,
-      null,
-      String.class),
   CASE_REF(
       "/cases/ref/{ref}",
       "/cases/caseref",
       "Search for caseRef for cases.",
       HttpStatus.NOT_FOUND,
       null,
-      String.class,
+      CaseContainerDTO.class,
       "caseEvents"),
   CASE_QID(
       "/cases/{caseId}/telephone-capture",
@@ -92,7 +86,7 @@ public enum RequestType {
       "Search for questionnaires for cases.",
       HttpStatus.NOT_FOUND,
       null,
-      String.class,
+      CaseContainerDTO.class,
       "caseEvents");
 
   private String url;
